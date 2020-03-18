@@ -25,17 +25,17 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Top = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.lblUname = New System.Windows.Forms.Label()
-        Me.lblPass = New System.Windows.Forms.Label()
-        Me.btnLogin = New System.Windows.Forms.Button()
-        Me.btnClr = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
-        Me.llFP = New System.Windows.Forms.LinkLabel()
-        Me.llCP = New System.Windows.Forms.LinkLabel()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.llCP = New System.Windows.Forms.LinkLabel()
+        Me.llFP = New System.Windows.Forms.LinkLabel()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnClr = New System.Windows.Forms.Button()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.lblPass = New System.Windows.Forms.Label()
+        Me.lblUname = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Top.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -73,6 +73,17 @@ Partial Class Login
         Me.Top.Size = New System.Drawing.Size(715, 260)
         Me.Top.TabIndex = 0
         '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("MingLiU_HKSCS-ExtB", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.ForeColor = System.Drawing.Color.White
+        Me.lblTitle.Location = New System.Drawing.Point(213, 59)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(321, 32)
+        Me.lblTitle.TabIndex = 2
+        Me.lblTitle.Text = "Ashroy Boys Hostel"
+        '
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -91,69 +102,25 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(332, 335)
         Me.Panel1.TabIndex = 3
         '
-        'TextBox1
+        'llCP
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(49, 122)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(236, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.llCP.AutoSize = True
+        Me.llCP.Location = New System.Drawing.Point(193, 284)
+        Me.llCP.Name = "llCP"
+        Me.llCP.Size = New System.Drawing.Size(93, 13)
+        Me.llCP.TabIndex = 8
+        Me.llCP.TabStop = True
+        Me.llCP.Text = "Change Password"
         '
-        'TextBox2
+        'llFP
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.White
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(49, 183)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(236, 20)
-        Me.TextBox2.TabIndex = 1
-        '
-        'lblUname
-        '
-        Me.lblUname.AutoSize = True
-        Me.lblUname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUname.ForeColor = System.Drawing.Color.DarkViolet
-        Me.lblUname.Location = New System.Drawing.Point(47, 93)
-        Me.lblUname.Name = "lblUname"
-        Me.lblUname.Size = New System.Drawing.Size(77, 16)
-        Me.lblUname.TabIndex = 2
-        Me.lblUname.Text = "User Name"
-        '
-        'lblPass
-        '
-        Me.lblPass.AutoSize = True
-        Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPass.ForeColor = System.Drawing.Color.DarkViolet
-        Me.lblPass.Location = New System.Drawing.Point(46, 155)
-        Me.lblPass.Name = "lblPass"
-        Me.lblPass.Size = New System.Drawing.Size(68, 16)
-        Me.lblPass.TabIndex = 3
-        Me.lblPass.Text = "Password"
-        '
-        'btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.Color.Green
-        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnLogin.Location = New System.Drawing.Point(49, 231)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(75, 23)
-        Me.btnLogin.TabIndex = 4
-        Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = False
-        '
-        'btnClr
-        '
-        Me.btnClr.BackColor = System.Drawing.Color.Gold
-        Me.btnClr.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClr.Location = New System.Drawing.Point(130, 231)
-        Me.btnClr.Name = "btnClr"
-        Me.btnClr.Size = New System.Drawing.Size(75, 23)
-        Me.btnClr.TabIndex = 5
-        Me.btnClr.Text = "Clear"
-        Me.btnClr.UseVisualStyleBackColor = False
+        Me.llFP.AutoSize = True
+        Me.llFP.Location = New System.Drawing.Point(48, 284)
+        Me.llFP.Name = "llFP"
+        Me.llFP.Size = New System.Drawing.Size(92, 13)
+        Me.llFP.TabIndex = 7
+        Me.llFP.TabStop = True
+        Me.llFP.Text = "Forgot Password?"
         '
         'btnExit
         '
@@ -167,36 +134,69 @@ Partial Class Login
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
         '
-        'llFP
+        'btnClr
         '
-        Me.llFP.AutoSize = True
-        Me.llFP.Location = New System.Drawing.Point(48, 284)
-        Me.llFP.Name = "llFP"
-        Me.llFP.Size = New System.Drawing.Size(92, 13)
-        Me.llFP.TabIndex = 7
-        Me.llFP.TabStop = True
-        Me.llFP.Text = "Forgot Password?"
+        Me.btnClr.BackColor = System.Drawing.Color.Gold
+        Me.btnClr.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnClr.Location = New System.Drawing.Point(130, 231)
+        Me.btnClr.Name = "btnClr"
+        Me.btnClr.Size = New System.Drawing.Size(75, 23)
+        Me.btnClr.TabIndex = 5
+        Me.btnClr.Text = "Clear"
+        Me.btnClr.UseVisualStyleBackColor = False
         '
-        'llCP
+        'btnLogin
         '
-        Me.llCP.AutoSize = True
-        Me.llCP.Location = New System.Drawing.Point(193, 284)
-        Me.llCP.Name = "llCP"
-        Me.llCP.Size = New System.Drawing.Size(93, 13)
-        Me.llCP.TabIndex = 8
-        Me.llCP.TabStop = True
-        Me.llCP.Text = "Change Password"
+        Me.btnLogin.BackColor = System.Drawing.Color.Green
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnLogin.Location = New System.Drawing.Point(49, 231)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(75, 23)
+        Me.btnLogin.TabIndex = 4
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
-        'lblTitle
+        'lblPass
         '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("MingLiU_HKSCS-ExtB", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(145, 58)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(423, 32)
-        Me.lblTitle.TabIndex = 2
-        Me.lblTitle.Text = "Sonar Bangla Boys Hostel"
+        Me.lblPass.AutoSize = True
+        Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPass.ForeColor = System.Drawing.Color.DarkViolet
+        Me.lblPass.Location = New System.Drawing.Point(46, 155)
+        Me.lblPass.Name = "lblPass"
+        Me.lblPass.Size = New System.Drawing.Size(68, 16)
+        Me.lblPass.TabIndex = 3
+        Me.lblPass.Text = "Password"
+        '
+        'lblUname
+        '
+        Me.lblUname.AutoSize = True
+        Me.lblUname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUname.ForeColor = System.Drawing.Color.DarkViolet
+        Me.lblUname.Location = New System.Drawing.Point(47, 93)
+        Me.lblUname.Name = "lblUname"
+        Me.lblUname.Size = New System.Drawing.Size(77, 16)
+        Me.lblUname.TabIndex = 2
+        Me.lblUname.Text = "User Name"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.White
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Location = New System.Drawing.Point(49, 183)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(236, 20)
+        Me.TextBox2.TabIndex = 1
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Location = New System.Drawing.Point(49, 122)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(236, 20)
+        Me.TextBox1.TabIndex = 0
         '
         'Login
         '
