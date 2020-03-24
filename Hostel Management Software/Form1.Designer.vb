@@ -22,8 +22,6 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Top = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -40,33 +38,10 @@ Partial Class Login
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(664, 13)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(14, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "X"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Uighur", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.DarkViolet
-        Me.Label2.Location = New System.Drawing.Point(124, 12)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 36)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "< Sign In >"
-        '
         'Top
         '
         Me.Top.BackColor = System.Drawing.Color.DarkViolet
         Me.Top.Controls.Add(Me.lblTitle)
-        Me.Top.Controls.Add(Me.Label1)
         Me.Top.Dock = System.Windows.Forms.DockStyle.Top
         Me.Top.Location = New System.Drawing.Point(0, 0)
         Me.Top.Name = "Top"
@@ -87,7 +62,6 @@ Partial Class Login
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.llCP)
         Me.Panel1.Controls.Add(Me.llFP)
         Me.Panel1.Controls.Add(Me.btnExit)
@@ -216,9 +190,6 @@ Partial Class Login
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Top As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TextBox2 As TextBox
