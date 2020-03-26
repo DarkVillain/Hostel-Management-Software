@@ -32,8 +32,8 @@ Partial Class Login
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblPass = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtBoxPass = New System.Windows.Forms.TextBox()
+        Me.txtBoxName = New System.Windows.Forms.TextBox()
         Me.Top.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -69,8 +69,8 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.lblPass)
         Me.Panel1.Controls.Add(Me.lblName)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.txtBoxPass)
+        Me.Panel1.Controls.Add(Me.txtBoxName)
         Me.Panel1.Location = New System.Drawing.Point(202, 181)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(332, 335)
@@ -154,23 +154,23 @@ Partial Class Login
         Me.lblName.TabIndex = 2
         Me.lblName.Text = "User Name"
         '
-        'TextBox2
+        'txtBoxPass
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.White
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(49, 183)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(236, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.txtBoxPass.BackColor = System.Drawing.Color.White
+        Me.txtBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBoxPass.Location = New System.Drawing.Point(49, 183)
+        Me.txtBoxPass.Name = "txtBoxPass"
+        Me.txtBoxPass.Size = New System.Drawing.Size(236, 20)
+        Me.txtBoxPass.TabIndex = 1
         '
-        'TextBox1
+        'txtBoxName
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(49, 122)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(236, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtBoxName.BackColor = System.Drawing.Color.White
+        Me.txtBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBoxName.Location = New System.Drawing.Point(49, 122)
+        Me.txtBoxName.Name = "txtBoxName"
+        Me.txtBoxName.Size = New System.Drawing.Size(236, 20)
+        Me.txtBoxName.TabIndex = 0
         '
         'Login
         '
@@ -192,8 +192,8 @@ Partial Class Login
     End Sub
     Friend WithEvents Top As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtBoxPass As TextBox
+    Friend WithEvents txtBoxName As TextBox
     Friend WithEvents lblName As Label
     Friend WithEvents lblTitle As Label
     Friend WithEvents llCP As LinkLabel
