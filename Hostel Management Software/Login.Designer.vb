@@ -40,7 +40,7 @@ Partial Class Login
         '
         'Top
         '
-        Me.Top.BackColor = System.Drawing.Color.DarkViolet
+        Me.Top.BackColor = System.Drawing.Color.DodgerBlue
         Me.Top.Controls.Add(Me.lblTitle)
         Me.Top.Dock = System.Windows.Forms.DockStyle.Top
         Me.Top.Location = New System.Drawing.Point(0, 0)
@@ -136,7 +136,7 @@ Partial Class Login
         '
         Me.lblPass.AutoSize = True
         Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPass.ForeColor = System.Drawing.Color.DarkViolet
+        Me.lblPass.ForeColor = System.Drawing.Color.DodgerBlue
         Me.lblPass.Location = New System.Drawing.Point(46, 155)
         Me.lblPass.Name = "lblPass"
         Me.lblPass.Size = New System.Drawing.Size(68, 16)
@@ -147,7 +147,7 @@ Partial Class Login
         '
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.DarkViolet
+        Me.lblName.ForeColor = System.Drawing.Color.DodgerBlue
         Me.lblName.Location = New System.Drawing.Point(47, 93)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(77, 16)
