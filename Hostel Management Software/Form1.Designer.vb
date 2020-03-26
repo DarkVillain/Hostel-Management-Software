@@ -34,8 +34,10 @@ Partial Class Login
         Me.lblName = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Top.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Top
@@ -62,6 +64,7 @@ Partial Class Login
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.llCP)
         Me.Panel1.Controls.Add(Me.llFP)
         Me.Panel1.Controls.Add(Me.btnExit)
@@ -172,6 +175,15 @@ Partial Class Login
         Me.TextBox1.Size = New System.Drawing.Size(236, 20)
         Me.TextBox1.TabIndex = 0
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(116, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 75)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -187,6 +199,7 @@ Partial Class Login
         Me.Top.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -202,4 +215,5 @@ Partial Class Login
     Friend WithEvents btnClr As Button
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblPass As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
