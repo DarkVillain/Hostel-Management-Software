@@ -28,6 +28,8 @@ Partial Class dash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Name = "dash"
         Me.Text = "Welcome to Dashboard!!"

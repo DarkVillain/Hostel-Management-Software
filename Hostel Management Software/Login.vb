@@ -37,7 +37,7 @@
             dash.Show()
             Me.Hide()
         ElseIf txtBoxName.Text <> username Or txtBoxPass.Text <> password Then
-            MsgBox("login failed,try again..!")
+            MsgBox("Username or password is incorrect!")
 
         End If
         If txtBoxName.Text = username And txtBoxPass.Text = password Then
@@ -52,6 +52,14 @@
     End Sub
 
     Private Sub lblTitle_Click(sender As Object, e As EventArgs) Handles lblTitle.Click
+
+    End Sub
+
+    Private Sub btnClr_Click(sender As Object, e As EventArgs) Handles btnClr.Click
+
+        txtBoxName.Clear()
+        txtBoxPass.Clear()
+
 
     End Sub
 End Class
