@@ -30,7 +30,7 @@ Partial Class dash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Name = "dash"
-        Me.Text = "Welcome to Dashboard"
+        Me.Text = "Welcome to Dashboard!!"
         Me.ResumeLayout(False)
 
     End Sub
