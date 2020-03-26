@@ -46,4 +46,8 @@
         End If
 
     End Sub
+
+    Private Sub txtBoxPass_TextChanged(sender As Object, e As EventArgs) Handles txtBoxPass.TextChanged
+
+    End Sub
 End Class
