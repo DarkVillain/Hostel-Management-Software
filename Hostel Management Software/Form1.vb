@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblUname.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblName.Click
 
     End Sub
 

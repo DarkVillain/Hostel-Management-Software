@@ -31,7 +31,7 @@ Partial Class Login
         Me.btnClr = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblPass = New System.Windows.Forms.Label()
-        Me.lblUname = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Top.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.btnClr)
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.lblPass)
-        Me.Panel1.Controls.Add(Me.lblUname)
+        Me.Panel1.Controls.Add(Me.lblName)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Location = New System.Drawing.Point(202, 181)
@@ -143,16 +143,16 @@ Partial Class Login
         Me.lblPass.TabIndex = 3
         Me.lblPass.Text = "Password"
         '
-        'lblUname
+        'lblName
         '
-        Me.lblUname.AutoSize = True
-        Me.lblUname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUname.ForeColor = System.Drawing.Color.DarkViolet
-        Me.lblUname.Location = New System.Drawing.Point(47, 93)
-        Me.lblUname.Name = "lblUname"
-        Me.lblUname.Size = New System.Drawing.Size(77, 16)
-        Me.lblUname.TabIndex = 2
-        Me.lblUname.Text = "User Name"
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.DarkViolet
+        Me.lblName.Location = New System.Drawing.Point(47, 93)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(77, 16)
+        Me.lblName.TabIndex = 2
+        Me.lblName.Text = "User Name"
         '
         'TextBox2
         '
@@ -194,7 +194,7 @@ Partial Class Login
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents lblUname As Label
+    Friend WithEvents lblName As Label
     Friend WithEvents lblTitle As Label
     Friend WithEvents llCP As LinkLabel
     Friend WithEvents llFP As LinkLabel
