@@ -22,7 +22,7 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Top = New System.Windows.Forms.Panel()
+        Me.Up = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llCP = New System.Windows.Forms.LinkLabel()
@@ -34,19 +34,19 @@ Partial Class Login
         Me.lblName = New System.Windows.Forms.Label()
         Me.txtBoxPass = New System.Windows.Forms.TextBox()
         Me.txtBoxName = New System.Windows.Forms.TextBox()
-        Me.Top.SuspendLayout()
+        Me.Up.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Top
+        'Up
         '
-        Me.Top.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Top.Controls.Add(Me.lblTitle)
-        Me.Top.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Top.Location = New System.Drawing.Point(0, 0)
-        Me.Top.Name = "Top"
-        Me.Top.Size = New System.Drawing.Size(715, 260)
-        Me.Top.TabIndex = 0
+        Me.Up.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Up.Controls.Add(Me.lblTitle)
+        Me.Up.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Up.Location = New System.Drawing.Point(0, 0)
+        Me.Up.Name = "Up"
+        Me.Up.Size = New System.Drawing.Size(715, 260)
+        Me.Up.TabIndex = 0
         '
         'lblTitle
         '
@@ -179,18 +179,18 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(715, 592)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Top)
+        Me.Controls.Add(Me.Up)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.Text = "Form1"
-        Me.Top.ResumeLayout(False)
-        Me.Top.PerformLayout()
+        Me.Up.ResumeLayout(False)
+        Me.Up.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Top As Panel
+    Friend WithEvents Up As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents txtBoxPass As TextBox
     Friend WithEvents txtBoxName As TextBox

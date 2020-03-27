@@ -17,7 +17,7 @@
 
     End Sub
 
-    Private Sub Top_Paint(sender As Object, e As PaintEventArgs) Handles Top.Paint
+    Private Sub Top_Paint(sender As Object, e As PaintEventArgs) Handles Up.Paint
 
     End Sub
 
