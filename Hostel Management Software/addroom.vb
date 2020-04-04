@@ -1,6 +1,7 @@
 ﻿Public Class addroom
 
-    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=orcl;PERSIST SECURITY INFO=True;USER ID=HR")
+    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR")
+
     Private Sub addroom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
@@ -18,6 +19,7 @@
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
         con.Open()
+
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
         command.CommandText = " INSERT INTO ROOMDETAILS VALUES (" & txtRN.Text & "," & txtRT.Text & "," & txtPC.Text & ")"
         If command.ExecuteNonQuery() > 0 Then
@@ -39,7 +41,7 @@
     Private Sub btnClr_Click(sender As Object, e As EventArgs) Handles btnClr.Click
 
         dash.Show()
-        Me.Close()
+        Me.Hide()
 
     End Sub
 End Class

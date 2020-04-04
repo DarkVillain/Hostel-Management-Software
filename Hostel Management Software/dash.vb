@@ -6,7 +6,11 @@
     Private Sub AddToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AddToolStripMenuItem1.Click
 
         addroom.Show()
-        Me.Close()
+        Close()
+
+    End Sub
+
+    Private Sub RoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RoomToolStripMenuItem.Click
 
     End Sub
 End Class
