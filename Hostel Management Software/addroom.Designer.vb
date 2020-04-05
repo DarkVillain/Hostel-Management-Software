@@ -29,8 +29,8 @@ Partial Class addroom
         Me.lblRT = New System.Windows.Forms.Label()
         Me.lblPC = New System.Windows.Forms.Label()
         Me.txtRN = New System.Windows.Forms.TextBox()
-        Me.txtRT = New System.Windows.Forms.TextBox()
         Me.txtPC = New System.Windows.Forms.TextBox()
+        Me.cmbRT = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,7 +74,7 @@ Partial Class addroom
         'lblRT
         '
         Me.lblRT.AutoSize = True
-        Me.lblRT.Location = New System.Drawing.Point(38, 113)
+        Me.lblRT.Location = New System.Drawing.Point(38, 116)
         Me.lblRT.Name = "lblRT"
         Me.lblRT.Size = New System.Drawing.Size(62, 13)
         Me.lblRT.TabIndex = 4
@@ -96,19 +96,21 @@ Partial Class addroom
         Me.txtRN.Size = New System.Drawing.Size(179, 20)
         Me.txtRN.TabIndex = 6
         '
-        'txtRT
-        '
-        Me.txtRT.Location = New System.Drawing.Point(121, 113)
-        Me.txtRT.Name = "txtRT"
-        Me.txtRT.Size = New System.Drawing.Size(179, 20)
-        Me.txtRT.TabIndex = 7
-        '
         'txtPC
         '
         Me.txtPC.Location = New System.Drawing.Point(121, 172)
         Me.txtPC.Name = "txtPC"
         Me.txtPC.Size = New System.Drawing.Size(179, 20)
         Me.txtPC.TabIndex = 8
+        '
+        'cmbRT
+        '
+        Me.cmbRT.FormattingEnabled = True
+        Me.cmbRT.Items.AddRange(New Object() {"AC", "NON-AC"})
+        Me.cmbRT.Location = New System.Drawing.Point(121, 116)
+        Me.cmbRT.Name = "cmbRT"
+        Me.cmbRT.Size = New System.Drawing.Size(179, 21)
+        Me.cmbRT.TabIndex = 10
         '
         'PictureBox1
         '
@@ -123,9 +125,9 @@ Partial Class addroom
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.cmbRT)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtPC)
-        Me.Controls.Add(Me.txtRT)
         Me.Controls.Add(Me.txtRN)
         Me.Controls.Add(Me.lblPC)
         Me.Controls.Add(Me.lblRT)
@@ -148,7 +150,7 @@ Partial Class addroom
     Friend WithEvents lblRT As Label
     Friend WithEvents lblPC As Label
     Friend WithEvents txtRN As TextBox
-    Friend WithEvents txtRT As TextBox
     Friend WithEvents txtPC As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents cmbRT As ComboBox
 End Class

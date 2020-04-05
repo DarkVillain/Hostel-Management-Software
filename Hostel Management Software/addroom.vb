@@ -1,4 +1,5 @@
-﻿Public Class addroom
+﻿Imports Oracle.DataAccess.Client
+Public Class addroom
 
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
 
@@ -21,19 +22,37 @@
         con.Open()
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
-        command.CommandText = " INSERT INTO ROOMDETAILS VALUES ('" & txtRN.Text & "','" & txtRT.Text & "','" & txtPC.Text & "')"
+        command.CommandText = " INSERT INTO ROOMDETAILS VALUES ('" & txtRN.Text & "','" & cmbRT.Text & "','" & txtPC.Text & "')"
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("Data has been saved!")
         Else
             MsgBox("Error, while saving data!")
         End If
 
+        con.Close()
+        updatecombo()
+
+
+    End Sub
+
+    Private Sub updatecombo()
+        cmbRT.Items.Clear()
+
+        con.Open()
+        Dim command As OracleCommand = con.CreateCommand()
+        command.CommandText = "SELECT ROOM_NO FROM ROOMDETAILS"
+        Dim oraclereader As OracleDataReader = command.ExecuteReader()
+
+        While oraclereader.Read()
+            cmbRT.Items.Add(oraclereader.Item("ROOM_NO"))
+        End While
+        con.Close()
     End Sub
 
     Private Sub btnBK_Click(sender As Object, e As EventArgs) Handles btnBK.Click
 
         txtRN.Text = " "
-        txtRT.Text = " "
+        cmbRT.Text = " "
         txtPC.Text = " "
 
     End Sub

@@ -149,6 +149,12 @@
     <Compile Include="dash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="editRoom.Designer.vb">
+      <DependentUpon>editRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dash.resx">
       <DependentUpon>dash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editRoom.resx">
+      <DependentUpon>editRoom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
