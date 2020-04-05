@@ -1,6 +1,6 @@
 ﻿Public Class addroom
 
-    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR")
+    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
 
     Private Sub addroom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -21,11 +21,11 @@
         con.Open()
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
-        command.CommandText = " INSERT INTO ROOMDETAILS VALUES (" & txtRN.Text & "," & txtRT.Text & "," & txtPC.Text & ")"
+        command.CommandText = " INSERT INTO ROOMDETAILS VALUES ('" & txtRN.Text & "','" & txtRT.Text & "','" & txtPC.Text & "')"
         If command.ExecuteNonQuery() > 0 Then
-            MsgBox("datas are saved..!")
+            MsgBox("Data has been saved!")
         Else
-            MsgBox("datas are not saved...!")
+            MsgBox("Error, while saving data!")
         End If
 
     End Sub
