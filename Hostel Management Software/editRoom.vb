@@ -12,7 +12,7 @@ Public Class editRoom
         Me.Hide()
     End Sub
 
-    Private Sub btnCLR_Click(sender As Object, e As EventArgs) Handles btnCLR.Click
+    Private Sub btnCLR_Click(sender As Object, e As EventArgs)
         cmbRN.Text = " "
         cmbRT.Text = " "
         txtPC.Text = " "
@@ -47,18 +47,21 @@ Public Class editRoom
         Else
             MsgBox("Error, while saving data!")
         End If
-
+        Me.Refresh()
         con.Close()
 
     End Sub
 
     Private Sub editRoom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'RoomDetails._ROOMDETAILS' table. You can move, or remove it, as needed.
+        Me.ROOMDETAILSTableAdapter.Fill(Me.RoomDetails._ROOMDETAILS)
 
         updatecombo()
 
     End Sub
 
     Private Sub updatecombo()
+
         cmbRN.Items.Clear()
 
         con.Open()
@@ -70,18 +73,18 @@ Public Class editRoom
             cmbRN.Items.Add(oraclereader.Item("ROOM_NO"))
         End While
         con.Close()
+
     End Sub
 
     Private Sub btnDLT_Click(sender As Object, e As EventArgs) Handles btnDLT.Click
 
         con.Open()
-
         Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "DELETE ROOMDETAILS WHERE ROOM_NO='" & cmbRT.Text & "', PRICE=" & txtPC.Text & " WHERE ROOM_NO= " & cmbRN.SelectedItem
-
+        command.CommandText = "DELETE FROM ROOMDETAILS WHERE ROOM_NO='" & cmbRN.Text & "'"
         cmbRN.Text = " "
         cmbRT.Text = " "
         txtPC.Text = " "
+
 
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("Data has been deleted!")

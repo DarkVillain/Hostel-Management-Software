@@ -31,13 +31,12 @@ Partial Class editRoom
         Me.btnUPDT = New System.Windows.Forms.Button()
         Me.btnDLT = New System.Windows.Forms.Button()
         Me.btnBCK = New System.Windows.Forms.Button()
-        Me.btnCLR = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblRN
         '
         Me.lblRN.AutoSize = True
-        Me.lblRN.Location = New System.Drawing.Point(6, 64)
+        Me.lblRN.Location = New System.Drawing.Point(23, 64)
         Me.lblRN.Name = "lblRN"
         Me.lblRN.Size = New System.Drawing.Size(55, 13)
         Me.lblRN.TabIndex = 0
@@ -46,7 +45,7 @@ Partial Class editRoom
         'lblRT
         '
         Me.lblRT.AutoSize = True
-        Me.lblRT.Location = New System.Drawing.Point(6, 112)
+        Me.lblRT.Location = New System.Drawing.Point(23, 107)
         Me.lblRT.Name = "lblRT"
         Me.lblRT.Size = New System.Drawing.Size(62, 13)
         Me.lblRT.TabIndex = 1
@@ -55,7 +54,7 @@ Partial Class editRoom
         'lblPC
         '
         Me.lblPC.AutoSize = True
-        Me.lblPC.Location = New System.Drawing.Point(6, 165)
+        Me.lblPC.Location = New System.Drawing.Point(23, 147)
         Me.lblPC.Name = "lblPC"
         Me.lblPC.Size = New System.Drawing.Size(31, 13)
         Me.lblPC.TabIndex = 2
@@ -63,7 +62,7 @@ Partial Class editRoom
         '
         'txtPC
         '
-        Me.txtPC.Location = New System.Drawing.Point(107, 158)
+        Me.txtPC.Location = New System.Drawing.Point(107, 140)
         Me.txtPC.Name = "txtPC"
         Me.txtPC.Size = New System.Drawing.Size(121, 20)
         Me.txtPC.TabIndex = 3
@@ -80,53 +79,46 @@ Partial Class editRoom
         '
         Me.cmbRT.FormattingEnabled = True
         Me.cmbRT.Items.AddRange(New Object() {"AC", "AC2"})
-        Me.cmbRT.Location = New System.Drawing.Point(107, 109)
+        Me.cmbRT.Location = New System.Drawing.Point(107, 104)
         Me.cmbRT.Name = "cmbRT"
         Me.cmbRT.Size = New System.Drawing.Size(121, 21)
         Me.cmbRT.TabIndex = 5
         '
         'btnUPDT
         '
-        Me.btnUPDT.Location = New System.Drawing.Point(3, 206)
+        Me.btnUPDT.Location = New System.Drawing.Point(26, 178)
         Me.btnUPDT.Name = "btnUPDT"
-        Me.btnUPDT.Size = New System.Drawing.Size(75, 23)
+        Me.btnUPDT.Size = New System.Drawing.Size(59, 23)
         Me.btnUPDT.TabIndex = 6
         Me.btnUPDT.Text = "Update"
         Me.btnUPDT.UseVisualStyleBackColor = True
         '
         'btnDLT
         '
-        Me.btnDLT.Location = New System.Drawing.Point(84, 206)
+        Me.btnDLT.Location = New System.Drawing.Point(107, 178)
         Me.btnDLT.Name = "btnDLT"
-        Me.btnDLT.Size = New System.Drawing.Size(75, 23)
+        Me.btnDLT.Size = New System.Drawing.Size(51, 23)
         Me.btnDLT.TabIndex = 7
         Me.btnDLT.Text = "Delete"
         Me.btnDLT.UseVisualStyleBackColor = True
         '
         'btnBCK
         '
-        Me.btnBCK.Location = New System.Drawing.Point(165, 206)
+        Me.btnBCK.Location = New System.Drawing.Point(172, 178)
         Me.btnBCK.Name = "btnBCK"
-        Me.btnBCK.Size = New System.Drawing.Size(75, 23)
+        Me.btnBCK.Size = New System.Drawing.Size(56, 23)
         Me.btnBCK.TabIndex = 8
         Me.btnBCK.Text = "Back"
         Me.btnBCK.UseVisualStyleBackColor = True
-        '
-        'btnCLR
-        '
-        Me.btnCLR.Location = New System.Drawing.Point(246, 206)
-        Me.btnCLR.Name = "btnCLR"
-        Me.btnCLR.Size = New System.Drawing.Size(75, 23)
-        Me.btnCLR.TabIndex = 9
-        Me.btnCLR.Text = "Clear"
-        Me.btnCLR.UseVisualStyleBackColor = True
         '
         'editRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 747)
-        Me.Controls.Add(Me.btnCLR)
         Me.Controls.Add(Me.btnBCK)
         Me.Controls.Add(Me.btnDLT)
         Me.Controls.Add(Me.btnUPDT)
@@ -152,5 +144,4 @@ Partial Class editRoom
     Friend WithEvents btnUPDT As Button
     Friend WithEvents btnDLT As Button
     Friend WithEvents btnBCK As Button
-    Friend WithEvents btnCLR As Button
 End Class

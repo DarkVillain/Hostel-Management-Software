@@ -31,13 +31,11 @@ Partial Class addroom
         Me.txtRN = New System.Windows.Forms.TextBox()
         Me.txtPC = New System.Windows.Forms.TextBox()
         Me.cmbRT = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(6, 228)
+        Me.btnAdd.Location = New System.Drawing.Point(21, 223)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 0
@@ -46,7 +44,7 @@ Partial Class addroom
         '
         'btnClr
         '
-        Me.btnClr.Location = New System.Drawing.Point(205, 228)
+        Me.btnClr.Location = New System.Drawing.Point(205, 223)
         Me.btnClr.Name = "btnClr"
         Me.btnClr.Size = New System.Drawing.Size(75, 23)
         Me.btnClr.TabIndex = 1
@@ -55,7 +53,7 @@ Partial Class addroom
         '
         'btnBK
         '
-        Me.btnBK.Location = New System.Drawing.Point(109, 228)
+        Me.btnBK.Location = New System.Drawing.Point(111, 223)
         Me.btnBK.Name = "btnBK"
         Me.btnBK.Size = New System.Drawing.Size(75, 23)
         Me.btnBK.TabIndex = 2
@@ -65,7 +63,7 @@ Partial Class addroom
         'lblRN
         '
         Me.lblRN.AutoSize = True
-        Me.lblRN.Location = New System.Drawing.Point(15, 55)
+        Me.lblRN.Location = New System.Drawing.Point(18, 101)
         Me.lblRN.Name = "lblRN"
         Me.lblRN.Size = New System.Drawing.Size(55, 13)
         Me.lblRN.TabIndex = 3
@@ -74,7 +72,7 @@ Partial Class addroom
         'lblRT
         '
         Me.lblRT.AutoSize = True
-        Me.lblRT.Location = New System.Drawing.Point(15, 122)
+        Me.lblRT.Location = New System.Drawing.Point(18, 142)
         Me.lblRT.Name = "lblRT"
         Me.lblRT.Size = New System.Drawing.Size(62, 13)
         Me.lblRT.TabIndex = 4
@@ -83,7 +81,7 @@ Partial Class addroom
         'lblPC
         '
         Me.lblPC.AutoSize = True
-        Me.lblPC.Location = New System.Drawing.Point(15, 178)
+        Me.lblPC.Location = New System.Drawing.Point(18, 183)
         Me.lblPC.Name = "lblPC"
         Me.lblPC.Size = New System.Drawing.Size(31, 13)
         Me.lblPC.TabIndex = 5
@@ -91,14 +89,14 @@ Partial Class addroom
         '
         'txtRN
         '
-        Me.txtRN.Location = New System.Drawing.Point(98, 55)
+        Me.txtRN.Location = New System.Drawing.Point(101, 101)
         Me.txtRN.Name = "txtRN"
         Me.txtRN.Size = New System.Drawing.Size(179, 20)
         Me.txtRN.TabIndex = 6
         '
         'txtPC
         '
-        Me.txtPC.Location = New System.Drawing.Point(98, 178)
+        Me.txtPC.Location = New System.Drawing.Point(101, 183)
         Me.txtPC.Name = "txtPC"
         Me.txtPC.Size = New System.Drawing.Size(179, 20)
         Me.txtPC.TabIndex = 8
@@ -107,26 +105,20 @@ Partial Class addroom
         '
         Me.cmbRT.FormattingEnabled = True
         Me.cmbRT.Items.AddRange(New Object() {"AC", "NON-AC"})
-        Me.cmbRT.Location = New System.Drawing.Point(98, 122)
+        Me.cmbRT.Location = New System.Drawing.Point(101, 142)
         Me.cmbRT.Name = "cmbRT"
         Me.cmbRT.Size = New System.Drawing.Size(179, 21)
         Me.cmbRT.TabIndex = 10
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(387, 38)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(376, 235)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
         '
         'addroom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 747)
         Me.Controls.Add(Me.cmbRT)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtPC)
         Me.Controls.Add(Me.txtRN)
         Me.Controls.Add(Me.lblPC)
@@ -136,8 +128,7 @@ Partial Class addroom
         Me.Controls.Add(Me.btnClr)
         Me.Controls.Add(Me.btnAdd)
         Me.Name = "addroom"
-        Me.Text = "Please write infromation"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Please insert details"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -151,6 +142,5 @@ Partial Class addroom
     Friend WithEvents lblPC As Label
     Friend WithEvents txtRN As TextBox
     Friend WithEvents txtPC As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents cmbRT As ComboBox
 End Class

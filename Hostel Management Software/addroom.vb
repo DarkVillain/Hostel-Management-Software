@@ -33,7 +33,7 @@ Public Class addroom
         Else
             MsgBox("Error, while saving data!")
         End If
-
+        Me.Refresh()
         con.Close()
 
 
@@ -43,16 +43,16 @@ Public Class addroom
 
     Private Sub btnBK_Click(sender As Object, e As EventArgs) Handles btnBK.Click
 
-        txtRN.Text = " "
-        cmbRT.Text = " "
-        txtPC.Text = " "
+        dash.Show()
+        Me.Hide()
 
     End Sub
 
     Private Sub btnClr_Click(sender As Object, e As EventArgs) Handles btnClr.Click
 
-        dash.Show()
-        Me.Hide()
+        txtRN.Text = " "
+        cmbRT.Text = " "
+        txtPC.Text = " "
 
     End Sub
 End Class
