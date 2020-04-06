@@ -137,10 +137,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addroom.Designer.vb">
-      <DependentUpon>addroom.vb</DependentUpon>
+    <Compile Include="addRoom.Designer.vb">
+      <DependentUpon>addRoom.vb</DependentUpon>
     </Compile>
-    <Compile Include="addroom.vb">
+    <Compile Include="addRoom.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dash.Designer.vb">
@@ -179,8 +179,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="addroom.resx">
-      <DependentUpon>addroom.vb</DependentUpon>
+    <EmbeddedResource Include="addRoom.resx">
+      <DependentUpon>addRoom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dash.resx">
       <DependentUpon>dash.vb</DependentUpon>
