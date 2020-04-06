@@ -71,9 +71,5 @@
 
     End Sub
 
-    Private Sub lblExit_Click(sender As Object, e As EventArgs) 
 
-        Me.Exit()
-
-    End Sub
 End Class
