@@ -23,6 +23,11 @@ Public Class addroom
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
         command.CommandText = " INSERT INTO ROOMDETAILS VALUES ('" & txtRN.Text & "','" & cmbRT.Text & "','" & txtPC.Text & "')"
+
+        txtRN.Text = " "
+        cmbRT.Text = " "
+        txtPC.Text = " "
+
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("Data has been saved!")
         Else

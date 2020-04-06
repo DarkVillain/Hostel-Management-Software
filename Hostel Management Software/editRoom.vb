@@ -35,6 +35,11 @@ Public Class editRoom
         con.Open()
         Dim command As OracleCommand = con.CreateCommand()
         command.CommandText = "UPDATE ROOMDETAILS SET ROOM_TYPE='" & cmbRT.Text & "', PRICE=" & txtPC.Text & " WHERE ROOM_NO= " & cmbRN.SelectedItem
+
+        cmbRN.Text = " "
+        cmbRT.Text = " "
+        txtPC.Text = " "
+
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("datas are updated...!")
         Else

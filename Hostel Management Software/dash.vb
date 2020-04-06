@@ -10,7 +10,15 @@
 
     End Sub
 
+
     Private Sub RoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RoomToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub EditToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EditToolStripMenuItem1.Click
+
+        editRoom.Show()
+        Close()
 
     End Sub
 End Class
