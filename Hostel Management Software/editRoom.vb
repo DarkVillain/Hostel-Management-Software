@@ -53,8 +53,6 @@ Public Class editRoom
     End Sub
 
     Private Sub editRoom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'RoomDetails._ROOMDETAILS' table. You can move, or remove it, as needed.
-        Me.ROOMDETAILSTableAdapter.Fill(Me.RoomDetails._ROOMDETAILS)
 
         updatecombo()
 
@@ -92,7 +90,9 @@ Public Class editRoom
             MsgBox("Error, while deleting data!")
         End If
 
+
         con.Close()
+        updatecombo()
 
     End Sub
 
