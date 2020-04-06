@@ -27,7 +27,6 @@ Partial Class Login
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llCP = New System.Windows.Forms.LinkLabel()
         Me.llFP = New System.Windows.Forms.LinkLabel()
-        Me.btnExit = New System.Windows.Forms.Button()
         Me.btnClr = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblPass = New System.Windows.Forms.Label()
@@ -53,7 +52,7 @@ Partial Class Login
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("MingLiU_HKSCS-ExtB", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(213, 59)
+        Me.lblTitle.Location = New System.Drawing.Point(492, 54)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(321, 32)
         Me.lblTitle.TabIndex = 2
@@ -64,14 +63,13 @@ Partial Class Login
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.llCP)
         Me.Panel1.Controls.Add(Me.llFP)
-        Me.Panel1.Controls.Add(Me.btnExit)
         Me.Panel1.Controls.Add(Me.btnClr)
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.lblPass)
         Me.Panel1.Controls.Add(Me.lblName)
         Me.Panel1.Controls.Add(Me.txtBoxPass)
         Me.Panel1.Controls.Add(Me.txtBoxName)
-        Me.Panel1.Location = New System.Drawing.Point(481, 181)
+        Me.Panel1.Location = New System.Drawing.Point(481, 165)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(332, 335)
         Me.Panel1.TabIndex = 3
@@ -96,24 +94,12 @@ Partial Class Login
         Me.llFP.TabStop = True
         Me.llFP.Text = "Forgot Password?"
         '
-        'btnExit
-        '
-        Me.btnExit.BackColor = System.Drawing.Color.Red
-        Me.btnExit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Location = New System.Drawing.Point(211, 231)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 6
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = False
-        '
         'btnClr
         '
         Me.btnClr.BackColor = System.Drawing.Color.Gold
         Me.btnClr.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClr.Location = New System.Drawing.Point(130, 231)
+        Me.btnClr.Location = New System.Drawing.Point(210, 231)
         Me.btnClr.Name = "btnClr"
         Me.btnClr.Size = New System.Drawing.Size(75, 23)
         Me.btnClr.TabIndex = 5
@@ -199,7 +185,6 @@ Partial Class Login
     Friend WithEvents lblTitle As Label
     Friend WithEvents llCP As LinkLabel
     Friend WithEvents llFP As LinkLabel
-    Friend WithEvents btnExit As Button
     Friend WithEvents btnClr As Button
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblPass As Label
