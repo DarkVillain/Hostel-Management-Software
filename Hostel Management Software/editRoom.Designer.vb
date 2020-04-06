@@ -79,6 +79,7 @@ Partial Class editRoom
         'cmbRT
         '
         Me.cmbRT.FormattingEnabled = True
+        Me.cmbRT.Items.AddRange(New Object() {"AC", "AC2"})
         Me.cmbRT.Location = New System.Drawing.Point(107, 109)
         Me.cmbRT.Name = "cmbRT"
         Me.cmbRT.Size = New System.Drawing.Size(121, 21)
@@ -120,11 +121,11 @@ Partial Class editRoom
         Me.btnCLR.Text = "Clear"
         Me.btnCLR.UseVisualStyleBackColor = True
         '
-        'Form1
+        'editRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1350, 747)
         Me.Controls.Add(Me.btnCLR)
         Me.Controls.Add(Me.btnBCK)
         Me.Controls.Add(Me.btnDLT)
@@ -135,8 +136,8 @@ Partial Class editRoom
         Me.Controls.Add(Me.lblPC)
         Me.Controls.Add(Me.lblRT)
         Me.Controls.Add(Me.lblRN)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "editRoom"
+        Me.Text = "Modify room details"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -30,24 +30,11 @@ Public Class addroom
         End If
 
         con.Close()
-        updatecombo()
 
 
     End Sub
 
-    Private Sub updatecombo()
-        cmbRT.Items.Clear()
 
-        con.Open()
-        Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "SELECT ROOM_NO FROM ROOMDETAILS"
-        Dim oraclereader As OracleDataReader = command.ExecuteReader()
-
-        While oraclereader.Read()
-            cmbRT.Items.Add(oraclereader.Item("ROOM_NO"))
-        End While
-        con.Close()
-    End Sub
 
     Private Sub btnBK_Click(sender As Object, e As EventArgs) Handles btnBK.Click
 
