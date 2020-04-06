@@ -32,7 +32,9 @@ Public Class editRoom
     End Sub
 
     Private Sub btnUPDT_Click(sender As Object, e As EventArgs) Handles btnUPDT.Click
+
         con.Open()
+
         Dim command As OracleCommand = con.CreateCommand()
         command.CommandText = "UPDATE ROOMDETAILS SET ROOM_TYPE='" & cmbRT.Text & "', PRICE=" & txtPC.Text & " WHERE ROOM_NO= " & cmbRN.SelectedItem
 
@@ -41,10 +43,13 @@ Public Class editRoom
         txtPC.Text = " "
 
         If command.ExecuteNonQuery() > 0 Then
-            MsgBox("datas are updated...!")
+            MsgBox("Data has been saved!")
         Else
-            MsgBox("datas are not updated")
+            MsgBox("Error, while saving data!")
         End If
+
+        con.Close()
+
     End Sub
 
     Private Sub editRoom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -67,5 +72,25 @@ Public Class editRoom
         con.Close()
     End Sub
 
+    Private Sub btnDLT_Click(sender As Object, e As EventArgs) Handles btnDLT.Click
+
+        con.Open()
+
+        Dim command As OracleCommand = con.CreateCommand()
+        command.CommandText = "DELETE ROOMDETAILS WHERE ROOM_NO='" & cmbRT.Text & "', PRICE=" & txtPC.Text & " WHERE ROOM_NO= " & cmbRN.SelectedItem
+
+        cmbRN.Text = " "
+        cmbRT.Text = " "
+        txtPC.Text = " "
+
+        If command.ExecuteNonQuery() > 0 Then
+            MsgBox("Data has been deleted!")
+        Else
+            MsgBox("Error, while deleting data!")
+        End If
+
+        con.Close()
+
+    End Sub
 
 End Class
