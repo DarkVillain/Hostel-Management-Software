@@ -45,7 +45,7 @@ Partial Class Login
         Me.Up.Dock = System.Windows.Forms.DockStyle.Top
         Me.Up.Location = New System.Drawing.Point(0, 0)
         Me.Up.Name = "Up"
-        Me.Up.Size = New System.Drawing.Size(715, 260)
+        Me.Up.Size = New System.Drawing.Size(1366, 260)
         Me.Up.TabIndex = 0
         '
         'lblTitle
@@ -71,7 +71,7 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.lblName)
         Me.Panel1.Controls.Add(Me.txtBoxPass)
         Me.Panel1.Controls.Add(Me.txtBoxName)
-        Me.Panel1.Location = New System.Drawing.Point(202, 181)
+        Me.Panel1.Location = New System.Drawing.Point(481, 181)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(332, 335)
         Me.Panel1.TabIndex = 3
@@ -162,6 +162,7 @@ Partial Class Login
         Me.txtBoxPass.Name = "txtBoxPass"
         Me.txtBoxPass.Size = New System.Drawing.Size(236, 20)
         Me.txtBoxPass.TabIndex = 1
+        Me.txtBoxPass.UseSystemPasswordChar = True
         '
         'txtBoxName
         '
@@ -177,7 +178,7 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(715, 592)
+        Me.ClientSize = New System.Drawing.Size(1366, 768)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Up)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
