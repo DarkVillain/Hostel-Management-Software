@@ -31,6 +31,8 @@ Partial Class editRoom
         Me.btnUPDT = New System.Windows.Forms.Button()
         Me.btnDLT = New System.Windows.Forms.Button()
         Me.btnBCK = New System.Windows.Forms.Button()
+        Me.dgvRoom = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvRoom, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblRN
@@ -111,6 +113,15 @@ Partial Class editRoom
         Me.btnBCK.Text = "Back"
         Me.btnBCK.UseVisualStyleBackColor = True
         '
+        'dgvRoom
+        '
+        Me.dgvRoom.AllowUserToOrderColumns = True
+        Me.dgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRoom.Location = New System.Drawing.Point(254, 42)
+        Me.dgvRoom.Name = "dgvRoom"
+        Me.dgvRoom.Size = New System.Drawing.Size(1084, 663)
+        Me.dgvRoom.TabIndex = 9
+        '
         'editRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -119,6 +130,7 @@ Partial Class editRoom
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 747)
+        Me.Controls.Add(Me.dgvRoom)
         Me.Controls.Add(Me.btnBCK)
         Me.Controls.Add(Me.btnDLT)
         Me.Controls.Add(Me.btnUPDT)
@@ -130,6 +142,7 @@ Partial Class editRoom
         Me.Controls.Add(Me.lblRN)
         Me.Name = "editRoom"
         Me.Text = "Modify room details"
+        CType(Me.dgvRoom, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -144,4 +157,5 @@ Partial Class editRoom
     Friend WithEvents btnUPDT As Button
     Friend WithEvents btnDLT As Button
     Friend WithEvents btnBCK As Button
+    Friend WithEvents dgvRoom As DataGridView
 End Class
