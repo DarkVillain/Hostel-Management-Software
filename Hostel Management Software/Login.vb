@@ -1,9 +1,15 @@
-﻿Imports Oracle.DataAccess.Client
+﻿Public Class Login
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
 
-Public Class Login
+    End Sub
 
-    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblName.Click
 
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) 
+
+    End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs)
 
@@ -15,18 +21,17 @@ Public Class Login
 
     End Sub
 
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtBoxName.TextChanged
+
+    End Sub
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
-        Dim username As String = txtBoxName.Text
-        Dim password As String = txtBoxPass.Text
+        Dim username As String
+        Dim password As String
 
-        con.Open()
-        Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "SELECT USERNAME,PASSWORD FROM LOGIN WHERE USERNAME='" + txtBoxName.Text + "'AND PASSWORD='" + txtBoxPass.Text + "'   "
-        Dim oraclereader As OracleDataReader = command.ExecuteReader()
-
-        oraclereader.Read()
-        txtBoxPass.Text = oraclereader.Item("PASSWORD")
+        username = "dark"
+        password = "villain"
 
         If txtBoxName.Text = username And txtBoxPass.Text = password Then
             dash.Show()
@@ -39,7 +44,7 @@ Public Class Login
             txtBoxName.Text = " "
             txtBoxPass.Text = " "
         End If
-        con.Close()
+
     End Sub
 
     Private Sub txtBoxPass_TextChanged(sender As Object, e As EventArgs) Handles txtBoxPass.TextChanged
@@ -59,6 +64,10 @@ Public Class Login
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnExit_Click_1(sender As Object, e As EventArgs)
 
     End Sub
 

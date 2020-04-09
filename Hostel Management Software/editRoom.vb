@@ -49,14 +49,12 @@ Public Class editRoom
         End If
         Me.Refresh()
         con.Close()
-        updategrid()
 
     End Sub
 
     Private Sub editRoom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         updatecombo()
-        updategrid()
 
     End Sub
 
@@ -71,27 +69,6 @@ Public Class editRoom
 
         While oraclereader.Read()
             cmbRN.Items.Add(oraclereader.Item("ROOM_NO"))
-        End While
-        con.Close()
-
-    End Sub
-
-    Private Sub updategrid()
-
-        dgvRoom.Columns.Clear()
-        dgvRoom.Rows.Clear()
-
-        dgvRoom.Columns.Add("colROOM_NO", "ROOM_NO")
-        dgvRoom.Columns.Add("colROOM_TYPE", "ROOM_TYPE")
-        dgvRoom.Columns.Add("colPRICE", "PRICE")
-
-        con.Open()
-        Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "SELECT * FROM ROOMDETAILS"
-        Dim oraclereader As OracleDataReader = command.ExecuteReader()
-
-        While oraclereader.Read()
-            dgvRoom.Rows.Add({oraclereader.Item("ROOM_NO"), oraclereader.Item("ROOM_TYPE"), oraclereader.Item("PRICE")})
         End While
         con.Close()
 
@@ -116,7 +93,6 @@ Public Class editRoom
 
         con.Close()
         updatecombo()
-        updategrid()
 
     End Sub
 
