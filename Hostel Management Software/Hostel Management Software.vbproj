@@ -147,6 +147,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addExpenses.Designer.vb">
+      <DependentUpon>addExpenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addExpenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="addMaterials.Designer.vb">
       <DependentUpon>addMaterials.vb</DependentUpon>
     </Compile>
@@ -165,16 +171,40 @@
     <Compile Include="addStudent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="billings.Designer.vb">
+      <DependentUpon>billings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="billings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="changePass.Designer.vb">
       <DependentUpon>changePass.vb</DependentUpon>
     </Compile>
     <Compile Include="changePass.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dailyUsageRep.Designer.vb">
+      <DependentUpon>dailyUsageRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dailyUsageRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dash.Designer.vb">
       <DependentUpon>dash.vb</DependentUpon>
     </Compile>
     <Compile Include="dash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editEntry.Designer.vb">
+      <DependentUpon>editEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editExpenses.Designer.vb">
+      <DependentUpon>editExpenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editExpenses.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="editMaterials.Designer.vb">
@@ -195,11 +225,47 @@
     <Compile Include="editStudent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="editUsage.Designer.vb">
+      <DependentUpon>editUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enterUsage.Designer.vb">
+      <DependentUpon>enterUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="enterUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expensesRep.Designer.vb">
+      <DependentUpon>expensesRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="expensesRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaveEntry.Designer.vb">
+      <DependentUpon>leaveEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leaveEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaveRep.Designer.vb">
+      <DependentUpon>leaveRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leaveRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.vb">
       <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="materialRep.Designer.vb">
+      <DependentUpon>materialRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="materialRep.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -228,10 +294,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>roomDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="studentRep.Designer.vb">
+      <DependentUpon>studentRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studentRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="addMaterials.resx">
+      <DependentUpon>addMaterials.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addRoom.resx">
       <DependentUpon>addRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudent.resx">
+      <DependentUpon>addStudent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="changePass.resx">
       <DependentUpon>changePass.vb</DependentUpon>
@@ -241,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editRoom.resx">
       <DependentUpon>editRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editStudent.resx">
+      <DependentUpon>editStudent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>

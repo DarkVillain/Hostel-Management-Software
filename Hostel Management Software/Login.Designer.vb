@@ -80,7 +80,7 @@ Partial Class Login
         'llRn
         '
         Me.llRn.AutoSize = True
-        Me.llRn.Location = New System.Drawing.Point(192, 345)
+        Me.llRn.Location = New System.Drawing.Point(206, 345)
         Me.llRn.Name = "llRn"
         Me.llRn.Size = New System.Drawing.Size(74, 13)
         Me.llRn.TabIndex = 8
