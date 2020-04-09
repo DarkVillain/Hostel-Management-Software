@@ -141,7 +141,7 @@ Partial Class register
         Me.lblRf.AutoSize = True
         Me.lblRf.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRf.ForeColor = System.Drawing.Color.White
-        Me.lblRf.Location = New System.Drawing.Point(163, 19)
+        Me.lblRf.Location = New System.Drawing.Point(160, 11)
         Me.lblRf.Name = "lblRf"
         Me.lblRf.Size = New System.Drawing.Size(202, 26)
         Me.lblRf.TabIndex = 8
@@ -196,7 +196,7 @@ Partial Class register
         'rbMl
         '
         Me.rbMl.AutoSize = True
-        Me.rbMl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbMl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbMl.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.rbMl.Location = New System.Drawing.Point(80, 378)
         Me.rbMl.Name = "rbMl"
@@ -235,7 +235,7 @@ Partial Class register
         'rbFl
         '
         Me.rbFl.AutoSize = True
-        Me.rbFl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbFl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbFl.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.rbFl.Location = New System.Drawing.Point(156, 378)
         Me.rbFl.Name = "rbFl"
@@ -279,7 +279,7 @@ Partial Class register
         Me.txtOr.AutoSize = True
         Me.txtOr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtOr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtOr.Location = New System.Drawing.Point(243, 492)
+        Me.txtOr.Location = New System.Drawing.Point(248, 490)
         Me.txtOr.Name = "txtOr"
         Me.txtOr.Size = New System.Drawing.Size(20, 16)
         Me.txtOr.TabIndex = 24
