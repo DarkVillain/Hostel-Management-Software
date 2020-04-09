@@ -67,9 +67,11 @@
 
     End Sub
 
-    Private Sub btnExit_Click_1(sender As Object, e As EventArgs)
+
+    Private Sub llRn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llRn.LinkClicked
+
+        register.Show()
+        Close()
 
     End Sub
-
-
 End Class

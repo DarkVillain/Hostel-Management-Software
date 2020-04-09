@@ -25,8 +25,8 @@ Partial Class Login
         Me.Up = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.llCP = New System.Windows.Forms.LinkLabel()
-        Me.llFP = New System.Windows.Forms.LinkLabel()
+        Me.llRn = New System.Windows.Forms.LinkLabel()
+        Me.llFp = New System.Windows.Forms.LinkLabel()
         Me.btnClr = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblPass = New System.Windows.Forms.Label()
@@ -61,8 +61,8 @@ Partial Class Login
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.llCP)
-        Me.Panel1.Controls.Add(Me.llFP)
+        Me.Panel1.Controls.Add(Me.llRn)
+        Me.Panel1.Controls.Add(Me.llFp)
         Me.Panel1.Controls.Add(Me.btnClr)
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.lblPass)
@@ -74,25 +74,25 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(332, 335)
         Me.Panel1.TabIndex = 3
         '
-        'llCP
+        'llRn
         '
-        Me.llCP.AutoSize = True
-        Me.llCP.Location = New System.Drawing.Point(193, 284)
-        Me.llCP.Name = "llCP"
-        Me.llCP.Size = New System.Drawing.Size(93, 13)
-        Me.llCP.TabIndex = 8
-        Me.llCP.TabStop = True
-        Me.llCP.Text = "Change Password"
+        Me.llRn.AutoSize = True
+        Me.llRn.Location = New System.Drawing.Point(193, 284)
+        Me.llRn.Name = "llRn"
+        Me.llRn.Size = New System.Drawing.Size(74, 13)
+        Me.llRn.TabIndex = 8
+        Me.llRn.TabStop = True
+        Me.llRn.Text = "Register Now!"
         '
-        'llFP
+        'llFp
         '
-        Me.llFP.AutoSize = True
-        Me.llFP.Location = New System.Drawing.Point(48, 284)
-        Me.llFP.Name = "llFP"
-        Me.llFP.Size = New System.Drawing.Size(92, 13)
-        Me.llFP.TabIndex = 7
-        Me.llFP.TabStop = True
-        Me.llFP.Text = "Forgot Password?"
+        Me.llFp.AutoSize = True
+        Me.llFp.Location = New System.Drawing.Point(48, 284)
+        Me.llFp.Name = "llFp"
+        Me.llFp.Size = New System.Drawing.Size(92, 13)
+        Me.llFp.TabIndex = 7
+        Me.llFp.TabStop = True
+        Me.llFp.Text = "Forgot Password?"
         '
         'btnClr
         '
@@ -183,8 +183,8 @@ Partial Class Login
     Friend WithEvents txtBoxName As TextBox
     Friend WithEvents lblName As Label
     Friend WithEvents lblTitle As Label
-    Friend WithEvents llCP As LinkLabel
-    Friend WithEvents llFP As LinkLabel
+    Friend WithEvents llRn As LinkLabel
+    Friend WithEvents llFp As LinkLabel
     Friend WithEvents btnClr As Button
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblPass As Label

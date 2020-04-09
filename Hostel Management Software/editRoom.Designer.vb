@@ -129,7 +129,7 @@ Partial Class editRoom
         Me.Controls.Add(Me.lblRT)
         Me.Controls.Add(Me.lblRN)
         Me.Name = "editRoom"
-        Me.Text = "Modify room details"
+        Me.Text = "Edit room details"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
