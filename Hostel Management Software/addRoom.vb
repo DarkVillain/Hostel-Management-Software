@@ -5,28 +5,7 @@ Public Class addroom
 
     Private Sub addroom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        updategrid()
 
-    End Sub
-
-    Private Sub updategrid()
-
-        dgvRoom.Columns.Clear()
-        dgvRoom.Rows.Clear()
-
-        dgvRoom.Columns.Add("colROOM_NO", "ROOM_NO")
-        dgvRoom.Columns.Add("colROOM_TYPE", "ROOM_TYPE")
-        dgvRoom.Columns.Add("colPRICE", "PRICE")
-
-        con.Open()
-        Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "SELECT * FROM ROOMDETAILS"
-        Dim oraclereader As OracleDataReader = command.ExecuteReader()
-
-        While oraclereader.Read()
-            dgvRoom.Rows.Add({oraclereader.Item("ROOM_NO"), oraclereader.Item("ROOM_TYPE"), oraclereader.Item("PRICE")})
-        End While
-        con.Close()
 
     End Sub
 
@@ -56,7 +35,6 @@ Public Class addroom
         End If
         Me.Refresh()
         con.Close()
-        updategrid()
 
 
     End Sub
@@ -75,10 +53,6 @@ Public Class addroom
         txtRN.Text = " "
         cmbRT.Text = " "
         txtPC.Text = " "
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRoom.CellContentClick
 
     End Sub
 End Class
