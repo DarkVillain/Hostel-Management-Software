@@ -31,9 +31,6 @@ Partial Class addroom
         Me.txtRN = New System.Windows.Forms.TextBox()
         Me.txtPC = New System.Windows.Forms.TextBox()
         Me.cmbRT = New System.Windows.Forms.ComboBox()
-        Me.dgvRoom = New System.Windows.Forms.DataGridView()
-        Me.lblRD = New System.Windows.Forms.Label()
-        CType(Me.dgvRoom, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAdd
@@ -113,24 +110,6 @@ Partial Class addroom
         Me.cmbRT.Size = New System.Drawing.Size(179, 21)
         Me.cmbRT.TabIndex = 10
         '
-        'dgvRoom
-        '
-        Me.dgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvRoom.Location = New System.Drawing.Point(325, 56)
-        Me.dgvRoom.Name = "dgvRoom"
-        Me.dgvRoom.Size = New System.Drawing.Size(962, 609)
-        Me.dgvRoom.TabIndex = 11
-        '
-        'lblRD
-        '
-        Me.lblRD.AutoSize = True
-        Me.lblRD.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRD.Location = New System.Drawing.Point(321, 9)
-        Me.lblRD.Name = "lblRD"
-        Me.lblRD.Size = New System.Drawing.Size(121, 24)
-        Me.lblRD.TabIndex = 12
-        Me.lblRD.Text = "Room Details"
-        '
         'addroom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -139,8 +118,6 @@ Partial Class addroom
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 747)
-        Me.Controls.Add(Me.lblRD)
-        Me.Controls.Add(Me.dgvRoom)
         Me.Controls.Add(Me.cmbRT)
         Me.Controls.Add(Me.txtPC)
         Me.Controls.Add(Me.txtRN)
@@ -152,7 +129,6 @@ Partial Class addroom
         Me.Controls.Add(Me.btnAdd)
         Me.Name = "addroom"
         Me.Text = "Please insert details"
-        CType(Me.dgvRoom, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -167,6 +143,4 @@ Partial Class addroom
     Friend WithEvents txtRN As TextBox
     Friend WithEvents txtPC As TextBox
     Friend WithEvents cmbRT As ComboBox
-    Friend WithEvents dgvRoom As DataGridView
-    Friend WithEvents lblRD As Label
 End Class

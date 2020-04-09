@@ -147,10 +147,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addMaterials.Designer.vb">
+      <DependentUpon>addMaterials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addMaterials.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="addRoom.Designer.vb">
       <DependentUpon>addRoom.vb</DependentUpon>
     </Compile>
     <Compile Include="addRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudent.Designer.vb">
+      <DependentUpon>addStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addStudent.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dash.Designer.vb">
@@ -159,10 +171,22 @@
     <Compile Include="dash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="editMaterials.Designer.vb">
+      <DependentUpon>editMaterials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editMaterials.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="editRoom.Designer.vb">
       <DependentUpon>editRoom.vb</DependentUpon>
     </Compile>
     <Compile Include="editRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editStudent.Designer.vb">
+      <DependentUpon>editStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editStudent.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.vb">
