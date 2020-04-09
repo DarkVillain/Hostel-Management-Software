@@ -71,7 +71,7 @@
     Private Sub llRn_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llRn.LinkClicked
 
         register.Show()
-        Close()
+        Me.Hide()
 
     End Sub
 End Class

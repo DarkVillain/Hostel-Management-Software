@@ -115,13 +115,13 @@ Partial Class dash
         'EnterUsageToolStripMenuItem
         '
         Me.EnterUsageToolStripMenuItem.Name = "EnterUsageToolStripMenuItem"
-        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EnterUsageToolStripMenuItem.Text = "Enter Usage"
         '
         'EditUsageToolStripMenuItem
         '
         Me.EditUsageToolStripMenuItem.Name = "EditUsageToolStripMenuItem"
-        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EditUsageToolStripMenuItem.Text = "Edit Usage"
         '
         'StudentLeaveEntryToolStripMenuItem
@@ -135,13 +135,13 @@ Partial Class dash
         'LeaveEntryToolStripMenuItem
         '
         Me.LeaveEntryToolStripMenuItem.Name = "LeaveEntryToolStripMenuItem"
-        Me.LeaveEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LeaveEntryToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.LeaveEntryToolStripMenuItem.Text = "Leave Entry"
         '
         'EditEntryToolStripMenuItem
         '
         Me.EditEntryToolStripMenuItem.Name = "EditEntryToolStripMenuItem"
-        Me.EditEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditEntryToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.EditEntryToolStripMenuItem.Text = "Edit Entry"
         '
         'HostelExpensesToolStripMenuItem
@@ -155,13 +155,13 @@ Partial Class dash
         'EnterExpensesToolStripMenuItem
         '
         Me.EnterExpensesToolStripMenuItem.Name = "EnterExpensesToolStripMenuItem"
-        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.EnterExpensesToolStripMenuItem.Text = "Enter Expenses"
         '
         'EditExpensesToolStripMenuItem
         '
         Me.EditExpensesToolStripMenuItem.Name = "EditExpensesToolStripMenuItem"
-        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.EditExpensesToolStripMenuItem.Text = "Edit Expenses"
         '
         'HostelBillingToolStripMenuItem
@@ -175,7 +175,7 @@ Partial Class dash
         'BillsToolStripMenuItem
         '
         Me.BillsToolStripMenuItem.Name = "BillsToolStripMenuItem"
-        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.BillsToolStripMenuItem.Text = "Bills"
         '
         'ReportsToolStripMenuItem
@@ -189,31 +189,31 @@ Partial Class dash
         'StudentReportsToolStripMenuItem
         '
         Me.StudentReportsToolStripMenuItem.Name = "StudentReportsToolStripMenuItem"
-        Me.StudentReportsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StudentReportsToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.StudentReportsToolStripMenuItem.Text = "Student Report"
         '
         'MaterialReportToolStripMenuItem
         '
         Me.MaterialReportToolStripMenuItem.Name = "MaterialReportToolStripMenuItem"
-        Me.MaterialReportToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MaterialReportToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.MaterialReportToolStripMenuItem.Text = "Material Report"
         '
         'DailyUsageToolStripMenuItem
         '
         Me.DailyUsageToolStripMenuItem.Name = "DailyUsageToolStripMenuItem"
-        Me.DailyUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DailyUsageToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.DailyUsageToolStripMenuItem.Text = "Daily Usage"
         '
         'LeaveEntryToolStripMenuItem1
         '
         Me.LeaveEntryToolStripMenuItem1.Name = "LeaveEntryToolStripMenuItem1"
-        Me.LeaveEntryToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LeaveEntryToolStripMenuItem1.Size = New System.Drawing.Size(170, 22)
         Me.LeaveEntryToolStripMenuItem1.Text = "Leave Entry"
         '
         'ExpensesEntryToolStripMenuItem
         '
         Me.ExpensesEntryToolStripMenuItem.Name = "ExpensesEntryToolStripMenuItem"
-        Me.ExpensesEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExpensesEntryToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.ExpensesEntryToolStripMenuItem.Text = "Expenses Entry"
         '
         'pnlDash
@@ -251,7 +251,8 @@ Partial Class dash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(869, 482)
         Me.Controls.Add(Me.pnlDash)
         Me.Controls.Add(Me.MenuStrip1)
