@@ -74,4 +74,11 @@
         Me.Hide()
 
     End Sub
+
+    Private Sub llFp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llFp.LinkClicked
+
+        changePass.Show()
+        Me.Hide()
+
+    End Sub
 End Class

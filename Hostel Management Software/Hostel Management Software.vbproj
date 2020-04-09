@@ -165,6 +165,12 @@
     <Compile Include="addStudent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="changePass.Designer.vb">
+      <DependentUpon>changePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dash.Designer.vb">
       <DependentUpon>dash.vb</DependentUpon>
     </Compile>
@@ -226,6 +232,9 @@
   <ItemGroup>
     <EmbeddedResource Include="addRoom.resx">
       <DependentUpon>addRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePass.resx">
+      <DependentUpon>changePass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dash.resx">
       <DependentUpon>dash.vb</DependentUpon>
