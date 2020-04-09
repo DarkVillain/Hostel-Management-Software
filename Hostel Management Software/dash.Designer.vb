@@ -75,13 +75,13 @@ Partial Class dash
         'AddToolStripMenuItem
         '
         Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.AddToolStripMenuItem.Text = "Add Student"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.EditToolStripMenuItem.Text = "Edit Student"
         '
         'KitchenToolStripMenuItem
@@ -95,13 +95,13 @@ Partial Class dash
         'AddMaterialsToolStripMenuItem
         '
         Me.AddMaterialsToolStripMenuItem.Name = "AddMaterialsToolStripMenuItem"
-        Me.AddMaterialsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AddMaterialsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.AddMaterialsToolStripMenuItem.Text = "Add Materials"
         '
         'EditMaterialsToolStripMenuItem
         '
         Me.EditMaterialsToolStripMenuItem.Name = "EditMaterialsToolStripMenuItem"
-        Me.EditMaterialsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditMaterialsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.EditMaterialsToolStripMenuItem.Text = "Edit Materials"
         '
         'UsageToolStripMenuItem
@@ -218,8 +218,9 @@ Partial Class dash
         '
         'pnlDash
         '
+        Me.pnlDash.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlDash.BackColor = System.Drawing.Color.DodgerBlue
-        Me.pnlDash.Controls.Add(Me.lblUSR)
         Me.pnlDash.Controls.Add(Me.lblBanner)
         Me.pnlDash.Location = New System.Drawing.Point(-1, 0)
         Me.pnlDash.Name = "pnlDash"
@@ -231,7 +232,7 @@ Partial Class dash
         Me.lblUSR.AutoSize = True
         Me.lblUSR.BackColor = System.Drawing.Color.LightSkyBlue
         Me.lblUSR.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUSR.Location = New System.Drawing.Point(774, 13)
+        Me.lblUSR.Location = New System.Drawing.Point(0, 0)
         Me.lblUSR.Name = "lblUSR"
         Me.lblUSR.Size = New System.Drawing.Size(0, 21)
         Me.lblUSR.TabIndex = 1
@@ -239,11 +240,11 @@ Partial Class dash
         'lblBanner
         '
         Me.lblBanner.AutoSize = True
-        Me.lblBanner.Font = New System.Drawing.Font("Microsoft Uighur", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBanner.Font = New System.Drawing.Font("Garamond", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBanner.ForeColor = System.Drawing.SystemColors.Control
         Me.lblBanner.Location = New System.Drawing.Point(13, 13)
         Me.lblBanner.Name = "lblBanner"
-        Me.lblBanner.Size = New System.Drawing.Size(436, 38)
+        Me.lblBanner.Size = New System.Drawing.Size(569, 33)
         Me.lblBanner.TabIndex = 0
         Me.lblBanner.Text = "WELCOME TO ASHROY BOYS HOSTEL "
         '
@@ -254,6 +255,7 @@ Partial Class dash
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(869, 482)
+        Me.Controls.Add(Me.lblUSR)
         Me.Controls.Add(Me.pnlDash)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

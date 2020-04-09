@@ -33,8 +33,10 @@ Partial Class Login
         Me.lblName = New System.Windows.Forms.Label()
         Me.txtBoxPass = New System.Windows.Forms.TextBox()
         Me.txtBoxName = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Up.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Up
@@ -61,6 +63,7 @@ Partial Class Login
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.llRn)
         Me.Panel1.Controls.Add(Me.llFp)
         Me.Panel1.Controls.Add(Me.btnClr)
@@ -71,13 +74,13 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.txtBoxName)
         Me.Panel1.Location = New System.Drawing.Point(481, 165)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(332, 335)
+        Me.Panel1.Size = New System.Drawing.Size(332, 383)
         Me.Panel1.TabIndex = 3
         '
         'llRn
         '
         Me.llRn.AutoSize = True
-        Me.llRn.Location = New System.Drawing.Point(193, 284)
+        Me.llRn.Location = New System.Drawing.Point(192, 345)
         Me.llRn.Name = "llRn"
         Me.llRn.Size = New System.Drawing.Size(74, 13)
         Me.llRn.TabIndex = 8
@@ -87,7 +90,7 @@ Partial Class Login
         'llFp
         '
         Me.llFp.AutoSize = True
-        Me.llFp.Location = New System.Drawing.Point(48, 284)
+        Me.llFp.Location = New System.Drawing.Point(47, 345)
         Me.llFp.Name = "llFp"
         Me.llFp.Size = New System.Drawing.Size(92, 13)
         Me.llFp.TabIndex = 7
@@ -99,7 +102,7 @@ Partial Class Login
         Me.btnClr.BackColor = System.Drawing.Color.Gold
         Me.btnClr.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClr.Location = New System.Drawing.Point(210, 231)
+        Me.btnClr.Location = New System.Drawing.Point(209, 292)
         Me.btnClr.Name = "btnClr"
         Me.btnClr.Size = New System.Drawing.Size(75, 23)
         Me.btnClr.TabIndex = 5
@@ -111,7 +114,7 @@ Partial Class Login
         Me.btnLogin.BackColor = System.Drawing.Color.Green
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnLogin.Location = New System.Drawing.Point(49, 231)
+        Me.btnLogin.Location = New System.Drawing.Point(48, 292)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(75, 23)
         Me.btnLogin.TabIndex = 4
@@ -123,7 +126,7 @@ Partial Class Login
         Me.lblPass.AutoSize = True
         Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPass.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.lblPass.Location = New System.Drawing.Point(46, 155)
+        Me.lblPass.Location = New System.Drawing.Point(45, 216)
         Me.lblPass.Name = "lblPass"
         Me.lblPass.Size = New System.Drawing.Size(68, 16)
         Me.lblPass.TabIndex = 3
@@ -134,7 +137,7 @@ Partial Class Login
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.lblName.Location = New System.Drawing.Point(47, 93)
+        Me.lblName.Location = New System.Drawing.Point(46, 154)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(77, 16)
         Me.lblName.TabIndex = 2
@@ -144,7 +147,7 @@ Partial Class Login
         '
         Me.txtBoxPass.BackColor = System.Drawing.Color.White
         Me.txtBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBoxPass.Location = New System.Drawing.Point(49, 183)
+        Me.txtBoxPass.Location = New System.Drawing.Point(48, 244)
         Me.txtBoxPass.Name = "txtBoxPass"
         Me.txtBoxPass.Size = New System.Drawing.Size(236, 20)
         Me.txtBoxPass.TabIndex = 1
@@ -154,10 +157,20 @@ Partial Class Login
         '
         Me.txtBoxName.BackColor = System.Drawing.Color.White
         Me.txtBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBoxName.Location = New System.Drawing.Point(49, 122)
+        Me.txtBoxName.Location = New System.Drawing.Point(48, 183)
         Me.txtBoxName.Name = "txtBoxName"
         Me.txtBoxName.Size = New System.Drawing.Size(236, 20)
         Me.txtBoxName.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Hostel_Management_Software.My.Resources.Resources.User
+        Me.PictureBox1.Location = New System.Drawing.Point(118, 7)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 87)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
         '
         'Login
         '
@@ -174,6 +187,7 @@ Partial Class Login
         Me.Up.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -188,4 +202,5 @@ Partial Class Login
     Friend WithEvents btnClr As Button
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblPass As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
