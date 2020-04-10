@@ -317,6 +317,9 @@
     <EmbeddedResource Include="dash.resx">
       <DependentUpon>dash.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="editMaterials.resx">
+      <DependentUpon>editMaterials.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editRoom.resx">
       <DependentUpon>editRoom.vb</DependentUpon>
     </EmbeddedResource>

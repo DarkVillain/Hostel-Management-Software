@@ -22,7 +22,7 @@ Partial Class dash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnsDm = New System.Windows.Forms.MenuStrip()
         Me.StudentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,23 +49,25 @@ Partial Class dash
         Me.pnlDash = New System.Windows.Forms.Panel()
         Me.lblBanner = New System.Windows.Forms.Label()
         Me.lblUSR = New System.Windows.Forms.Label()
-        Me.MenuStrip1.SuspendLayout()
+        Me.mnsDm.SuspendLayout()
         Me.pnlDash.SuspendLayout()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'mnsDm
         '
-        Me.MenuStrip1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MenuStrip1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentToolStripMenuItem, Me.KitchenToolStripMenuItem, Me.UsageToolStripMenuItem, Me.StudentLeaveEntryToolStripMenuItem, Me.HostelExpensesToolStripMenuItem, Me.HostelBillingToolStripMenuItem, Me.ReportsToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(10, 58)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.MenuStrip1.Size = New System.Drawing.Size(792, 25)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.mnsDm.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.mnsDm.BackColor = System.Drawing.Color.DodgerBlue
+        Me.mnsDm.Dock = System.Windows.Forms.DockStyle.None
+        Me.mnsDm.GripMargin = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.mnsDm.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.mnsDm.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentToolStripMenuItem, Me.KitchenToolStripMenuItem, Me.UsageToolStripMenuItem, Me.StudentLeaveEntryToolStripMenuItem, Me.HostelExpensesToolStripMenuItem, Me.HostelBillingToolStripMenuItem, Me.ReportsToolStripMenuItem})
+        Me.mnsDm.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
+        Me.mnsDm.Location = New System.Drawing.Point(1, 60)
+        Me.mnsDm.Name = "mnsDm"
+        Me.mnsDm.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.mnsDm.Size = New System.Drawing.Size(792, 25)
+        Me.mnsDm.TabIndex = 0
+        Me.mnsDm.Text = "MenuStrip1"
         '
         'StudentToolStripMenuItem
         '
@@ -78,13 +80,13 @@ Partial Class dash
         'AddToolStripMenuItem
         '
         Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AddToolStripMenuItem.Text = "Add Student"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditToolStripMenuItem.Text = "Edit Student"
         '
         'KitchenToolStripMenuItem
@@ -118,13 +120,13 @@ Partial Class dash
         'EnterUsageToolStripMenuItem
         '
         Me.EnterUsageToolStripMenuItem.Name = "EnterUsageToolStripMenuItem"
-        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EnterUsageToolStripMenuItem.Text = "Enter Usage"
         '
         'EditUsageToolStripMenuItem
         '
         Me.EditUsageToolStripMenuItem.Name = "EditUsageToolStripMenuItem"
-        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditUsageToolStripMenuItem.Text = "Edit Usage"
         '
         'StudentLeaveEntryToolStripMenuItem
@@ -138,13 +140,13 @@ Partial Class dash
         'LeaveEntryToolStripMenuItem
         '
         Me.LeaveEntryToolStripMenuItem.Name = "LeaveEntryToolStripMenuItem"
-        Me.LeaveEntryToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.LeaveEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LeaveEntryToolStripMenuItem.Text = "Leave Entry"
         '
         'EditEntryToolStripMenuItem
         '
         Me.EditEntryToolStripMenuItem.Name = "EditEntryToolStripMenuItem"
-        Me.EditEntryToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.EditEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditEntryToolStripMenuItem.Text = "Edit Entry"
         '
         'HostelExpensesToolStripMenuItem
@@ -158,13 +160,13 @@ Partial Class dash
         'EnterExpensesToolStripMenuItem
         '
         Me.EnterExpensesToolStripMenuItem.Name = "EnterExpensesToolStripMenuItem"
-        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EnterExpensesToolStripMenuItem.Text = "Enter Expenses"
         '
         'EditExpensesToolStripMenuItem
         '
         Me.EditExpensesToolStripMenuItem.Name = "EditExpensesToolStripMenuItem"
-        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditExpensesToolStripMenuItem.Text = "Edit Expenses"
         '
         'HostelBillingToolStripMenuItem
@@ -178,7 +180,7 @@ Partial Class dash
         'BillsToolStripMenuItem
         '
         Me.BillsToolStripMenuItem.Name = "BillsToolStripMenuItem"
-        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
+        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BillsToolStripMenuItem.Text = "Bills"
         '
         'ReportsToolStripMenuItem
@@ -258,14 +260,14 @@ Partial Class dash
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(869, 482)
+        Me.Controls.Add(Me.mnsDm)
         Me.Controls.Add(Me.lblUSR)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlDash)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.MainMenuStrip = Me.mnsDm
         Me.Name = "dash"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.mnsDm.ResumeLayout(False)
+        Me.mnsDm.PerformLayout()
         Me.pnlDash.ResumeLayout(False)
         Me.pnlDash.PerformLayout()
         Me.ResumeLayout(False)
@@ -273,7 +275,7 @@ Partial Class dash
 
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents mnsDm As MenuStrip
     Friend WithEvents StudentToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
