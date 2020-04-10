@@ -25,6 +25,7 @@ Partial Class Login
         Me.Up = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.llRn = New System.Windows.Forms.LinkLabel()
         Me.llFp = New System.Windows.Forms.LinkLabel()
         Me.btnClr = New System.Windows.Forms.Button()
@@ -33,7 +34,6 @@ Partial Class Login
         Me.lblName = New System.Windows.Forms.Label()
         Me.txtBoxPass = New System.Windows.Forms.TextBox()
         Me.txtBoxName = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Up.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,17 +46,17 @@ Partial Class Login
         Me.Up.Dock = System.Windows.Forms.DockStyle.Top
         Me.Up.Location = New System.Drawing.Point(0, 0)
         Me.Up.Name = "Up"
-        Me.Up.Size = New System.Drawing.Size(1366, 260)
+        Me.Up.Size = New System.Drawing.Size(1366, 292)
         Me.Up.TabIndex = 0
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("MingLiU_HKSCS-ExtB", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(492, 54)
+        Me.lblTitle.Location = New System.Drawing.Point(387, 21)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(321, 32)
+        Me.lblTitle.Size = New System.Drawing.Size(496, 79)
         Me.lblTitle.TabIndex = 2
         Me.lblTitle.Text = "Ashroy Boys Hostel"
         '
@@ -72,17 +72,29 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.lblName)
         Me.Panel1.Controls.Add(Me.txtBoxPass)
         Me.Panel1.Controls.Add(Me.txtBoxName)
-        Me.Panel1.Location = New System.Drawing.Point(481, 165)
+        Me.Panel1.Location = New System.Drawing.Point(481, 220)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(332, 383)
+        Me.Panel1.Size = New System.Drawing.Size(332, 399)
         Me.Panel1.TabIndex = 3
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Hostel_Management_Software.My.Resources.Resources.User
+        Me.PictureBox1.Location = New System.Drawing.Point(118, 7)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 87)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
         '
         'llRn
         '
         Me.llRn.AutoSize = True
-        Me.llRn.Location = New System.Drawing.Point(206, 345)
+        Me.llRn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llRn.LinkColor = System.Drawing.Color.Purple
+        Me.llRn.Location = New System.Drawing.Point(192, 345)
         Me.llRn.Name = "llRn"
-        Me.llRn.Size = New System.Drawing.Size(74, 13)
+        Me.llRn.Size = New System.Drawing.Size(105, 16)
         Me.llRn.TabIndex = 8
         Me.llRn.TabStop = True
         Me.llRn.Text = "Register Now!"
@@ -90,9 +102,11 @@ Partial Class Login
         'llFp
         '
         Me.llFp.AutoSize = True
+        Me.llFp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llFp.LinkColor = System.Drawing.Color.Red
         Me.llFp.Location = New System.Drawing.Point(47, 345)
         Me.llFp.Name = "llFp"
-        Me.llFp.Size = New System.Drawing.Size(92, 13)
+        Me.llFp.Size = New System.Drawing.Size(117, 16)
         Me.llFp.TabIndex = 7
         Me.llFp.TabStop = True
         Me.llFp.Text = "Forgot Password?"
@@ -101,10 +115,11 @@ Partial Class Login
         '
         Me.btnClr.BackColor = System.Drawing.Color.Gold
         Me.btnClr.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClr.Location = New System.Drawing.Point(209, 292)
+        Me.btnClr.Location = New System.Drawing.Point(206, 292)
         Me.btnClr.Name = "btnClr"
-        Me.btnClr.Size = New System.Drawing.Size(75, 23)
+        Me.btnClr.Size = New System.Drawing.Size(78, 32)
         Me.btnClr.TabIndex = 5
         Me.btnClr.Text = "Clear"
         Me.btnClr.UseVisualStyleBackColor = False
@@ -113,10 +128,11 @@ Partial Class Login
         '
         Me.btnLogin.BackColor = System.Drawing.Color.Green
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnLogin.Location = New System.Drawing.Point(48, 292)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(75, 23)
+        Me.btnLogin.Size = New System.Drawing.Size(84, 32)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
@@ -124,22 +140,22 @@ Partial Class Login
         'lblPass
         '
         Me.lblPass.AutoSize = True
-        Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPass.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPass.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblPass.Location = New System.Drawing.Point(45, 216)
         Me.lblPass.Name = "lblPass"
-        Me.lblPass.Size = New System.Drawing.Size(68, 16)
+        Me.lblPass.Size = New System.Drawing.Size(76, 16)
         Me.lblPass.TabIndex = 3
         Me.lblPass.Text = "Password"
         '
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblName.Location = New System.Drawing.Point(46, 154)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(77, 16)
+        Me.lblName.Size = New System.Drawing.Size(86, 16)
         Me.lblName.TabIndex = 2
         Me.lblName.Text = "User Name"
         '
@@ -162,27 +178,17 @@ Partial Class Login
         Me.txtBoxName.Size = New System.Drawing.Size(236, 20)
         Me.txtBoxName.TabIndex = 0
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Hostel_Management_Software.My.Resources.Resources.User
-        Me.PictureBox1.Location = New System.Drawing.Point(118, 7)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 87)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
-        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.ClientSize = New System.Drawing.Size(1366, 749)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Up)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Login"
-        Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Up.ResumeLayout(False)
         Me.Up.PerformLayout()
         Me.Panel1.ResumeLayout(False)
