@@ -263,7 +263,7 @@ Partial Class dash
         Me.Controls.Add(Me.pnlDash)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "dash"
-        Me.Text = "WELCOME"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.pnlDash.ResumeLayout(False)
