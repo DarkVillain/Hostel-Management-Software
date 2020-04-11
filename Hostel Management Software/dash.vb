@@ -1,7 +1,8 @@
-﻿Public Class dash
+﻿Imports Oracle.DataAccess.Client
+Public Class dash
     Private Sub dash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
+        Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
 
         lblUSR.Text = Login.txtBoxName.Text
 

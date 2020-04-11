@@ -136,6 +136,7 @@ Partial Class addStudent
         '
         Me.dtp.Location = New System.Drawing.Point(149, 263)
         Me.dtp.Name = "dtp"
+        Me.dtp.ShowCheckBox = True
         Me.dtp.Size = New System.Drawing.Size(121, 20)
         Me.dtp.TabIndex = 8
         '

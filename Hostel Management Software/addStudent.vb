@@ -1,12 +1,11 @@
 ﻿Imports System.IO
+Imports System.Configuration
 Imports Oracle.DataAccess.Client
 Public Class addStudent
 
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
     'connection done here 
     Private Sub addStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
 
     End Sub
 
@@ -19,14 +18,18 @@ Public Class addStudent
         con.Open()
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
-        command.CommandText = " INSERT INTO STUDENT VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.MaxDate & "','" & cmbAr.Text & "')"
+        dtp.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        command.CommandText = " INSERT INTO student(reg_id, name, fat_name, year, dated, alloc_room, image) VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Format & "','" & cmbAr.Text & "','" & pbPic.Name & "')"
 
         txtRn.Text = " "
         txtNm.Text = " "
         txtFn.Text = " "
         cmbYr.Text = " "
-        dtp.MaxDate = " "
+        'dtp.Value = " "
         cmbAr.Text = " "
+        pbPic.Image = Nothing
+        txtPic.Text = " "
+
 
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("Data has been saved!")
