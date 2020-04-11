@@ -55,7 +55,8 @@ Partial Class dash
         '
         'mnsDm
         '
-        Me.mnsDm.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.mnsDm.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.mnsDm.BackColor = System.Drawing.Color.DodgerBlue
         Me.mnsDm.Dock = System.Windows.Forms.DockStyle.None
         Me.mnsDm.GripMargin = New System.Windows.Forms.Padding(8, 2, 0, 2)
@@ -80,13 +81,13 @@ Partial Class dash
         'AddToolStripMenuItem
         '
         Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.AddToolStripMenuItem.Text = "Add Student"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.EditToolStripMenuItem.Text = "Edit Student"
         '
         'KitchenToolStripMenuItem
@@ -100,13 +101,13 @@ Partial Class dash
         'AddMaterialsToolStripMenuItem
         '
         Me.AddMaterialsToolStripMenuItem.Name = "AddMaterialsToolStripMenuItem"
-        Me.AddMaterialsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AddMaterialsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.AddMaterialsToolStripMenuItem.Text = "Add Materials"
         '
         'EditMaterialsToolStripMenuItem
         '
         Me.EditMaterialsToolStripMenuItem.Name = "EditMaterialsToolStripMenuItem"
-        Me.EditMaterialsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditMaterialsToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.EditMaterialsToolStripMenuItem.Text = "Edit Materials"
         '
         'UsageToolStripMenuItem
@@ -120,13 +121,13 @@ Partial Class dash
         'EnterUsageToolStripMenuItem
         '
         Me.EnterUsageToolStripMenuItem.Name = "EnterUsageToolStripMenuItem"
-        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EnterUsageToolStripMenuItem.Text = "Enter Usage"
         '
         'EditUsageToolStripMenuItem
         '
         Me.EditUsageToolStripMenuItem.Name = "EditUsageToolStripMenuItem"
-        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EditUsageToolStripMenuItem.Text = "Edit Usage"
         '
         'StudentLeaveEntryToolStripMenuItem
@@ -140,13 +141,13 @@ Partial Class dash
         'LeaveEntryToolStripMenuItem
         '
         Me.LeaveEntryToolStripMenuItem.Name = "LeaveEntryToolStripMenuItem"
-        Me.LeaveEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LeaveEntryToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.LeaveEntryToolStripMenuItem.Text = "Leave Entry"
         '
         'EditEntryToolStripMenuItem
         '
         Me.EditEntryToolStripMenuItem.Name = "EditEntryToolStripMenuItem"
-        Me.EditEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditEntryToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.EditEntryToolStripMenuItem.Text = "Edit Entry"
         '
         'HostelExpensesToolStripMenuItem
@@ -160,13 +161,13 @@ Partial Class dash
         'EnterExpensesToolStripMenuItem
         '
         Me.EnterExpensesToolStripMenuItem.Name = "EnterExpensesToolStripMenuItem"
-        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.EnterExpensesToolStripMenuItem.Text = "Enter Expenses"
         '
         'EditExpensesToolStripMenuItem
         '
         Me.EditExpensesToolStripMenuItem.Name = "EditExpensesToolStripMenuItem"
-        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.EditExpensesToolStripMenuItem.Text = "Edit Expenses"
         '
         'HostelBillingToolStripMenuItem
@@ -180,7 +181,7 @@ Partial Class dash
         'BillsToolStripMenuItem
         '
         Me.BillsToolStripMenuItem.Name = "BillsToolStripMenuItem"
-        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.BillsToolStripMenuItem.Text = "Bills"
         '
         'ReportsToolStripMenuItem
@@ -237,7 +238,7 @@ Partial Class dash
         Me.lblBanner.AutoSize = True
         Me.lblBanner.Font = New System.Drawing.Font("Garamond", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBanner.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblBanner.Location = New System.Drawing.Point(13, 13)
+        Me.lblBanner.Location = New System.Drawing.Point(289, 9)
         Me.lblBanner.Name = "lblBanner"
         Me.lblBanner.Size = New System.Drawing.Size(569, 33)
         Me.lblBanner.TabIndex = 0
@@ -246,12 +247,16 @@ Partial Class dash
         'lblUSR
         '
         Me.lblUSR.AutoSize = True
-        Me.lblUSR.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.lblUSR.BackColor = System.Drawing.Color.Silver
+        Me.lblUSR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUSR.Dock = System.Windows.Forms.DockStyle.Top
         Me.lblUSR.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUSR.ForeColor = System.Drawing.Color.ForestGreen
         Me.lblUSR.Location = New System.Drawing.Point(0, 0)
         Me.lblUSR.Name = "lblUSR"
-        Me.lblUSR.Size = New System.Drawing.Size(0, 21)
+        Me.lblUSR.Size = New System.Drawing.Size(92, 23)
         Me.lblUSR.TabIndex = 1
+        Me.lblUSR.Text = "Welcome, "
         '
         'dash
         '
@@ -260,9 +265,10 @@ Partial Class dash
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(869, 482)
-        Me.Controls.Add(Me.mnsDm)
         Me.Controls.Add(Me.lblUSR)
+        Me.Controls.Add(Me.mnsDm)
         Me.Controls.Add(Me.pnlDash)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.MainMenuStrip = Me.mnsDm
         Me.Name = "dash"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

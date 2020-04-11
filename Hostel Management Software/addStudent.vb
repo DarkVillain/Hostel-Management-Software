@@ -1,4 +1,5 @@
-﻿Imports Oracle.DataAccess.Client
+﻿Imports System.IO
+Imports Oracle.DataAccess.Client
 Public Class addStudent
 
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
@@ -18,13 +19,13 @@ Public Class addStudent
         con.Open()
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
-        command.CommandText = " INSERT INTO STUDENT VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Text & "','" & cmbAr.Text & "')"
+        command.CommandText = " INSERT INTO STUDENT VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.MaxDate & "','" & cmbAr.Text & "')"
 
         txtRn.Text = " "
         txtNm.Text = " "
         txtFn.Text = " "
         cmbYr.Text = " "
-        dtp.Text = " "
+        dtp.MaxDate = " "
         cmbAr.Text = " "
 
         If command.ExecuteNonQuery() > 0 Then
@@ -45,4 +46,23 @@ Public Class addStudent
 
     End Sub
 
+    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ofgUp.FileOk
+
+
+
+    End Sub
+
+    Private Sub pbPic_Click(sender As Object, e As EventArgs) Handles pbPic.Click
+
+    End Sub
+
+    Private Sub btnBrws_Click(sender As Object, e As EventArgs) Handles btnBrws.Click
+
+        ofgUp.ShowDialog()
+        '
+        txtPic.Text = ofgUp.FileName
+
+        pbPic.Image = Image.FromFile(txtPic.Text)
+
+    End Sub
 End Class

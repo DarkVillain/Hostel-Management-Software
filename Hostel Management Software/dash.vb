@@ -1,10 +1,9 @@
 ﻿Public Class dash
     Private Sub dash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Call CenterToScreen()
-        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
-        Me.WindowState = FormWindowState.Maximized
-        ' Above line will make it fullscreen
+
+
+        lblUSR.Text = Login.txtBoxName.Text
 
     End Sub
 
@@ -122,6 +121,12 @@
     Private Sub ExpensesEntryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExpensesEntryToolStripMenuItem.Click
 
         expensesRep.Show()
+
+
+    End Sub
+
+    Private Sub lblUSR_Click(sender As Object, e As EventArgs) Handles lblUSR.Click
+
 
 
     End Sub

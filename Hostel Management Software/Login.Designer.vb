@@ -174,9 +174,10 @@ Partial Class Login
         '
         Me.txtBoxName.BackColor = System.Drawing.Color.White
         Me.txtBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBoxName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBoxName.Location = New System.Drawing.Point(48, 183)
         Me.txtBoxName.Name = "txtBoxName"
-        Me.txtBoxName.Size = New System.Drawing.Size(236, 20)
+        Me.txtBoxName.Size = New System.Drawing.Size(236, 22)
         Me.txtBoxName.TabIndex = 0
         '
         'Login

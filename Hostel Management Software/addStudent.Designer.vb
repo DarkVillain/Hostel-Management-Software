@@ -37,15 +37,21 @@ Partial Class addStudent
         Me.txtNm = New System.Windows.Forms.TextBox()
         Me.txtRn = New System.Windows.Forms.TextBox()
         Me.btnBck = New System.Windows.Forms.Button()
+        Me.pbPic = New System.Windows.Forms.PictureBox()
+        Me.ofgUp = New System.Windows.Forms.OpenFileDialog()
+        Me.btnBrws = New System.Windows.Forms.Button()
+        Me.txtPic = New System.Windows.Forms.TextBox()
+        CType(Me.pbPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblInfo
         '
         Me.lblInfo.AutoSize = True
-        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInfo.Location = New System.Drawing.Point(303, 20)
+        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblInfo.Location = New System.Drawing.Point(152, 19)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(172, 16)
+        Me.lblInfo.Size = New System.Drawing.Size(234, 24)
         Me.lblInfo.TabIndex = 0
         Me.lblInfo.Text = "Add Student Information"
         '
@@ -53,7 +59,8 @@ Partial Class addStudent
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(267, 84)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(27, 101)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 16)
         Me.Label2.TabIndex = 1
@@ -63,7 +70,8 @@ Partial Class addStudent
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(267, 123)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(27, 140)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 16)
         Me.Label3.TabIndex = 2
@@ -72,17 +80,20 @@ Partial Class addStudent
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(267, 211)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(29, 221)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 13)
+        Me.Label4.Size = New System.Drawing.Size(42, 16)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Year"
+        Me.Label4.Text = "Class"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(267, 253)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(29, 263)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(37, 16)
         Me.Label5.TabIndex = 4
@@ -92,7 +103,8 @@ Partial Class addStudent
         '
         Me.lblAr.AutoSize = True
         Me.lblAr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAr.Location = New System.Drawing.Point(267, 296)
+        Me.lblAr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAr.Location = New System.Drawing.Point(29, 306)
         Me.lblAr.Name = "lblAr"
         Me.lblAr.Size = New System.Drawing.Size(113, 16)
         Me.lblAr.TabIndex = 5
@@ -102,7 +114,8 @@ Partial Class addStudent
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(267, 162)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(27, 179)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(93, 16)
         Me.Label1.TabIndex = 6
@@ -110,8 +123,9 @@ Partial Class addStudent
         '
         'btnAdd
         '
+        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(270, 374)
+        Me.btnAdd.Location = New System.Drawing.Point(148, 350)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 7
@@ -120,7 +134,7 @@ Partial Class addStudent
         '
         'dtp
         '
-        Me.dtp.Location = New System.Drawing.Point(387, 253)
+        Me.dtp.Location = New System.Drawing.Point(149, 263)
         Me.dtp.Name = "dtp"
         Me.dtp.Size = New System.Drawing.Size(121, 20)
         Me.dtp.TabIndex = 8
@@ -128,8 +142,8 @@ Partial Class addStudent
         'cmbYr
         '
         Me.cmbYr.FormattingEnabled = True
-        Me.cmbYr.Items.AddRange(New Object() {"2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"})
-        Me.cmbYr.Location = New System.Drawing.Point(387, 211)
+        Me.cmbYr.Items.AddRange(New Object() {"8", "9", "10", "11", "12"})
+        Me.cmbYr.Location = New System.Drawing.Point(149, 221)
         Me.cmbYr.Name = "cmbYr"
         Me.cmbYr.Size = New System.Drawing.Size(121, 21)
         Me.cmbYr.TabIndex = 9
@@ -138,49 +152,86 @@ Partial Class addStudent
         '
         Me.cmbAr.FormattingEnabled = True
         Me.cmbAr.Items.AddRange(New Object() {"A0", "A1", "A2", "A3", "A5", "A6", "A7", "A8", "A9", "B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9"})
-        Me.cmbAr.Location = New System.Drawing.Point(387, 293)
+        Me.cmbAr.Location = New System.Drawing.Point(149, 303)
         Me.cmbAr.Name = "cmbAr"
         Me.cmbAr.Size = New System.Drawing.Size(121, 21)
         Me.cmbAr.TabIndex = 10
         '
         'txtFn
         '
-        Me.txtFn.Location = New System.Drawing.Point(389, 162)
+        Me.txtFn.Location = New System.Drawing.Point(149, 179)
         Me.txtFn.Name = "txtFn"
         Me.txtFn.Size = New System.Drawing.Size(119, 20)
         Me.txtFn.TabIndex = 11
         '
         'txtNm
         '
-        Me.txtNm.Location = New System.Drawing.Point(389, 123)
+        Me.txtNm.Location = New System.Drawing.Point(149, 140)
         Me.txtNm.Name = "txtNm"
         Me.txtNm.Size = New System.Drawing.Size(119, 20)
         Me.txtNm.TabIndex = 12
         '
         'txtRn
         '
-        Me.txtRn.Location = New System.Drawing.Point(389, 84)
+        Me.txtRn.Location = New System.Drawing.Point(149, 101)
         Me.txtRn.Name = "txtRn"
         Me.txtRn.Size = New System.Drawing.Size(119, 20)
         Me.txtRn.TabIndex = 13
         '
         'btnBck
         '
+        Me.btnBck.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBck.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBck.Location = New System.Drawing.Point(433, 374)
+        Me.btnBck.Location = New System.Drawing.Point(311, 350)
         Me.btnBck.Name = "btnBck"
         Me.btnBck.Size = New System.Drawing.Size(75, 23)
         Me.btnBck.TabIndex = 14
         Me.btnBck.Text = "Back"
         Me.btnBck.UseVisualStyleBackColor = True
         '
+        'pbPic
+        '
+        Me.pbPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pbPic.Location = New System.Drawing.Point(286, 101)
+        Me.pbPic.Name = "pbPic"
+        Me.pbPic.Size = New System.Drawing.Size(100, 98)
+        Me.pbPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbPic.TabIndex = 15
+        Me.pbPic.TabStop = False
+        '
+        'ofgUp
+        '
+        Me.ofgUp.FileName = "Upload Picture"
+        '
+        'btnBrws
+        '
+        Me.btnBrws.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBrws.Location = New System.Drawing.Point(401, 176)
+        Me.btnBrws.Name = "btnBrws"
+        Me.btnBrws.Size = New System.Drawing.Size(68, 23)
+        Me.btnBrws.TabIndex = 16
+        Me.btnBrws.Text = "Browse..."
+        Me.btnBrws.UseVisualStyleBackColor = True
+        '
+        'txtPic
+        '
+        Me.txtPic.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPic.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPic.Location = New System.Drawing.Point(286, 221)
+        Me.txtPic.Name = "txtPic"
+        Me.txtPic.Size = New System.Drawing.Size(188, 14)
+        Me.txtPic.TabIndex = 17
+        '
         'addStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
+        Me.BackColor = System.Drawing.Color.DarkGreen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtPic)
+        Me.Controls.Add(Me.btnBrws)
+        Me.Controls.Add(Me.pbPic)
         Me.Controls.Add(Me.btnBck)
         Me.Controls.Add(Me.txtRn)
         Me.Controls.Add(Me.txtNm)
@@ -197,7 +248,7 @@ Partial Class addStudent
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblInfo)
         Me.Name = "addStudent"
-        Me.Text = "Add Student Details"
+        CType(Me.pbPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -218,6 +269,8 @@ Partial Class addStudent
     Friend WithEvents txtNm As TextBox
     Friend WithEvents txtRn As TextBox
     Friend WithEvents btnBck As Button
-
-
+    Friend WithEvents pbPic As PictureBox
+    Friend WithEvents ofgUp As OpenFileDialog
+    Friend WithEvents btnBrws As Button
+    Friend WithEvents txtPic As TextBox
 End Class

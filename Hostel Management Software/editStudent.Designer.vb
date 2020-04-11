@@ -43,7 +43,7 @@ Partial Class editStudent
         'btnBck
         '
         Me.btnBck.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBck.Location = New System.Drawing.Point(492, 392)
+        Me.btnBck.Location = New System.Drawing.Point(347, 377)
         Me.btnBck.Name = "btnBck"
         Me.btnBck.Size = New System.Drawing.Size(75, 23)
         Me.btnBck.TabIndex = 29
@@ -52,14 +52,14 @@ Partial Class editStudent
         '
         'txtNm
         '
-        Me.txtNm.Location = New System.Drawing.Point(448, 138)
+        Me.txtNm.Location = New System.Drawing.Point(194, 123)
         Me.txtNm.Name = "txtNm"
         Me.txtNm.Size = New System.Drawing.Size(119, 20)
         Me.txtNm.TabIndex = 27
         '
         'txtFn
         '
-        Me.txtFn.Location = New System.Drawing.Point(448, 177)
+        Me.txtFn.Location = New System.Drawing.Point(194, 162)
         Me.txtFn.Name = "txtFn"
         Me.txtFn.Size = New System.Drawing.Size(119, 20)
         Me.txtFn.TabIndex = 26
@@ -68,7 +68,7 @@ Partial Class editStudent
         '
         Me.cmbAr.FormattingEnabled = True
         Me.cmbAr.Items.AddRange(New Object() {"A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9"})
-        Me.cmbAr.Location = New System.Drawing.Point(446, 308)
+        Me.cmbAr.Location = New System.Drawing.Point(192, 293)
         Me.cmbAr.Name = "cmbAr"
         Me.cmbAr.Size = New System.Drawing.Size(121, 21)
         Me.cmbAr.TabIndex = 25
@@ -77,14 +77,14 @@ Partial Class editStudent
         '
         Me.cmbYr.FormattingEnabled = True
         Me.cmbYr.Items.AddRange(New Object() {"2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"})
-        Me.cmbYr.Location = New System.Drawing.Point(446, 226)
+        Me.cmbYr.Location = New System.Drawing.Point(192, 211)
         Me.cmbYr.Name = "cmbYr"
         Me.cmbYr.Size = New System.Drawing.Size(121, 21)
         Me.cmbYr.TabIndex = 24
         '
         'dtp
         '
-        Me.dtp.Location = New System.Drawing.Point(446, 268)
+        Me.dtp.Location = New System.Drawing.Point(192, 253)
         Me.dtp.Name = "dtp"
         Me.dtp.Size = New System.Drawing.Size(121, 20)
         Me.dtp.TabIndex = 23
@@ -92,7 +92,7 @@ Partial Class editStudent
         'btnUpdt
         '
         Me.btnUpdt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdt.Location = New System.Drawing.Point(274, 391)
+        Me.btnUpdt.Location = New System.Drawing.Point(84, 377)
         Me.btnUpdt.Name = "btnUpdt"
         Me.btnUpdt.Size = New System.Drawing.Size(86, 23)
         Me.btnUpdt.TabIndex = 22
@@ -103,7 +103,8 @@ Partial Class editStudent
         '
         Me.lblFn.AutoSize = True
         Me.lblFn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFn.Location = New System.Drawing.Point(280, 179)
+        Me.lblFn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblFn.Location = New System.Drawing.Point(26, 164)
         Me.lblFn.Name = "lblFn"
         Me.lblFn.Size = New System.Drawing.Size(93, 16)
         Me.lblFn.TabIndex = 21
@@ -113,7 +114,8 @@ Partial Class editStudent
         '
         Me.lblAr.AutoSize = True
         Me.lblAr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAr.Location = New System.Drawing.Point(280, 313)
+        Me.lblAr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblAr.Location = New System.Drawing.Point(26, 298)
         Me.lblAr.Name = "lblAr"
         Me.lblAr.Size = New System.Drawing.Size(113, 16)
         Me.lblAr.TabIndex = 20
@@ -123,7 +125,8 @@ Partial Class editStudent
         '
         Me.lblDtp.AutoSize = True
         Me.lblDtp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDtp.Location = New System.Drawing.Point(280, 270)
+        Me.lblDtp.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblDtp.Location = New System.Drawing.Point(26, 255)
         Me.lblDtp.Name = "lblDtp"
         Me.lblDtp.Size = New System.Drawing.Size(37, 16)
         Me.lblDtp.TabIndex = 19
@@ -133,17 +136,19 @@ Partial Class editStudent
         '
         Me.lblYr.AutoSize = True
         Me.lblYr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblYr.Location = New System.Drawing.Point(280, 228)
+        Me.lblYr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblYr.Location = New System.Drawing.Point(26, 213)
         Me.lblYr.Name = "lblYr"
-        Me.lblYr.Size = New System.Drawing.Size(37, 16)
+        Me.lblYr.Size = New System.Drawing.Size(42, 16)
         Me.lblYr.TabIndex = 18
-        Me.lblYr.Text = "Year"
+        Me.lblYr.Text = "Class"
         '
         'lblNm
         '
         Me.lblNm.AutoSize = True
         Me.lblNm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNm.Location = New System.Drawing.Point(280, 140)
+        Me.lblNm.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblNm.Location = New System.Drawing.Point(26, 125)
         Me.lblNm.Name = "lblNm"
         Me.lblNm.Size = New System.Drawing.Size(45, 16)
         Me.lblNm.TabIndex = 17
@@ -153,7 +158,8 @@ Partial Class editStudent
         '
         Me.lblRn.AutoSize = True
         Me.lblRn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRn.Location = New System.Drawing.Point(280, 101)
+        Me.lblRn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblRn.Location = New System.Drawing.Point(26, 86)
         Me.lblRn.Name = "lblRn"
         Me.lblRn.Size = New System.Drawing.Size(104, 16)
         Me.lblRn.TabIndex = 16
@@ -162,17 +168,18 @@ Partial Class editStudent
         'lblInfo
         '
         Me.lblInfo.AutoSize = True
-        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInfo.Location = New System.Drawing.Point(316, 37)
+        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblInfo.Location = New System.Drawing.Point(219, 9)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(171, 16)
+        Me.lblInfo.Size = New System.Drawing.Size(232, 24)
         Me.lblInfo.TabIndex = 15
         Me.lblInfo.Text = "Edit Student Information"
         '
         'cmbRn
         '
         Me.cmbRn.FormattingEnabled = True
-        Me.cmbRn.Location = New System.Drawing.Point(448, 98)
+        Me.cmbRn.Location = New System.Drawing.Point(194, 83)
         Me.cmbRn.Name = "cmbRn"
         Me.cmbRn.Size = New System.Drawing.Size(121, 21)
         Me.cmbRn.TabIndex = 30
@@ -180,7 +187,7 @@ Partial Class editStudent
         'btnDlt
         '
         Me.btnDlt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDlt.Location = New System.Drawing.Point(388, 391)
+        Me.btnDlt.Location = New System.Drawing.Point(223, 377)
         Me.btnDlt.Name = "btnDlt"
         Me.btnDlt.Size = New System.Drawing.Size(77, 23)
         Me.btnDlt.TabIndex = 31
@@ -191,7 +198,7 @@ Partial Class editStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnDlt)
@@ -211,7 +218,6 @@ Partial Class editStudent
         Me.Controls.Add(Me.lblRn)
         Me.Controls.Add(Me.lblInfo)
         Me.Name = "editStudent"
-        Me.Text = "Edit Student Information"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

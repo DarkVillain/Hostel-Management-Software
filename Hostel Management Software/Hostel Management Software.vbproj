@@ -294,6 +294,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>roomDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="studentDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="studentRep.Designer.vb">
       <DependentUpon>studentRep.vb</DependentUpon>
     </Compile>
@@ -360,6 +365,17 @@
     </None>
     <None Include="roomDetails.xss">
       <DependentUpon>roomDetails.xsd</DependentUpon>
+    </None>
+    <None Include="studentDS.xsc">
+      <DependentUpon>studentDS.xsd</DependentUpon>
+    </None>
+    <None Include="studentDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDS.xss">
+      <DependentUpon>studentDS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
