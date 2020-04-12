@@ -24,15 +24,18 @@ Partial Class leaveEntry
     Private Sub InitializeComponent()
         Me.lblRn = New System.Windows.Forms.Label()
         Me.lblInfo = New System.Windows.Forms.Label()
-        Me.cmbRn = New System.Windows.Forms.ComboBox()
         Me.cmbCz = New System.Windows.Forms.ComboBox()
         Me.lblCz = New System.Windows.Forms.Label()
-        Me.dtpFrm = New System.Windows.Forms.DateTimePicker()
         Me.lblFrm = New System.Windows.Forms.Label()
         Me.dtpTo = New System.Windows.Forms.DateTimePicker()
         Me.cmbTo = New System.Windows.Forms.Label()
         Me.btnBck = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.dtpFrm = New System.Windows.Forms.DateTimePicker()
+        Me.txtEi = New System.Windows.Forms.TextBox()
+        Me.cmbRn = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtSpn = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblRn
@@ -40,7 +43,7 @@ Partial Class leaveEntry
         Me.lblRn.AutoSize = True
         Me.lblRn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblRn.Location = New System.Drawing.Point(56, 104)
+        Me.lblRn.Location = New System.Drawing.Point(56, 99)
         Me.lblRn.Name = "lblRn"
         Me.lblRn.Size = New System.Drawing.Size(104, 16)
         Me.lblRn.TabIndex = 14
@@ -56,14 +59,6 @@ Partial Class leaveEntry
         Me.lblInfo.Size = New System.Drawing.Size(120, 24)
         Me.lblInfo.TabIndex = 16
         Me.lblInfo.Text = "Leave Entry"
-        '
-        'cmbRn
-        '
-        Me.cmbRn.FormattingEnabled = True
-        Me.cmbRn.Location = New System.Drawing.Point(211, 99)
-        Me.cmbRn.Name = "cmbRn"
-        Me.cmbRn.Size = New System.Drawing.Size(109, 21)
-        Me.cmbRn.TabIndex = 17
         '
         'cmbCz
         '
@@ -85,14 +80,6 @@ Partial Class leaveEntry
         Me.lblCz.TabIndex = 19
         Me.lblCz.Text = "Reason"
         '
-        'dtpFrm
-        '
-        Me.dtpFrm.Location = New System.Drawing.Point(211, 188)
-        Me.dtpFrm.Name = "dtpFrm"
-        Me.dtpFrm.ShowCheckBox = True
-        Me.dtpFrm.Size = New System.Drawing.Size(109, 20)
-        Me.dtpFrm.TabIndex = 21
-        '
         'lblFrm
         '
         Me.lblFrm.AutoSize = True
@@ -106,9 +93,10 @@ Partial Class leaveEntry
         '
         'dtpTo
         '
+        Me.dtpTo.CustomFormat = "dd MMM yyyy"
+        Me.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpTo.Location = New System.Drawing.Point(211, 233)
         Me.dtpTo.Name = "dtpTo"
-        Me.dtpTo.ShowCheckBox = True
         Me.dtpTo.Size = New System.Drawing.Size(109, 20)
         Me.dtpTo.TabIndex = 23
         '
@@ -145,21 +133,67 @@ Partial Class leaveEntry
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'dtpFrm
+        '
+        Me.dtpFrm.CustomFormat = "dd MMM yyyy"
+        Me.dtpFrm.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpFrm.Location = New System.Drawing.Point(211, 188)
+        Me.dtpFrm.Name = "dtpFrm"
+        Me.dtpFrm.Size = New System.Drawing.Size(109, 20)
+        Me.dtpFrm.TabIndex = 26
+        '
+        'txtEi
+        '
+        Me.txtEi.Location = New System.Drawing.Point(211, 57)
+        Me.txtEi.Name = "txtEi"
+        Me.txtEi.Size = New System.Drawing.Size(109, 20)
+        Me.txtEi.TabIndex = 27
+        '
+        'cmbRn
+        '
+        Me.cmbRn.FormattingEnabled = True
+        Me.cmbRn.Items.AddRange(New Object() {"School leave", "Sick leave"})
+        Me.cmbRn.Location = New System.Drawing.Point(211, 99)
+        Me.cmbRn.Name = "cmbRn"
+        Me.cmbRn.Size = New System.Drawing.Size(109, 21)
+        Me.cmbRn.TabIndex = 28
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(58, 61)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(52, 16)
+        Me.Label1.TabIndex = 29
+        Me.Label1.Text = "Entry id"
+        '
+        'txtSpn
+        '
+        Me.txtSpn.Location = New System.Drawing.Point(211, 261)
+        Me.txtSpn.Name = "txtSpn"
+        Me.txtSpn.Size = New System.Drawing.Size(109, 20)
+        Me.txtSpn.TabIndex = 30
+        '
         'leaveEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGreen
-        Me.ClientSize = New System.Drawing.Size(379, 515)
+        Me.ClientSize = New System.Drawing.Size(379, 394)
+        Me.Controls.Add(Me.txtSpn)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.cmbRn)
+        Me.Controls.Add(Me.txtEi)
+        Me.Controls.Add(Me.dtpFrm)
         Me.Controls.Add(Me.btnBck)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.dtpTo)
         Me.Controls.Add(Me.cmbTo)
-        Me.Controls.Add(Me.dtpFrm)
         Me.Controls.Add(Me.lblFrm)
         Me.Controls.Add(Me.lblCz)
         Me.Controls.Add(Me.cmbCz)
-        Me.Controls.Add(Me.cmbRn)
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.lblRn)
         Me.Name = "leaveEntry"
@@ -169,13 +203,16 @@ Partial Class leaveEntry
     End Sub
     Friend WithEvents lblRn As Label
     Friend WithEvents lblInfo As Label
-    Friend WithEvents cmbRn As ComboBox
     Friend WithEvents cmbCz As ComboBox
     Friend WithEvents lblCz As Label
-    Friend WithEvents dtpFrm As DateTimePicker
     Friend WithEvents lblFrm As Label
     Friend WithEvents dtpTo As DateTimePicker
     Friend WithEvents cmbTo As Label
     Friend WithEvents btnBck As Button
     Friend WithEvents btnAdd As Button
+    Friend WithEvents dtpFrm As DateTimePicker
+    Friend WithEvents txtEi As TextBox
+    Friend WithEvents cmbRn As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtSpn As TextBox
 End Class
