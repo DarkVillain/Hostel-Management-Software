@@ -19,7 +19,7 @@ Public Class addStudent
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
         dtp.Text = DateTime.Now.ToString("dd/MM/yyyy")
-        command.CommandText = " INSERT INTO student(reg_id, name, fat_name, year, dated, alloc_room, image) VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Text & "','" & cmbAr.Text & "','" & pbPic.Name & "')"
+        command.CommandText = " INSERT INTO student(reg_id, name, fat_name, class, dated, alloc_room, image) VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Text & "','" & cmbAr.Text & "','" & pbPic.Name & "')"
 
         txtRn.Text = " "
         txtNm.Text = " "

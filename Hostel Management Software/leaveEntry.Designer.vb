@@ -36,6 +36,7 @@ Partial Class leaveEntry
         Me.cmbRn = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSpn = New System.Windows.Forms.TextBox()
+        Me.btnCd = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblRn
@@ -115,7 +116,7 @@ Partial Class leaveEntry
         '
         Me.btnBck.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBck.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBck.Location = New System.Drawing.Point(245, 287)
+        Me.btnBck.Location = New System.Drawing.Point(222, 318)
         Me.btnBck.Name = "btnBck"
         Me.btnBck.Size = New System.Drawing.Size(75, 23)
         Me.btnBck.TabIndex = 25
@@ -126,7 +127,7 @@ Partial Class leaveEntry
         '
         Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(61, 287)
+        Me.btnAdd.Location = New System.Drawing.Point(70, 318)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 24
@@ -171,10 +172,20 @@ Partial Class leaveEntry
         '
         'txtSpn
         '
-        Me.txtSpn.Location = New System.Drawing.Point(211, 261)
+        Me.txtSpn.Location = New System.Drawing.Point(211, 273)
         Me.txtSpn.Name = "txtSpn"
         Me.txtSpn.Size = New System.Drawing.Size(109, 20)
         Me.txtSpn.TabIndex = 30
+        '
+        'btnCd
+        '
+        Me.btnCd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCd.Location = New System.Drawing.Point(59, 271)
+        Me.btnCd.Name = "btnCd"
+        Me.btnCd.Size = New System.Drawing.Size(101, 23)
+        Me.btnCd.TabIndex = 31
+        Me.btnCd.Text = "Count Days"
+        Me.btnCd.UseVisualStyleBackColor = True
         '
         'leaveEntry
         '
@@ -182,6 +193,7 @@ Partial Class leaveEntry
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGreen
         Me.ClientSize = New System.Drawing.Size(379, 394)
+        Me.Controls.Add(Me.btnCd)
         Me.Controls.Add(Me.txtSpn)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmbRn)
@@ -215,4 +227,5 @@ Partial Class leaveEntry
     Friend WithEvents cmbRn As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtSpn As TextBox
+    Friend WithEvents btnCd As Button
 End Class

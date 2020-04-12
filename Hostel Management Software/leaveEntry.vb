@@ -35,4 +35,21 @@ Public Class leaveEntry
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRn.SelectedIndexChanged
 
     End Sub
+
+    Private Sub btnCd_Click(sender As Object, e As EventArgs) Handles btnCd.Click
+        'ei code 2 ta date er majher din gune textbox e store korbe.
+        Dim dt1 As DateTime = Convert.ToDateTime(dtpFrm.Value.ToString("dd/MM/yyy"))
+        Dim dt2 As DateTime = Convert.ToDateTime(dtpTo.Value.ToString("dd/MM/yyy"))
+        Dim ts As TimeSpan = dt2.Subtract(dt1)
+        If Convert.ToInt32(ts.Days) >= 0 Then
+            txtSpn.Text = Convert.ToInt32(ts.Days) 'Stored to textBox
+        Else
+            MessageBox.Show("Please Check It's Invalid Input")
+        End If
+
+    End Sub
+
+    Private Sub leaveEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
