@@ -322,6 +322,9 @@
     <EmbeddedResource Include="dash.resx">
       <DependentUpon>dash.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="editEntry.resx">
+      <DependentUpon>editEntry.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editMaterials.resx">
       <DependentUpon>editMaterials.vb</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="enterUsage.resx">
       <DependentUpon>enterUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaveEntry.resx">
+      <DependentUpon>leaveEntry.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>

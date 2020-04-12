@@ -60,7 +60,7 @@ Partial Class addStudent
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(27, 101)
+        Me.Label2.Location = New System.Drawing.Point(25, 95)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 16)
         Me.Label2.TabIndex = 1
@@ -71,7 +71,7 @@ Partial Class addStudent
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(27, 140)
+        Me.Label3.Location = New System.Drawing.Point(25, 134)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 16)
         Me.Label3.TabIndex = 2
@@ -82,7 +82,7 @@ Partial Class addStudent
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(29, 221)
+        Me.Label4.Location = New System.Drawing.Point(27, 215)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 16)
         Me.Label4.TabIndex = 3
@@ -93,7 +93,7 @@ Partial Class addStudent
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(29, 263)
+        Me.Label5.Location = New System.Drawing.Point(27, 257)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(37, 16)
         Me.Label5.TabIndex = 4
@@ -104,7 +104,7 @@ Partial Class addStudent
         Me.lblAr.AutoSize = True
         Me.lblAr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAr.Location = New System.Drawing.Point(29, 306)
+        Me.lblAr.Location = New System.Drawing.Point(27, 300)
         Me.lblAr.Name = "lblAr"
         Me.lblAr.Size = New System.Drawing.Size(113, 16)
         Me.lblAr.TabIndex = 5
@@ -115,7 +115,7 @@ Partial Class addStudent
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(27, 179)
+        Me.Label1.Location = New System.Drawing.Point(25, 173)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(93, 16)
         Me.Label1.TabIndex = 6
@@ -125,7 +125,7 @@ Partial Class addStudent
         '
         Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(148, 350)
+        Me.btnAdd.Location = New System.Drawing.Point(146, 344)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 7
@@ -134,7 +134,7 @@ Partial Class addStudent
         '
         'dtp
         '
-        Me.dtp.Location = New System.Drawing.Point(149, 263)
+        Me.dtp.Location = New System.Drawing.Point(147, 257)
         Me.dtp.Name = "dtp"
         Me.dtp.ShowCheckBox = True
         Me.dtp.Size = New System.Drawing.Size(121, 20)
@@ -144,7 +144,7 @@ Partial Class addStudent
         '
         Me.cmbYr.FormattingEnabled = True
         Me.cmbYr.Items.AddRange(New Object() {"8", "9", "10", "11", "12"})
-        Me.cmbYr.Location = New System.Drawing.Point(149, 221)
+        Me.cmbYr.Location = New System.Drawing.Point(147, 215)
         Me.cmbYr.Name = "cmbYr"
         Me.cmbYr.Size = New System.Drawing.Size(121, 21)
         Me.cmbYr.TabIndex = 9
@@ -153,28 +153,28 @@ Partial Class addStudent
         '
         Me.cmbAr.FormattingEnabled = True
         Me.cmbAr.Items.AddRange(New Object() {"A0", "A1", "A2", "A3", "A5", "A6", "A7", "A8", "A9", "B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9"})
-        Me.cmbAr.Location = New System.Drawing.Point(149, 303)
+        Me.cmbAr.Location = New System.Drawing.Point(147, 297)
         Me.cmbAr.Name = "cmbAr"
         Me.cmbAr.Size = New System.Drawing.Size(121, 21)
         Me.cmbAr.TabIndex = 10
         '
         'txtFn
         '
-        Me.txtFn.Location = New System.Drawing.Point(149, 179)
+        Me.txtFn.Location = New System.Drawing.Point(147, 173)
         Me.txtFn.Name = "txtFn"
         Me.txtFn.Size = New System.Drawing.Size(119, 20)
         Me.txtFn.TabIndex = 11
         '
         'txtNm
         '
-        Me.txtNm.Location = New System.Drawing.Point(149, 140)
+        Me.txtNm.Location = New System.Drawing.Point(147, 134)
         Me.txtNm.Name = "txtNm"
         Me.txtNm.Size = New System.Drawing.Size(119, 20)
         Me.txtNm.TabIndex = 12
         '
         'txtRn
         '
-        Me.txtRn.Location = New System.Drawing.Point(149, 101)
+        Me.txtRn.Location = New System.Drawing.Point(147, 95)
         Me.txtRn.Name = "txtRn"
         Me.txtRn.Size = New System.Drawing.Size(119, 20)
         Me.txtRn.TabIndex = 13
@@ -183,7 +183,7 @@ Partial Class addStudent
         '
         Me.btnBck.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBck.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBck.Location = New System.Drawing.Point(311, 350)
+        Me.btnBck.Location = New System.Drawing.Point(309, 344)
         Me.btnBck.Name = "btnBck"
         Me.btnBck.Size = New System.Drawing.Size(75, 23)
         Me.btnBck.TabIndex = 14
@@ -193,7 +193,7 @@ Partial Class addStudent
         'pbPic
         '
         Me.pbPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pbPic.Location = New System.Drawing.Point(286, 101)
+        Me.pbPic.Location = New System.Drawing.Point(284, 95)
         Me.pbPic.Name = "pbPic"
         Me.pbPic.Size = New System.Drawing.Size(100, 98)
         Me.pbPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -207,7 +207,7 @@ Partial Class addStudent
         'btnBrws
         '
         Me.btnBrws.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBrws.Location = New System.Drawing.Point(401, 176)
+        Me.btnBrws.Location = New System.Drawing.Point(399, 170)
         Me.btnBrws.Name = "btnBrws"
         Me.btnBrws.Size = New System.Drawing.Size(68, 23)
         Me.btnBrws.TabIndex = 16
@@ -218,7 +218,7 @@ Partial Class addStudent
         '
         Me.txtPic.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPic.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPic.Location = New System.Drawing.Point(286, 221)
+        Me.txtPic.Location = New System.Drawing.Point(284, 215)
         Me.txtPic.Name = "txtPic"
         Me.txtPic.Size = New System.Drawing.Size(188, 14)
         Me.txtPic.TabIndex = 17
@@ -229,7 +229,7 @@ Partial Class addStudent
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGreen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(506, 450)
         Me.Controls.Add(Me.txtPic)
         Me.Controls.Add(Me.btnBrws)
         Me.Controls.Add(Me.pbPic)
