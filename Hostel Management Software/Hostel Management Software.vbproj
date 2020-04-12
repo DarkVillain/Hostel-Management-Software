@@ -331,6 +331,12 @@
     <EmbeddedResource Include="editStudent.resx">
       <DependentUpon>editStudent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="editUsage.resx">
+      <DependentUpon>editUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enterUsage.resx">
+      <DependentUpon>enterUsage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
     </EmbeddedResource>

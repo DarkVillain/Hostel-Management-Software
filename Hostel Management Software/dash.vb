@@ -125,10 +125,4 @@ Public Class dash
 
 
     End Sub
-
-    Private Sub lblUSR_Click(sender As Object, e As EventArgs) Handles lblUSR.Click
-
-
-
-    End Sub
 End Class

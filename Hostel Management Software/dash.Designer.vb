@@ -121,13 +121,13 @@ Partial Class dash
         'EnterUsageToolStripMenuItem
         '
         Me.EnterUsageToolStripMenuItem.Name = "EnterUsageToolStripMenuItem"
-        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EnterUsageToolStripMenuItem.Text = "Enter Usage"
         '
         'EditUsageToolStripMenuItem
         '
         Me.EditUsageToolStripMenuItem.Name = "EditUsageToolStripMenuItem"
-        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditUsageToolStripMenuItem.Text = "Edit Usage"
         '
         'StudentLeaveEntryToolStripMenuItem
