@@ -22,6 +22,7 @@ Partial Class dash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.mnsDm = New System.Windows.Forms.MenuStrip()
         Me.StudentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,9 +49,16 @@ Partial Class dash
         Me.ExpensesEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlDash = New System.Windows.Forms.Panel()
         Me.lblBanner = New System.Windows.Forms.Label()
-        Me.lblUSR = New System.Windows.Forms.Label()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.tsslMsg = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.tsslNm = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.tsslBlnk = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.tsslTd = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.mnsDm.SuspendLayout()
         Me.pnlDash.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnsDm
@@ -121,13 +129,13 @@ Partial Class dash
         'EnterUsageToolStripMenuItem
         '
         Me.EnterUsageToolStripMenuItem.Name = "EnterUsageToolStripMenuItem"
-        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnterUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EnterUsageToolStripMenuItem.Text = "Enter Usage"
         '
         'EditUsageToolStripMenuItem
         '
         Me.EditUsageToolStripMenuItem.Name = "EditUsageToolStripMenuItem"
-        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditUsageToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EditUsageToolStripMenuItem.Text = "Edit Usage"
         '
         'StudentLeaveEntryToolStripMenuItem
@@ -244,19 +252,39 @@ Partial Class dash
         Me.lblBanner.TabIndex = 0
         Me.lblBanner.Text = "WELCOME TO ASHROY BOYS HOSTEL "
         '
-        'lblUSR
+        'StatusStrip1
         '
-        Me.lblUSR.AutoSize = True
-        Me.lblUSR.BackColor = System.Drawing.Color.Silver
-        Me.lblUSR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUSR.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lblUSR.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUSR.ForeColor = System.Drawing.Color.ForestGreen
-        Me.lblUSR.Location = New System.Drawing.Point(0, 0)
-        Me.lblUSR.Name = "lblUSR"
-        Me.lblUSR.Size = New System.Drawing.Size(92, 23)
-        Me.lblUSR.TabIndex = 1
-        Me.lblUSR.Text = "Welcome, "
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsslMsg, Me.tsslNm, Me.tsslBlnk, Me.tsslTd})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 460)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(869, 22)
+        Me.StatusStrip1.TabIndex = 2
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'tsslMsg
+        '
+        Me.tsslMsg.Name = "tsslMsg"
+        Me.tsslMsg.Size = New System.Drawing.Size(77, 17)
+        Me.tsslMsg.Text = "Logged in as:"
+        '
+        'tsslNm
+        '
+        Me.tsslNm.Image = Global.Hostel_Management_Software.My.Resources.Resources.admin
+        Me.tsslNm.Name = "tsslNm"
+        Me.tsslNm.Size = New System.Drawing.Size(119, 17)
+        Me.tsslNm.Text = "&login.txtBoxName"
+        '
+        'tsslBlnk
+        '
+        Me.tsslBlnk.Name = "tsslBlnk"
+        Me.tsslBlnk.Size = New System.Drawing.Size(611, 17)
+        Me.tsslBlnk.Spring = True
+        '
+        'tsslTd
+        '
+        Me.tsslTd.Name = "tsslTd"
+        Me.tsslTd.Size = New System.Drawing.Size(0, 17)
+        Me.tsslTd.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'dash
         '
@@ -265,17 +293,18 @@ Partial Class dash
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(869, 482)
-        Me.Controls.Add(Me.lblUSR)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.mnsDm)
         Me.Controls.Add(Me.pnlDash)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.mnsDm
         Me.Name = "dash"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.mnsDm.ResumeLayout(False)
         Me.mnsDm.PerformLayout()
         Me.pnlDash.ResumeLayout(False)
         Me.pnlDash.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -306,6 +335,12 @@ Partial Class dash
     Friend WithEvents LeaveEntryToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExpensesEntryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pnlDash As Panel
-    Friend WithEvents lblUSR As Label
     Friend WithEvents lblBanner As Label
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents tsslMsg As ToolStripStatusLabel
+    Friend WithEvents tsslNm As ToolStripStatusLabel
+    Friend WithEvents tsslBlnk As ToolStripStatusLabel
+    Friend WithEvents tsslTd As ToolStripStatusLabel
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer2 As Timer
 End Class

@@ -5,6 +5,7 @@ Public Class editEntry
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
     Private Sub editEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Me.CenterToScreen()   'Make it Center of the screen
         updateCombo()
 
 

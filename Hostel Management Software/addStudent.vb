@@ -6,7 +6,7 @@ Public Class addStudent
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
     'connection done here 
     Private Sub addStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.CenterToScreen()
     End Sub
 
     Private Sub txtRn_TextChanged(sender As Object, e As EventArgs) Handles txtRn.TextChanged

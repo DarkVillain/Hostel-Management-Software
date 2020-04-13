@@ -3,8 +3,9 @@ Public Class dash
     Private Sub dash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
-
-        lblUSR.Text = Login.txtBoxName.Text
+        tsslNm.Text = Login.txtBoxName.Text
+        tsslTd.Text = Now
+        Me.CenterToScreen()
 
     End Sub
 
@@ -46,20 +47,17 @@ Public Class dash
 
         enterUsage.Show()
 
-
     End Sub
 
     Private Sub EditUsageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditUsageToolStripMenuItem.Click
 
         editUsage.Show()
 
-
     End Sub
 
     Private Sub LeaveEntryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LeaveEntryToolStripMenuItem.Click
 
-        leaveEntry.Show()
-
+        addLeave.Show()
 
     End Sub
 
@@ -67,13 +65,11 @@ Public Class dash
 
         editEntry.Show()
 
-
     End Sub
 
     Private Sub EnterExpensesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EnterExpensesToolStripMenuItem.Click
 
         addExpenses.Show()
-
 
     End Sub
 
@@ -123,6 +119,14 @@ Public Class dash
 
         expensesRep.Show()
 
+
+    End Sub
+
+    Private Sub lblUSR_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub tsslNm_Click(sender As Object, e As EventArgs) Handles tsslNm.Click
 
     End Sub
 End Class

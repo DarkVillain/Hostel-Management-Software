@@ -70,4 +70,8 @@ Public Class editStudent
         con.Close()
 
     End Sub
+
+    Private Sub editStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()   'Make it Center of the screen
+    End Sub
 End Class

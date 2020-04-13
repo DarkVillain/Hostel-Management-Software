@@ -46,7 +46,7 @@ Partial Class Login
         Me.Up.Dock = System.Windows.Forms.DockStyle.Top
         Me.Up.Location = New System.Drawing.Point(0, 0)
         Me.Up.Name = "Up"
-        Me.Up.Size = New System.Drawing.Size(1366, 292)
+        Me.Up.Size = New System.Drawing.Size(568, 292)
         Me.Up.TabIndex = 0
         '
         'lblTitle
@@ -54,7 +54,7 @@ Partial Class Login
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(387, 21)
+        Me.lblTitle.Location = New System.Drawing.Point(24, 28)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(496, 79)
         Me.lblTitle.TabIndex = 2
@@ -72,7 +72,7 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.lblName)
         Me.Panel1.Controls.Add(Me.txtBoxPass)
         Me.Panel1.Controls.Add(Me.txtBoxName)
-        Me.Panel1.Location = New System.Drawing.Point(481, 220)
+        Me.Panel1.Location = New System.Drawing.Point(120, 220)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(332, 399)
         Me.Panel1.TabIndex = 3
@@ -182,15 +182,14 @@ Partial Class Login
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1366, 749)
+        Me.ClientSize = New System.Drawing.Size(568, 629)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Up)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Login"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Up.ResumeLayout(False)
         Me.Up.PerformLayout()
         Me.Panel1.ResumeLayout(False)

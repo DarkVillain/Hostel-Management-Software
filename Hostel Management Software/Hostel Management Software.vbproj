@@ -308,6 +308,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="addExpenses.resx">
+      <DependentUpon>addExpenses.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addMaterials.resx">
       <DependentUpon>addMaterials.vb</DependentUpon>
     </EmbeddedResource>
@@ -317,6 +320,9 @@
     <EmbeddedResource Include="addStudent.resx">
       <DependentUpon>addStudent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="billings.resx">
+      <DependentUpon>billings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="changePass.resx">
       <DependentUpon>changePass.vb</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editEntry.resx">
       <DependentUpon>editEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editExpenses.resx">
+      <DependentUpon>editExpenses.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editMaterials.resx">
       <DependentUpon>editMaterials.vb</DependentUpon>
@@ -341,11 +350,20 @@
     <EmbeddedResource Include="enterUsage.resx">
       <DependentUpon>enterUsage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="expensesRep.resx">
+      <DependentUpon>expensesRep.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="leaveEntry.resx">
       <DependentUpon>leaveEntry.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="leaveRep.resx">
+      <DependentUpon>leaveRep.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="materialRep.resx">
+      <DependentUpon>materialRep.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -355,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentRep.resx">
+      <DependentUpon>studentRep.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -403,7 +424,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hostelbg.jpg" />
   </ItemGroup>

@@ -5,7 +5,7 @@ Public Class addroom
 
     Private Sub addroom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
+        Me.CenterToScreen()
 
     End Sub
 

@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Imports System.Configuration
 Imports Oracle.DataAccess.Client
-Public Class leaveEntry
+Public Class addLeave
 
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
     Private Sub btnBck_Click(sender As Object, e As EventArgs) Handles btnBck.Click
@@ -50,6 +50,8 @@ Public Class leaveEntry
     End Sub
 
     Private Sub leaveEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.CenterToScreen()
 
     End Sub
 End Class

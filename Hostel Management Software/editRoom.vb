@@ -53,7 +53,7 @@ Public Class editRoom
     End Sub
 
     Private Sub editRoom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.CenterToScreen()   'Make it Center of the screen
         updatecombo()
 
     End Sub

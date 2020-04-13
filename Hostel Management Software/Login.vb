@@ -1,15 +1,4 @@
 ﻿Public Class Login
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblName.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) 
-
-    End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs)
 
@@ -34,6 +23,7 @@
         password = "villain"
 
         If txtBoxName.Text = username And txtBoxPass.Text = password Then
+            'dash.tsslNm.Text = txtBoxName.Text
             dash.Show()
             Me.Hide()
         ElseIf txtBoxName.Text <> username Or txtBoxPass.Text <> password Then
@@ -60,10 +50,12 @@
         txtBoxName.Clear()
         txtBoxPass.Clear()
 
-
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.CenterToScreen() 'To make window to the centerScreen
+        'Me.CenterToParent()
 
     End Sub
 
