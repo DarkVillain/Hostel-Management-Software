@@ -243,14 +243,16 @@ Partial Class dash
         '
         'lblBanner
         '
+        Me.lblBanner.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblBanner.AutoSize = True
         Me.lblBanner.Font = New System.Drawing.Font("Garamond", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBanner.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblBanner.Location = New System.Drawing.Point(289, 9)
+        Me.lblBanner.Location = New System.Drawing.Point(225, 9)
         Me.lblBanner.Name = "lblBanner"
         Me.lblBanner.Size = New System.Drawing.Size(569, 33)
         Me.lblBanner.TabIndex = 0
         Me.lblBanner.Text = "WELCOME TO ASHROY BOYS HOSTEL "
+        Me.lblBanner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'StatusStrip1
         '
@@ -277,7 +279,7 @@ Partial Class dash
         'tsslBlnk
         '
         Me.tsslBlnk.Name = "tsslBlnk"
-        Me.tsslBlnk.Size = New System.Drawing.Size(611, 17)
+        Me.tsslBlnk.Size = New System.Drawing.Size(658, 17)
         Me.tsslBlnk.Spring = True
         '
         'tsslTd

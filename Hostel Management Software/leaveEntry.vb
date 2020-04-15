@@ -15,10 +15,11 @@ Public Class addLeave
 
         con.Open()
         Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = " INSERT INTO LEAVE VALUES ('" & txtEi.Text & "','" & cmbRn.Text & "','" & cmbCz.Text & "','" & dtpFrm.Text & "','" & dtpTo.Text & "')"
+        command.CommandText = " INSERT INTO LEAVE VALUES ('" & txtEi.Text & "','" & cmbRn.Text & "','" & cmbCz.Text & "','" & dtpFrm.Text & "','" & dtpTo.Text & "', " & txtSpn.Text & ")"
         txtEi.Text = " "
         cmbRn.Text = " "
         cmbCz.Text = " "
+        txtSpn.Text = " "
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("Data has been saved!")
         Else

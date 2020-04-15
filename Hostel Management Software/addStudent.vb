@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Drawing
 Imports System.Configuration
 Imports Oracle.DataAccess.Client
 Public Class addStudent
@@ -11,6 +12,7 @@ Public Class addStudent
 
     Private Sub txtRn_TextChanged(sender As Object, e As EventArgs) Handles txtRn.TextChanged
 
+
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -18,8 +20,8 @@ Public Class addStudent
         con.Open()
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
-        dtp.Text = DateTime.Now.ToString("dd/MM/yyyy")
-        command.CommandText = " INSERT INTO student(reg_id, name, fat_name, class, dated, alloc_room, image) VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Text & "','" & cmbAr.Text & "','" & pbPic.Name & "')"
+
+        command.CommandText = "INSERT INTO STUDENT VALUES ('" & txtRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Text & "','" & cmbAr.Text & "','" & txtPn.Text & "','" & txtAdrs.Text & "','" & txtMl.Text & "')"
 
         txtRn.Text = " "
         txtNm.Text = " "
@@ -27,9 +29,11 @@ Public Class addStudent
         cmbYr.Text = " "
         'dtp.Value = " "
         cmbAr.Text = " "
-        pbPic.Image = Nothing
-        txtPic.Text = " "
-
+        'pbPic.Image = Nothing
+        'txtPic.Text = " "
+        txtPn.Text = " "
+        txtAdrs.Text = " "
+        txtMl.Text = " "
 
         If command.ExecuteNonQuery() > 0 Then
             MsgBox("Data has been saved!")
@@ -49,23 +53,18 @@ Public Class addStudent
 
     End Sub
 
-    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ofgUp.FileOk
+    'Private Sub btnBrws_Click(sender As Object, e As EventArgs) Handles btnBrws.Click
+    '
+    'Dim myStream As Stream = Nothing
+    'Dim ofgUp As New OpenFileDialog()
+    '   ofgUp.ShowDialog()
+    '  ofgUp.InitialDirectory = "c:\"
+    ' ofgUp.Filter = "jpg files (*.jpg)|*.jpg|jpeg files (*.jpeg)|png files (*.png)|All files (*.*)|*.jpg*"
+    'ofgUp.FilterIndex = 2
+    'ofgUp.RestoreDirectory = True
+    'txtPic.Text = ofgUp.FileName
 
+    'pbPic.Image = Image.FromFile(txtPic.Text)
 
-
-    End Sub
-
-    Private Sub pbPic_Click(sender As Object, e As EventArgs) Handles pbPic.Click
-
-    End Sub
-
-    Private Sub btnBrws_Click(sender As Object, e As EventArgs) Handles btnBrws.Click
-
-        ofgUp.ShowDialog()
-        '
-        txtPic.Text = ofgUp.FileName
-
-        pbPic.Image = Image.FromFile(txtPic.Text)
-
-    End Sub
+    'End Sub
 End Class
