@@ -3,6 +3,64 @@ Public Class editStudent
 
     Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
 
+    Private Sub editStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.CenterToScreen()   'Make it Center of the screen
+        updateCombo()
+
+    End Sub
+
+    Private Sub btnUpdt_Click(sender As Object, e As EventArgs) Handles btnUpdt.Click
+
+        con.Open()
+
+        Dim command As OracleCommand = con.CreateCommand()
+        command.CommandText = "UPDATE STUDENT SET NAME='" & txtNm.Text & "', FAT_NAME='" & txtFn.Text & "', CLASS='" & cmbYr.Text & "', DATED='" & dtp.Text & "', ALLOC_ROOM='" & cmbAr.Text & "', PHONE='" & txtPn.Text & "', ADDRS='" & txtAdrs.Text & "', EMAIL='" & txtMl.Text & "'  WHERE REG_ID= " & cmbRn.SelectedItem
+
+        txtNm.Text = " "
+        txtFn.Text = " "
+        cmbYr.Text = " "
+        'dtp.Text = " "
+        cmbAr.Text = " "
+        txtPn.Text = " "
+        txtAdrs.Text = " "
+        txtMl.Text = " "
+
+        If command.ExecuteNonQuery() > 0 Then
+            MsgBox("Data has been Updated!")
+        Else
+            MsgBox("Error, while saving data!")
+        End If
+        Me.Refresh()
+        con.Close()
+
+    End Sub
+
+    Private Sub btnDlt_Click(sender As Object, e As EventArgs) Handles btnDlt.Click
+
+        con.Open()
+        Dim command As OracleCommand = con.CreateCommand()
+        command.CommandText = "DELETE FROM STUDENT WHERE REG_ID='" & cmbRn.Text & "'"
+
+        txtNm.Text = " "
+        txtFn.Text = " "
+        cmbYr.Text = " "
+        'dtp.Text = " "
+        cmbAr.Text = " "
+        txtPn.Text = " "
+        txtAdrs.Text = " "
+        txtMl.Text = " "
+
+        If command.ExecuteNonQuery() > 0 Then
+            MsgBox("Data has been deleted!")
+        Else
+            MsgBox("Error, while deleting data!")
+        End If
+
+        con.Close()
+        updateCombo()
+
+    End Sub
     Private Sub btnBck_Click(sender As Object, e As EventArgs) Handles btnBck.Click
 
         dash.Show()
@@ -10,22 +68,25 @@ Public Class editStudent
 
     End Sub
 
-    Private Sub cmb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRn.SelectedIndexChanged
+    Private Sub cmbRn_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRn.SelectedIndexChanged
 
         con.Open()
         Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "SELECT * FROM student WHERE reg_id=" & cmbRn.SelectedItem
+        command.CommandText = "SELECT * FROM STUDENT WHERE REG_ID=" & cmbRn.SelectedItem
         Dim oraclereader As OracleDataReader = command.ExecuteReader()
 
         oraclereader.Read()
+
         txtNm.Text = oraclereader.Item("NAME")
-        txtFn.Text = oraclereader.Item("FATHERS_NAME")
-        cmbYr.Text = oraclereader.Item("YEAR")
+        txtFn.Text = oraclereader.Item("FAT_NAME")
+        cmbYr.Text = oraclereader.Item("CLASS")
         dtp.Text = oraclereader.Item("DATED")
         cmbAr.Text = oraclereader.Item("ALLOC_ROOM")
+        txtPn.Text = oraclereader.Item("PHONE")
+        txtAdrs.Text = oraclereader.Item("ADDRS")
+        txtMl.Text = oraclereader.Item("EMAIL")
 
         con.Close()
-        updateCombo()
 
     End Sub
 
@@ -43,35 +104,4 @@ Public Class editStudent
         con.Close()
     End Sub
 
-    Private Sub dtp_Click(sender As Object, e As EventArgs) Handles lblDtp.Click
-
-    End Sub
-
-    Private Sub btnUpdt_Click(sender As Object, e As EventArgs) Handles btnUpdt.Click
-
-        con.Open()
-
-        Dim command As OracleCommand = con.CreateCommand()
-        command.CommandText = "UPDATE STUDENT SET REG_ID" & cmbRn.Text & "','" & txtNm.Text & "','" & txtFn.Text & "','" & cmbYr.Text & "','" & dtp.Text & "','" & cmbAr.Text & "')"
-
-        cmbRn.Text = " "
-        txtNm.Text = " "
-        txtFn.Text = " "
-        cmbYr.Text = " "
-        dtp.Text = " "
-        cmbAr.Text = " "
-
-        If command.ExecuteNonQuery() > 0 Then
-            MsgBox("Data has been saved!")
-        Else
-            MsgBox("Error, while saving data!")
-        End If
-        Me.Refresh()
-        con.Close()
-
-    End Sub
-
-    Private Sub editStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.CenterToScreen()   'Make it Center of the screen
-    End Sub
 End Class

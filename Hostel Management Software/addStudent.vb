@@ -53,18 +53,4 @@ Public Class addStudent
 
     End Sub
 
-    'Private Sub btnBrws_Click(sender As Object, e As EventArgs) Handles btnBrws.Click
-    '
-    'Dim myStream As Stream = Nothing
-    'Dim ofgUp As New OpenFileDialog()
-    '   ofgUp.ShowDialog()
-    '  ofgUp.InitialDirectory = "c:\"
-    ' ofgUp.Filter = "jpg files (*.jpg)|*.jpg|jpeg files (*.jpeg)|png files (*.png)|All files (*.*)|*.jpg*"
-    'ofgUp.FilterIndex = 2
-    'ofgUp.RestoreDirectory = True
-    'txtPic.Text = ofgUp.FileName
-
-    'pbPic.Image = Image.FromFile(txtPic.Text)
-
-    'End Sub
 End Class
