@@ -28,12 +28,12 @@ Partial Class Login
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.llRn = New System.Windows.Forms.LinkLabel()
         Me.llFp = New System.Windows.Forms.LinkLabel()
-        Me.btnClr = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblPass = New System.Windows.Forms.Label()
-        Me.lblName = New System.Windows.Forms.Label()
-        Me.txtBoxPass = New System.Windows.Forms.TextBox()
-        Me.txtBoxName = New System.Windows.Forms.TextBox()
+        Me.lblUn = New System.Windows.Forms.Label()
+        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.txtUm = New System.Windows.Forms.TextBox()
         Me.Up.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,12 +66,12 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.llRn)
         Me.Panel1.Controls.Add(Me.llFp)
-        Me.Panel1.Controls.Add(Me.btnClr)
+        Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.lblPass)
-        Me.Panel1.Controls.Add(Me.lblName)
-        Me.Panel1.Controls.Add(Me.txtBoxPass)
-        Me.Panel1.Controls.Add(Me.txtBoxName)
+        Me.Panel1.Controls.Add(Me.lblUn)
+        Me.Panel1.Controls.Add(Me.txtPass)
+        Me.Panel1.Controls.Add(Me.txtUm)
         Me.Panel1.Location = New System.Drawing.Point(126, 121)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(332, 399)
@@ -111,18 +111,18 @@ Partial Class Login
         Me.llFp.TabStop = True
         Me.llFp.Text = "Forgot Password?"
         '
-        'btnClr
+        'btnClear
         '
-        Me.btnClr.BackColor = System.Drawing.Color.Gold
-        Me.btnClr.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClr.Location = New System.Drawing.Point(206, 292)
-        Me.btnClr.Name = "btnClr"
-        Me.btnClr.Size = New System.Drawing.Size(78, 32)
-        Me.btnClr.TabIndex = 5
-        Me.btnClr.Text = "Clear"
-        Me.btnClr.UseVisualStyleBackColor = False
+        Me.btnClear.BackColor = System.Drawing.Color.Gold
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnClear.Location = New System.Drawing.Point(206, 292)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(78, 32)
+        Me.btnClear.TabIndex = 5
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnLogin
         '
@@ -148,37 +148,37 @@ Partial Class Login
         Me.lblPass.TabIndex = 3
         Me.lblPass.Text = "Password"
         '
-        'lblName
+        'lblUn
         '
-        Me.lblName.AutoSize = True
-        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblName.Location = New System.Drawing.Point(46, 154)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(86, 16)
-        Me.lblName.TabIndex = 2
-        Me.lblName.Text = "User Name"
+        Me.lblUn.AutoSize = True
+        Me.lblUn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUn.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblUn.Location = New System.Drawing.Point(46, 154)
+        Me.lblUn.Name = "lblUn"
+        Me.lblUn.Size = New System.Drawing.Size(86, 16)
+        Me.lblUn.TabIndex = 2
+        Me.lblUn.Text = "User Name"
         '
-        'txtBoxPass
+        'txtPass
         '
-        Me.txtBoxPass.BackColor = System.Drawing.Color.White
-        Me.txtBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBoxPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBoxPass.Location = New System.Drawing.Point(48, 244)
-        Me.txtBoxPass.Name = "txtBoxPass"
-        Me.txtBoxPass.Size = New System.Drawing.Size(236, 22)
-        Me.txtBoxPass.TabIndex = 1
-        Me.txtBoxPass.UseSystemPasswordChar = True
+        Me.txtPass.BackColor = System.Drawing.Color.White
+        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Location = New System.Drawing.Point(48, 244)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(236, 22)
+        Me.txtPass.TabIndex = 1
+        Me.txtPass.UseSystemPasswordChar = True
         '
-        'txtBoxName
+        'txtUm
         '
-        Me.txtBoxName.BackColor = System.Drawing.Color.White
-        Me.txtBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBoxName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBoxName.Location = New System.Drawing.Point(48, 183)
-        Me.txtBoxName.Name = "txtBoxName"
-        Me.txtBoxName.Size = New System.Drawing.Size(236, 22)
-        Me.txtBoxName.TabIndex = 0
+        Me.txtUm.BackColor = System.Drawing.Color.White
+        Me.txtUm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtUm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUm.Location = New System.Drawing.Point(48, 183)
+        Me.txtUm.Name = "txtUm"
+        Me.txtUm.Size = New System.Drawing.Size(236, 22)
+        Me.txtUm.TabIndex = 0
         '
         'Login
         '
@@ -200,13 +200,13 @@ Partial Class Login
     End Sub
     Friend WithEvents Up As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents txtBoxPass As TextBox
-    Friend WithEvents txtBoxName As TextBox
-    Friend WithEvents lblName As Label
+    Friend WithEvents txtPass As TextBox
+    Friend WithEvents txtUm As TextBox
+    Friend WithEvents lblUn As Label
     Friend WithEvents lblTitle As Label
     Friend WithEvents llRn As LinkLabel
     Friend WithEvents llFp As LinkLabel
-    Friend WithEvents btnClr As Button
+    Friend WithEvents btnClear As Button
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblPass As Label
     Friend WithEvents PictureBox1 As PictureBox

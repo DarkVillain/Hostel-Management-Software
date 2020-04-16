@@ -47,8 +47,6 @@ Partial Class dash
         Me.DailyUsageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LeaveEntryToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExpensesEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.pnlDash = New System.Windows.Forms.Panel()
-        Me.lblBanner = New System.Windows.Forms.Label()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tsslMsg = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tsslNm = New System.Windows.Forms.ToolStripStatusLabel()
@@ -57,24 +55,20 @@ Partial Class dash
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.mnsDm.SuspendLayout()
-        Me.pnlDash.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnsDm
         '
-        Me.mnsDm.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.mnsDm.BackColor = System.Drawing.Color.DodgerBlue
-        Me.mnsDm.Dock = System.Windows.Forms.DockStyle.None
+        Me.mnsDm.BackColor = System.Drawing.Color.White
         Me.mnsDm.GripMargin = New System.Windows.Forms.Padding(8, 2, 0, 2)
         Me.mnsDm.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.mnsDm.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentToolStripMenuItem, Me.KitchenToolStripMenuItem, Me.UsageToolStripMenuItem, Me.StudentLeaveEntryToolStripMenuItem, Me.HostelExpensesToolStripMenuItem, Me.HostelBillingToolStripMenuItem, Me.ReportsToolStripMenuItem})
-        Me.mnsDm.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
-        Me.mnsDm.Location = New System.Drawing.Point(1, 60)
+        Me.mnsDm.Location = New System.Drawing.Point(0, 0)
         Me.mnsDm.Name = "mnsDm"
-        Me.mnsDm.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.mnsDm.Size = New System.Drawing.Size(792, 25)
+        Me.mnsDm.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.mnsDm.ShowItemToolTips = True
+        Me.mnsDm.Size = New System.Drawing.Size(1018, 25)
         Me.mnsDm.TabIndex = 0
         Me.mnsDm.Text = "MenuStrip1"
         '
@@ -162,6 +156,7 @@ Partial Class dash
         '
         Me.HostelExpensesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EnterExpensesToolStripMenuItem, Me.EditExpensesToolStripMenuItem})
         Me.HostelExpensesToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HostelExpensesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.HostelExpensesToolStripMenuItem.Name = "HostelExpensesToolStripMenuItem"
         Me.HostelExpensesToolStripMenuItem.Size = New System.Drawing.Size(119, 21)
         Me.HostelExpensesToolStripMenuItem.Text = "Hostel Expenses"
@@ -169,13 +164,13 @@ Partial Class dash
         'EnterExpensesToolStripMenuItem
         '
         Me.EnterExpensesToolStripMenuItem.Name = "EnterExpensesToolStripMenuItem"
-        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EnterExpensesToolStripMenuItem.Text = "Enter Expenses"
         '
         'EditExpensesToolStripMenuItem
         '
         Me.EditExpensesToolStripMenuItem.Name = "EditExpensesToolStripMenuItem"
-        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditExpensesToolStripMenuItem.Text = "Edit Expenses"
         '
         'HostelBillingToolStripMenuItem
@@ -189,7 +184,7 @@ Partial Class dash
         'BillsToolStripMenuItem
         '
         Me.BillsToolStripMenuItem.Name = "BillsToolStripMenuItem"
-        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
+        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BillsToolStripMenuItem.Text = "Bills"
         '
         'ReportsToolStripMenuItem
@@ -203,87 +198,71 @@ Partial Class dash
         'StudentReportsToolStripMenuItem
         '
         Me.StudentReportsToolStripMenuItem.Name = "StudentReportsToolStripMenuItem"
-        Me.StudentReportsToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.StudentReportsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.StudentReportsToolStripMenuItem.Text = "Student Report"
         '
         'MaterialReportToolStripMenuItem
         '
         Me.MaterialReportToolStripMenuItem.Name = "MaterialReportToolStripMenuItem"
-        Me.MaterialReportToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.MaterialReportToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.MaterialReportToolStripMenuItem.Text = "Material Report"
         '
         'DailyUsageToolStripMenuItem
         '
         Me.DailyUsageToolStripMenuItem.Name = "DailyUsageToolStripMenuItem"
-        Me.DailyUsageToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.DailyUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DailyUsageToolStripMenuItem.Text = "Daily Usage"
         '
         'LeaveEntryToolStripMenuItem1
         '
         Me.LeaveEntryToolStripMenuItem1.Name = "LeaveEntryToolStripMenuItem1"
-        Me.LeaveEntryToolStripMenuItem1.Size = New System.Drawing.Size(170, 22)
+        Me.LeaveEntryToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.LeaveEntryToolStripMenuItem1.Text = "Leave Entry"
         '
         'ExpensesEntryToolStripMenuItem
         '
         Me.ExpensesEntryToolStripMenuItem.Name = "ExpensesEntryToolStripMenuItem"
-        Me.ExpensesEntryToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.ExpensesEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExpensesEntryToolStripMenuItem.Text = "Expenses Entry"
-        '
-        'pnlDash
-        '
-        Me.pnlDash.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlDash.BackColor = System.Drawing.Color.DodgerBlue
-        Me.pnlDash.Controls.Add(Me.lblBanner)
-        Me.pnlDash.Location = New System.Drawing.Point(-1, 0)
-        Me.pnlDash.Name = "pnlDash"
-        Me.pnlDash.Size = New System.Drawing.Size(872, 66)
-        Me.pnlDash.TabIndex = 1
-        '
-        'lblBanner
-        '
-        Me.lblBanner.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblBanner.AutoSize = True
-        Me.lblBanner.Font = New System.Drawing.Font("Garamond", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBanner.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblBanner.Location = New System.Drawing.Point(225, 9)
-        Me.lblBanner.Name = "lblBanner"
-        Me.lblBanner.Size = New System.Drawing.Size(569, 33)
-        Me.lblBanner.TabIndex = 0
-        Me.lblBanner.Text = "WELCOME TO ASHROY BOYS HOSTEL "
-        Me.lblBanner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.White
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsslMsg, Me.tsslNm, Me.tsslBlnk, Me.tsslTd})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 460)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(869, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1018, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'tsslMsg
         '
+        Me.tsslMsg.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tsslMsg.ForeColor = System.Drawing.SystemColors.ControlText
         Me.tsslMsg.Name = "tsslMsg"
-        Me.tsslMsg.Size = New System.Drawing.Size(77, 17)
+        Me.tsslMsg.Size = New System.Drawing.Size(87, 17)
         Me.tsslMsg.Text = "Logged in as:"
         '
         'tsslNm
         '
+        Me.tsslNm.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tsslNm.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.tsslNm.Image = Global.Hostel_Management_Software.My.Resources.Resources.admin
         Me.tsslNm.Name = "tsslNm"
-        Me.tsslNm.Size = New System.Drawing.Size(119, 17)
-        Me.tsslNm.Text = "&login.txtBoxName"
+        Me.tsslNm.Size = New System.Drawing.Size(86, 17)
+        Me.tsslNm.Text = "&login.txtUn"
         '
         'tsslBlnk
         '
+        Me.tsslBlnk.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tsslBlnk.Name = "tsslBlnk"
-        Me.tsslBlnk.Size = New System.Drawing.Size(658, 17)
+        Me.tsslBlnk.Size = New System.Drawing.Size(739, 17)
         Me.tsslBlnk.Spring = True
         '
         'tsslTd
         '
+        Me.tsslTd.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tsslTd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.tsslTd.Name = "tsslTd"
         Me.tsslTd.Size = New System.Drawing.Size(0, 17)
         Me.tsslTd.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -292,19 +271,19 @@ Partial Class dash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkMagenta
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(869, 482)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.ClientSize = New System.Drawing.Size(1018, 482)
         Me.Controls.Add(Me.mnsDm)
-        Me.Controls.Add(Me.pnlDash)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Controls.Add(Me.StatusStrip1)
+        Me.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.MainMenuStrip = Me.mnsDm
         Me.Name = "dash"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
         Me.mnsDm.ResumeLayout(False)
         Me.mnsDm.PerformLayout()
-        Me.pnlDash.ResumeLayout(False)
-        Me.pnlDash.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -336,8 +315,6 @@ Partial Class dash
     Friend WithEvents DailyUsageToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LeaveEntryToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExpensesEntryToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents pnlDash As Panel
-    Friend WithEvents lblBanner As Label
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents tsslMsg As ToolStripStatusLabel
     Friend WithEvents tsslNm As ToolStripStatusLabel

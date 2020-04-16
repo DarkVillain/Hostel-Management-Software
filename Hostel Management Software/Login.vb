@@ -10,7 +10,7 @@
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtBoxName.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtUm.TextChanged
 
     End Sub
 
@@ -22,33 +22,25 @@
         username = "dark"
         password = "villain"
 
-        If txtBoxName.Text = username And txtBoxPass.Text = password Then
+        If txtUm.Text = username And txtPass.Text = password Then
             'dash.tsslNm.Text = txtBoxName.Text
             dash.Show()
             Me.Hide()
-        ElseIf txtBoxName.Text <> username Or txtBoxPass.Text <> password Then
+        ElseIf txtUm.Text <> username Or txtPass.Text <> password Then
             MsgBox("Username or password is incorrect!")
 
         End If
-        If txtBoxName.Text = username And txtBoxPass.Text = password Then
-            txtBoxName.Text = " "
-            txtBoxPass.Text = " "
+        If txtUm.Text = username And txtPass.Text = password Then
+            txtUm.Text = " "
+            txtPass.Text = " "
         End If
 
     End Sub
 
-    Private Sub txtBoxPass_TextChanged(sender As Object, e As EventArgs) Handles txtBoxPass.TextChanged
+    Private Sub btnClr_Click(sender As Object, e As EventArgs) Handles btnClear.Click
 
-    End Sub
-
-    Private Sub lblTitle_Click(sender As Object, e As EventArgs) Handles lblTitle.Click
-
-    End Sub
-
-    Private Sub btnClr_Click(sender As Object, e As EventArgs) Handles btnClr.Click
-
-        txtBoxName.Clear()
-        txtBoxPass.Clear()
+        txtUm.Clear()
+        txtPass.Clear()
 
     End Sub
 

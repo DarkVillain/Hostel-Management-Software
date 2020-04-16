@@ -2,10 +2,15 @@
 Public Class dash
     Private Sub dash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Call CenterToScreen()
+        Me.FormBorderStyle = FormBorderStyle.Sizable
+        Me.WindowState = FormWindowState.Maximized
+        ' Above line will make it fullscreen
+
         Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
-        tsslNm.Text = Login.txtBoxName.Text
+        tsslNm.Text = Login.txtUm.Text
         tsslTd.Text = Now
-        Me.CenterToScreen()
+
 
     End Sub
 
