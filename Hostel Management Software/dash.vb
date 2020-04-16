@@ -1,5 +1,9 @@
 ﻿Imports Oracle.DataAccess.Client
+Imports System.IO
 Public Class dash
+
+    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
+
     Private Sub dash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Call CenterToScreen()
@@ -10,14 +14,38 @@ Public Class dash
         Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
         tsslNm.Text = Login.txtUm.Text
         tsslTd.Text = Now
+        Me.Refresh()
 
+        btnClick.PerformClick()
+        Timer2.Start()
+        Timer2.Interval = 1000
+
+        updateGrid()
 
     End Sub
 
-    Private Sub StudentToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StudentToolStripMenuItem.Click
+    Private Sub updateGrid()
 
 
+        dgv.Columns.Clear()
+        dgv.Rows.Clear()
 
+        dgv.Columns.Add("colREG_ID", "Reg id")
+        dgv.Columns.Add("colNAME", "Name")
+        dgv.Columns.Add("colCLASS", "Class")
+        dgv.Columns.Add("colDATED", "Date Joined")
+        dgv.Columns.Add("colALLOC_ROOM", "Room")
+        dgv.Columns.Add("colPHONE", "Phone No")
+
+        con.Open()
+        Dim command As OracleCommand = con.CreateCommand()
+        command.CommandText = "SELECT * FROM STUDENT"
+        Dim oraclereader As OracleDataReader = command.ExecuteReader()
+
+        While oraclereader.Read()
+            dgv.Rows.Add({oraclereader.Item("REG_ID"), oraclereader.Item("NAME"), oraclereader.Item("ALLOC_ROOM")})
+        End While
+        con.Close()
     End Sub
 
     Private Sub AddToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddToolStripMenuItem.Click
@@ -132,6 +160,30 @@ Public Class dash
     End Sub
 
     Private Sub tsslNm_Click(sender As Object, e As EventArgs) Handles tsslNm.Click
+
+    End Sub
+
+    Private Sub btnClick_Click(sender As Object, e As EventArgs) Handles btnClick.Click
+
+        updateGrid()
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        Timer1.Start()
+        tsslTd.Text = Now
+
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+
+        btnClick.PerformClick()
+
+    End Sub
+
+    Private Sub dgv_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv.CellContentClick
+
 
     End Sub
 End Class

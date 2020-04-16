@@ -54,8 +54,12 @@ Partial Class dash
         Me.tsslTd = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.lblStudent = New System.Windows.Forms.Label()
+        Me.btnClick = New System.Windows.Forms.Button()
         Me.mnsDm.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mnsDm
@@ -164,13 +168,13 @@ Partial Class dash
         'EnterExpensesToolStripMenuItem
         '
         Me.EnterExpensesToolStripMenuItem.Name = "EnterExpensesToolStripMenuItem"
-        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnterExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.EnterExpensesToolStripMenuItem.Text = "Enter Expenses"
         '
         'EditExpensesToolStripMenuItem
         '
         Me.EditExpensesToolStripMenuItem.Name = "EditExpensesToolStripMenuItem"
-        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditExpensesToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.EditExpensesToolStripMenuItem.Text = "Edit Expenses"
         '
         'HostelBillingToolStripMenuItem
@@ -184,7 +188,7 @@ Partial Class dash
         'BillsToolStripMenuItem
         '
         Me.BillsToolStripMenuItem.Name = "BillsToolStripMenuItem"
-        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BillsToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.BillsToolStripMenuItem.Text = "Bills"
         '
         'ReportsToolStripMenuItem
@@ -198,31 +202,31 @@ Partial Class dash
         'StudentReportsToolStripMenuItem
         '
         Me.StudentReportsToolStripMenuItem.Name = "StudentReportsToolStripMenuItem"
-        Me.StudentReportsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StudentReportsToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.StudentReportsToolStripMenuItem.Text = "Student Report"
         '
         'MaterialReportToolStripMenuItem
         '
         Me.MaterialReportToolStripMenuItem.Name = "MaterialReportToolStripMenuItem"
-        Me.MaterialReportToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MaterialReportToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.MaterialReportToolStripMenuItem.Text = "Material Report"
         '
         'DailyUsageToolStripMenuItem
         '
         Me.DailyUsageToolStripMenuItem.Name = "DailyUsageToolStripMenuItem"
-        Me.DailyUsageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DailyUsageToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.DailyUsageToolStripMenuItem.Text = "Daily Usage"
         '
         'LeaveEntryToolStripMenuItem1
         '
         Me.LeaveEntryToolStripMenuItem1.Name = "LeaveEntryToolStripMenuItem1"
-        Me.LeaveEntryToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LeaveEntryToolStripMenuItem1.Size = New System.Drawing.Size(170, 22)
         Me.LeaveEntryToolStripMenuItem1.Text = "Leave Entry"
         '
         'ExpensesEntryToolStripMenuItem
         '
         Me.ExpensesEntryToolStripMenuItem.Name = "ExpensesEntryToolStripMenuItem"
-        Me.ExpensesEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExpensesEntryToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.ExpensesEntryToolStripMenuItem.Text = "Expenses Entry"
         '
         'StatusStrip1
@@ -256,7 +260,7 @@ Partial Class dash
         '
         Me.tsslBlnk.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tsslBlnk.Name = "tsslBlnk"
-        Me.tsslBlnk.Size = New System.Drawing.Size(739, 17)
+        Me.tsslBlnk.Size = New System.Drawing.Size(830, 17)
         Me.tsslBlnk.Spring = True
         '
         'tsslTd
@@ -267,6 +271,47 @@ Partial Class dash
         Me.tsslTd.Size = New System.Drawing.Size(0, 17)
         Me.tsslTd.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Timer1
+        '
+        '
+        'Timer2
+        '
+        '
+        'dgv
+        '
+        Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
+        Me.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders
+        Me.dgv.BackgroundColor = System.Drawing.Color.White
+        Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv.GridColor = System.Drawing.Color.Black
+        Me.dgv.Location = New System.Drawing.Point(12, 85)
+        Me.dgv.Name = "dgv"
+        Me.dgv.Size = New System.Drawing.Size(792, 372)
+        Me.dgv.TabIndex = 3
+        '
+        'lblStudent
+        '
+        Me.lblStudent.AutoSize = True
+        Me.lblStudent.BackColor = System.Drawing.Color.Transparent
+        Me.lblStudent.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStudent.ForeColor = System.Drawing.Color.Black
+        Me.lblStudent.Location = New System.Drawing.Point(12, 53)
+        Me.lblStudent.Name = "lblStudent"
+        Me.lblStudent.Size = New System.Drawing.Size(196, 20)
+        Me.lblStudent.TabIndex = 4
+        Me.lblStudent.Text = "Students Residing Now"
+        '
+        'btnClick
+        '
+        Me.btnClick.BackColor = System.Drawing.Color.Transparent
+        Me.btnClick.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnClick.Location = New System.Drawing.Point(262, 53)
+        Me.btnClick.Name = "btnClick"
+        Me.btnClick.Size = New System.Drawing.Size(75, 23)
+        Me.btnClick.TabIndex = 5
+        Me.btnClick.UseVisualStyleBackColor = False
+        Me.btnClick.Visible = False
+        '
         'dash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -275,6 +320,9 @@ Partial Class dash
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1018, 482)
+        Me.Controls.Add(Me.btnClick)
+        Me.Controls.Add(Me.lblStudent)
+        Me.Controls.Add(Me.dgv)
         Me.Controls.Add(Me.mnsDm)
         Me.Controls.Add(Me.StatusStrip1)
         Me.ForeColor = System.Drawing.SystemColors.ButtonFace
@@ -286,6 +334,7 @@ Partial Class dash
         Me.mnsDm.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -322,4 +371,7 @@ Partial Class dash
     Friend WithEvents tsslTd As ToolStripStatusLabel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents dgv As DataGridView
+    Friend WithEvents lblStudent As Label
+    Friend WithEvents btnClick As Button
 End Class
