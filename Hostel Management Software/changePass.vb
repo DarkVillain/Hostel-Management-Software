@@ -1,7 +1,11 @@
-﻿Public Class changePass
+﻿Imports System.IO
+Imports System.Configuration
+Imports Oracle.DataAccess.Client
+Public Class changePass
+
+    Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
+
     Private Sub btnCng_Click(sender As Object, e As EventArgs) Handles btnCng.Click
-
-
 
     End Sub
 
