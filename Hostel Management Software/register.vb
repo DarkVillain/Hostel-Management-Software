@@ -18,27 +18,29 @@ Public Class register
 
         Dim command As Oracle.DataAccess.Client.OracleCommand = con.CreateCommand()
 
-        command.CommandText = "INSERT INTO LOGIN VALUES ('" & txtUn.Text & "','" & txtPass.Text & "','" & txtFn.Text & "','" & cmbGnd.Text & "','" & dtpDob.Text & "','" & txtPn.Text & "','" & txtMl.Text & "')"
+        If txtPass.Text = txtCnPass.Text Then 'Change txtPass & txtCnPass to password & Confirm password
 
-        txtUn.Text = " "
-        txtPass.Text = " "
-        'dtp.Value = " "
-        txtFn.Text = " "
-        cmbGnd.Text = " "
-        'pbPic.Image = Nothing
-        'txtPic.Text = " "
-        'dtpDob.Text = " "
-        txtPn.Text = " "
-        txtMl.Text = " "
+            command.CommandText = "INSERT INTO LOGIN VALUES ('" & txtUn.Text & "','" & txtPass.Text & "','" & txtFn.Text & "','" & cmbGnd.Text & "','" & dtpDob.Text & "','" & txtPn.Text & "','" & txtMl.Text & "')"
 
-        If command.ExecuteNonQuery() > 0 Then
-            MsgBox("You have registered yourself succsessfully! Now login.")
-            Login.Show()
-            Me.Hide()
+            txtUn.Text = " "
+            txtPass.Text = " "
+            txtCnPass.Text = " "
+            txtFn.Text = " "
+            cmbGnd.Text = " "
+            txtPn.Text = " "
+            txtMl.Text = " "
+
+            If command.ExecuteNonQuery() > 0 Then
+                MsgBox("You have registered yourself succsessfully! Now please login.")
+                Login.Show()
+                Me.Hide()
+            Else
+
+
+                MsgBox("Error, while saving data!")
+            End If
         Else
-
-
-            MsgBox("Error, while saving data!")
+            MsgBox("Password and Confirm Password fields doesn't match!")
         End If
 
         con.Close()

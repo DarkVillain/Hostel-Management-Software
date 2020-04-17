@@ -49,7 +49,7 @@ Partial Class register
         Me.lblFn.AutoSize = True
         Me.lblFn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFn.ForeColor = System.Drawing.Color.White
-        Me.lblFn.Location = New System.Drawing.Point(79, 214)
+        Me.lblFn.Location = New System.Drawing.Point(30, 214)
         Me.lblFn.Name = "lblFn"
         Me.lblFn.Size = New System.Drawing.Size(78, 16)
         Me.lblFn.TabIndex = 0
@@ -60,29 +60,29 @@ Partial Class register
         Me.lblUn.AutoSize = True
         Me.lblUn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUn.ForeColor = System.Drawing.Color.White
-        Me.lblUn.Location = New System.Drawing.Point(76, 81)
+        Me.lblUn.Location = New System.Drawing.Point(27, 81)
         Me.lblUn.Name = "lblUn"
-        Me.lblUn.Size = New System.Drawing.Size(82, 16)
+        Me.lblUn.Size = New System.Drawing.Size(86, 16)
         Me.lblUn.TabIndex = 2
-        Me.lblUn.Text = "UserName"
+        Me.lblUn.Text = "User Name"
         '
         'lblPass
         '
         Me.lblPass.AutoSize = True
         Me.lblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPass.ForeColor = System.Drawing.Color.White
-        Me.lblPass.Location = New System.Drawing.Point(76, 151)
+        Me.lblPass.Location = New System.Drawing.Point(27, 151)
         Me.lblPass.Name = "lblPass"
-        Me.lblPass.Size = New System.Drawing.Size(76, 16)
+        Me.lblPass.Size = New System.Drawing.Size(110, 16)
         Me.lblPass.TabIndex = 3
-        Me.lblPass.Text = "Password"
+        Me.lblPass.Text = "New Password"
         '
         'lblCnPass
         '
         Me.lblCnPass.AutoSize = True
         Me.lblCnPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCnPass.ForeColor = System.Drawing.Color.White
-        Me.lblCnPass.Location = New System.Drawing.Point(290, 151)
+        Me.lblCnPass.Location = New System.Drawing.Point(241, 151)
         Me.lblCnPass.Name = "lblCnPass"
         Me.lblCnPass.Size = New System.Drawing.Size(132, 16)
         Me.lblCnPass.TabIndex = 4
@@ -93,7 +93,7 @@ Partial Class register
         Me.lblGnd.AutoSize = True
         Me.lblGnd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGnd.ForeColor = System.Drawing.Color.White
-        Me.lblGnd.Location = New System.Drawing.Point(77, 279)
+        Me.lblGnd.Location = New System.Drawing.Point(28, 279)
         Me.lblGnd.Name = "lblGnd"
         Me.lblGnd.Size = New System.Drawing.Size(59, 16)
         Me.lblGnd.TabIndex = 5
@@ -104,7 +104,7 @@ Partial Class register
         Me.lblDob.AutoSize = True
         Me.lblDob.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDob.ForeColor = System.Drawing.Color.White
-        Me.lblDob.Location = New System.Drawing.Point(290, 283)
+        Me.lblDob.Location = New System.Drawing.Point(241, 283)
         Me.lblDob.Name = "lblDob"
         Me.lblDob.Size = New System.Drawing.Size(93, 16)
         Me.lblDob.TabIndex = 6
@@ -115,7 +115,7 @@ Partial Class register
         Me.lblPn.AutoSize = True
         Me.lblPn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPn.ForeColor = System.Drawing.Color.White
-        Me.lblPn.Location = New System.Drawing.Point(76, 342)
+        Me.lblPn.Location = New System.Drawing.Point(27, 342)
         Me.lblPn.Name = "lblPn"
         Me.lblPn.Size = New System.Drawing.Size(80, 16)
         Me.lblPn.TabIndex = 7
@@ -126,7 +126,7 @@ Partial Class register
         Me.lblRf.AutoSize = True
         Me.lblRf.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRf.ForeColor = System.Drawing.Color.White
-        Me.lblRf.Location = New System.Drawing.Point(160, 11)
+        Me.lblRf.Location = New System.Drawing.Point(111, 11)
         Me.lblRf.Name = "lblRf"
         Me.lblRf.Size = New System.Drawing.Size(202, 26)
         Me.lblRf.TabIndex = 8
@@ -134,28 +134,28 @@ Partial Class register
         '
         'txtFn
         '
-        Me.txtFn.Location = New System.Drawing.Point(81, 245)
+        Me.txtFn.Location = New System.Drawing.Point(32, 245)
         Me.txtFn.Name = "txtFn"
         Me.txtFn.Size = New System.Drawing.Size(363, 20)
         Me.txtFn.TabIndex = 10
         '
         'txtUn
         '
-        Me.txtUn.Location = New System.Drawing.Point(79, 110)
+        Me.txtUn.Location = New System.Drawing.Point(30, 110)
         Me.txtUn.Name = "txtUn"
         Me.txtUn.Size = New System.Drawing.Size(363, 20)
         Me.txtUn.TabIndex = 12
         '
         'txtPass
         '
-        Me.txtPass.Location = New System.Drawing.Point(79, 179)
+        Me.txtPass.Location = New System.Drawing.Point(30, 179)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(149, 20)
         Me.txtPass.TabIndex = 13
         '
         'txtCnPass
         '
-        Me.txtCnPass.Location = New System.Drawing.Point(293, 179)
+        Me.txtCnPass.Location = New System.Drawing.Point(244, 179)
         Me.txtCnPass.Name = "txtCnPass"
         Me.txtCnPass.Size = New System.Drawing.Size(149, 20)
         Me.txtCnPass.TabIndex = 14
@@ -163,14 +163,14 @@ Partial Class register
         'dtpDob
         '
         Me.dtpDob.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpDob.Location = New System.Drawing.Point(293, 309)
+        Me.dtpDob.Location = New System.Drawing.Point(244, 309)
         Me.dtpDob.Name = "dtpDob"
         Me.dtpDob.Size = New System.Drawing.Size(149, 20)
         Me.dtpDob.TabIndex = 17
         '
         'txtPn
         '
-        Me.txtPn.Location = New System.Drawing.Point(79, 371)
+        Me.txtPn.Location = New System.Drawing.Point(30, 371)
         Me.txtPn.Name = "txtPn"
         Me.txtPn.Size = New System.Drawing.Size(363, 20)
         Me.txtPn.TabIndex = 18
@@ -179,7 +179,7 @@ Partial Class register
         '
         Me.btnReg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReg.ForeColor = System.Drawing.Color.DarkGreen
-        Me.btnReg.Location = New System.Drawing.Point(81, 483)
+        Me.btnReg.Location = New System.Drawing.Point(32, 483)
         Me.btnReg.Name = "btnReg"
         Me.btnReg.Size = New System.Drawing.Size(116, 30)
         Me.btnReg.TabIndex = 19
@@ -191,7 +191,7 @@ Partial Class register
         Me.lblMl.AutoSize = True
         Me.lblMl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMl.ForeColor = System.Drawing.Color.White
-        Me.lblMl.Location = New System.Drawing.Point(79, 403)
+        Me.lblMl.Location = New System.Drawing.Point(30, 403)
         Me.lblMl.Name = "lblMl"
         Me.lblMl.Size = New System.Drawing.Size(52, 16)
         Me.lblMl.TabIndex = 21
@@ -199,7 +199,7 @@ Partial Class register
         '
         'txtMl
         '
-        Me.txtMl.Location = New System.Drawing.Point(81, 433)
+        Me.txtMl.Location = New System.Drawing.Point(32, 433)
         Me.txtMl.Name = "txtMl"
         Me.txtMl.Size = New System.Drawing.Size(363, 20)
         Me.txtMl.TabIndex = 22
@@ -208,7 +208,7 @@ Partial Class register
         '
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.SteelBlue
-        Me.btnLogin.Location = New System.Drawing.Point(328, 483)
+        Me.btnLogin.Location = New System.Drawing.Point(279, 483)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(116, 30)
         Me.btnLogin.TabIndex = 23
@@ -220,7 +220,7 @@ Partial Class register
         Me.txtOr.AutoSize = True
         Me.txtOr.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtOr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtOr.Location = New System.Drawing.Point(248, 490)
+        Me.txtOr.Location = New System.Drawing.Point(199, 490)
         Me.txtOr.Name = "txtOr"
         Me.txtOr.Size = New System.Drawing.Size(20, 16)
         Me.txtOr.TabIndex = 24
@@ -230,7 +230,7 @@ Partial Class register
         '
         Me.cmbGnd.FormattingEnabled = True
         Me.cmbGnd.Items.AddRange(New Object() {"Male", "Female", "Others"})
-        Me.cmbGnd.Location = New System.Drawing.Point(81, 308)
+        Me.cmbGnd.Location = New System.Drawing.Point(32, 308)
         Me.cmbGnd.Name = "cmbGnd"
         Me.cmbGnd.Size = New System.Drawing.Size(148, 21)
         Me.cmbGnd.TabIndex = 25
@@ -240,7 +240,7 @@ Partial Class register
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DodgerBlue
-        Me.ClientSize = New System.Drawing.Size(530, 525)
+        Me.ClientSize = New System.Drawing.Size(419, 525)
         Me.Controls.Add(Me.cmbGnd)
         Me.Controls.Add(Me.txtOr)
         Me.Controls.Add(Me.btnLogin)
