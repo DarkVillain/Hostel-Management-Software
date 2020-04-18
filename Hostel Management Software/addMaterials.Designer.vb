@@ -23,16 +23,18 @@ Partial Class addMaterials
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblAm = New System.Windows.Forms.Label()
-        Me.lblMt = New System.Windows.Forms.Label()
+        Me.lblMn = New System.Windows.Forms.Label()
         Me.lblPu = New System.Windows.Forms.Label()
         Me.lblUn = New System.Windows.Forms.Label()
-        Me.txtMt = New System.Windows.Forms.TextBox()
+        Me.txtMn = New System.Windows.Forms.TextBox()
         Me.txtPu = New System.Windows.Forms.TextBox()
         Me.cmbUn = New System.Windows.Forms.ComboBox()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnBck = New System.Windows.Forms.Button()
         Me.txtMi = New System.Windows.Forms.TextBox()
         Me.lblMi = New System.Windows.Forms.Label()
+        Me.txtAm = New System.Windows.Forms.TextBox()
+        Me.lblMu = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblAm
@@ -40,29 +42,29 @@ Partial Class addMaterials
         Me.lblAm.AutoSize = True
         Me.lblAm.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAm.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblAm.Location = New System.Drawing.Point(253, 37)
+        Me.lblAm.Location = New System.Drawing.Point(90, 9)
         Me.lblAm.Name = "lblAm"
         Me.lblAm.Size = New System.Drawing.Size(136, 24)
         Me.lblAm.TabIndex = 0
         Me.lblAm.Text = "Add Materials"
         '
-        'lblMt
+        'lblMn
         '
-        Me.lblMt.AutoSize = True
-        Me.lblMt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMt.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblMt.Location = New System.Drawing.Point(29, 179)
-        Me.lblMt.Name = "lblMt"
-        Me.lblMt.Size = New System.Drawing.Size(96, 16)
-        Me.lblMt.TabIndex = 1
-        Me.lblMt.Text = "Material Name"
+        Me.lblMn.AutoSize = True
+        Me.lblMn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMn.ForeColor = System.Drawing.SystemColors.Control
+        Me.lblMn.Location = New System.Drawing.Point(29, 149)
+        Me.lblMn.Name = "lblMn"
+        Me.lblMn.Size = New System.Drawing.Size(96, 16)
+        Me.lblMn.TabIndex = 1
+        Me.lblMn.Text = "Material Name"
         '
         'lblPu
         '
         Me.lblPu.AutoSize = True
         Me.lblPu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPu.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblPu.Location = New System.Drawing.Point(29, 228)
+        Me.lblPu.Location = New System.Drawing.Point(29, 190)
         Me.lblPu.Name = "lblPu"
         Me.lblPu.Size = New System.Drawing.Size(88, 16)
         Me.lblPu.TabIndex = 2
@@ -73,26 +75,26 @@ Partial Class addMaterials
         Me.lblUn.AutoSize = True
         Me.lblUn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUn.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblUn.Location = New System.Drawing.Point(29, 278)
+        Me.lblUn.Location = New System.Drawing.Point(29, 279)
         Me.lblUn.Name = "lblUn"
         Me.lblUn.Size = New System.Drawing.Size(31, 16)
         Me.lblUn.TabIndex = 3
         Me.lblUn.Text = "Unit"
         '
-        'txtMt
+        'txtMn
         '
-        Me.txtMt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMt.Location = New System.Drawing.Point(170, 176)
-        Me.txtMt.Name = "txtMt"
-        Me.txtMt.Size = New System.Drawing.Size(100, 22)
-        Me.txtMt.TabIndex = 4
+        Me.txtMn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMn.Location = New System.Drawing.Point(170, 146)
+        Me.txtMn.Name = "txtMn"
+        Me.txtMn.Size = New System.Drawing.Size(122, 22)
+        Me.txtMn.TabIndex = 4
         '
         'txtPu
         '
         Me.txtPu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPu.Location = New System.Drawing.Point(170, 228)
+        Me.txtPu.Location = New System.Drawing.Point(170, 190)
         Me.txtPu.Name = "txtPu"
-        Me.txtPu.Size = New System.Drawing.Size(100, 22)
+        Me.txtPu.Size = New System.Drawing.Size(122, 22)
         Me.txtPu.TabIndex = 5
         '
         'cmbUn
@@ -100,9 +102,9 @@ Partial Class addMaterials
         Me.cmbUn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUn.FormattingEnabled = True
         Me.cmbUn.Items.AddRange(New Object() {"KiloGrams", "Liters", "Grams"})
-        Me.cmbUn.Location = New System.Drawing.Point(170, 273)
+        Me.cmbUn.Location = New System.Drawing.Point(170, 274)
         Me.cmbUn.Name = "cmbUn"
-        Me.cmbUn.Size = New System.Drawing.Size(100, 24)
+        Me.cmbUn.Size = New System.Drawing.Size(122, 24)
         Me.cmbUn.TabIndex = 6
         '
         'btnAdd
@@ -128,9 +130,9 @@ Partial Class addMaterials
         'txtMi
         '
         Me.txtMi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMi.Location = New System.Drawing.Point(170, 128)
+        Me.txtMi.Location = New System.Drawing.Point(170, 98)
         Me.txtMi.Name = "txtMi"
-        Me.txtMi.Size = New System.Drawing.Size(100, 22)
+        Me.txtMi.Size = New System.Drawing.Size(122, 22)
         Me.txtMi.TabIndex = 10
         '
         'lblMi
@@ -138,28 +140,49 @@ Partial Class addMaterials
         Me.lblMi.AutoSize = True
         Me.lblMi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMi.ForeColor = System.Drawing.SystemColors.Control
-        Me.lblMi.Location = New System.Drawing.Point(29, 131)
+        Me.lblMi.Location = New System.Drawing.Point(29, 101)
         Me.lblMi.Name = "lblMi"
         Me.lblMi.Size = New System.Drawing.Size(70, 16)
         Me.lblMi.TabIndex = 9
         Me.lblMi.Text = "Material id"
+        '
+        'txtAm
+        '
+        Me.txtAm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAm.Location = New System.Drawing.Point(170, 235)
+        Me.txtAm.Name = "txtAm"
+        Me.txtAm.Size = New System.Drawing.Size(122, 22)
+        Me.txtAm.TabIndex = 12
+        '
+        'lblMu
+        '
+        Me.lblMu.AutoSize = True
+        Me.lblMu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMu.ForeColor = System.Drawing.SystemColors.Control
+        Me.lblMu.Location = New System.Drawing.Point(29, 235)
+        Me.lblMu.Name = "lblMu"
+        Me.lblMu.Size = New System.Drawing.Size(56, 16)
+        Me.lblMu.TabIndex = 11
+        Me.lblMu.Text = "Quantity"
         '
         'addMaterials
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Red
-        Me.ClientSize = New System.Drawing.Size(725, 450)
+        Me.ClientSize = New System.Drawing.Size(325, 398)
+        Me.Controls.Add(Me.txtAm)
+        Me.Controls.Add(Me.lblMu)
         Me.Controls.Add(Me.txtMi)
         Me.Controls.Add(Me.lblMi)
         Me.Controls.Add(Me.btnBck)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.cmbUn)
         Me.Controls.Add(Me.txtPu)
-        Me.Controls.Add(Me.txtMt)
+        Me.Controls.Add(Me.txtMn)
         Me.Controls.Add(Me.lblUn)
         Me.Controls.Add(Me.lblPu)
-        Me.Controls.Add(Me.lblMt)
+        Me.Controls.Add(Me.lblMn)
         Me.Controls.Add(Me.lblAm)
         Me.Name = "addMaterials"
         Me.ResumeLayout(False)
@@ -168,14 +191,16 @@ Partial Class addMaterials
     End Sub
 
     Friend WithEvents lblAm As Label
-    Friend WithEvents lblMt As Label
+    Friend WithEvents lblMn As Label
     Friend WithEvents lblPu As Label
     Friend WithEvents lblUn As Label
-    Friend WithEvents txtMt As TextBox
+    Friend WithEvents txtMn As TextBox
     Friend WithEvents txtPu As TextBox
     Friend WithEvents cmbUn As ComboBox
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnBck As Button
     Friend WithEvents txtMi As TextBox
     Friend WithEvents lblMi As Label
+    Friend WithEvents txtAm As TextBox
+    Friend WithEvents lblMu As Label
 End Class
