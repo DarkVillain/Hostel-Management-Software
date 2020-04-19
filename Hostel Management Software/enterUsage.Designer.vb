@@ -32,13 +32,13 @@ Partial Class enterUsage
         Me.lblTd = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnBck = New System.Windows.Forms.Button()
-        Me.cmbUi = New System.Windows.Forms.ComboBox()
-        Me.cmbUs = New System.Windows.Forms.ComboBox()
         Me.txtMn = New System.Windows.Forms.TextBox()
         Me.txtPu = New System.Windows.Forms.TextBox()
-        Me.txtUn = New System.Windows.Forms.TextBox()
         Me.txtPc = New System.Windows.Forms.TextBox()
-        Me.dtpTd = New System.Windows.Forms.DateTimePicker()
+        Me.dtp = New System.Windows.Forms.DateTimePicker()
+        Me.txtAm = New System.Windows.Forms.TextBox()
+        Me.txtUi = New System.Windows.Forms.TextBox()
+        Me.cmbUn = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblMu
@@ -141,64 +141,63 @@ Partial Class enterUsage
         Me.btnBck.Text = "BACK"
         Me.btnBck.UseVisualStyleBackColor = True
         '
-        'cmbUi
-        '
-        Me.cmbUi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbUi.FormattingEnabled = True
-        Me.cmbUi.Location = New System.Drawing.Point(198, 53)
-        Me.cmbUi.Name = "cmbUi"
-        Me.cmbUi.Size = New System.Drawing.Size(100, 24)
-        Me.cmbUi.TabIndex = 10
-        '
-        'cmbUs
-        '
-        Me.cmbUs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbUs.FormattingEnabled = True
-        Me.cmbUs.Location = New System.Drawing.Point(198, 227)
-        Me.cmbUs.Name = "cmbUs"
-        Me.cmbUs.Size = New System.Drawing.Size(100, 24)
-        Me.cmbUs.TabIndex = 11
-        '
         'txtMn
         '
         Me.txtMn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMn.Location = New System.Drawing.Point(198, 100)
+        Me.txtMn.Location = New System.Drawing.Point(171, 100)
         Me.txtMn.Name = "txtMn"
-        Me.txtMn.Size = New System.Drawing.Size(100, 22)
-        Me.txtMn.TabIndex = 12
+        Me.txtMn.Size = New System.Drawing.Size(145, 22)
+        Me.txtMn.TabIndex = 2
         '
         'txtPu
         '
         Me.txtPu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPu.Location = New System.Drawing.Point(198, 144)
+        Me.txtPu.Location = New System.Drawing.Point(171, 144)
         Me.txtPu.Name = "txtPu"
-        Me.txtPu.Size = New System.Drawing.Size(100, 22)
-        Me.txtPu.TabIndex = 13
-        '
-        'txtUn
-        '
-        Me.txtUn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUn.Location = New System.Drawing.Point(198, 189)
-        Me.txtUn.Name = "txtUn"
-        Me.txtUn.Size = New System.Drawing.Size(100, 22)
-        Me.txtUn.TabIndex = 14
+        Me.txtPu.Size = New System.Drawing.Size(145, 22)
+        Me.txtPu.TabIndex = 3
         '
         'txtPc
         '
         Me.txtPc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPc.Location = New System.Drawing.Point(198, 274)
+        Me.txtPc.Location = New System.Drawing.Point(171, 274)
         Me.txtPc.Name = "txtPc"
-        Me.txtPc.Size = New System.Drawing.Size(100, 22)
-        Me.txtPc.TabIndex = 15
+        Me.txtPc.Size = New System.Drawing.Size(145, 22)
+        Me.txtPc.TabIndex = 6
         '
-        'dtpTd
+        'dtp
         '
-        Me.dtpTd.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpTd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpTd.Location = New System.Drawing.Point(198, 308)
-        Me.dtpTd.Name = "dtpTd"
-        Me.dtpTd.Size = New System.Drawing.Size(100, 22)
-        Me.dtpTd.TabIndex = 16
+        Me.dtp.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtp.Location = New System.Drawing.Point(171, 313)
+        Me.dtp.Name = "dtp"
+        Me.dtp.Size = New System.Drawing.Size(145, 22)
+        Me.dtp.TabIndex = 7
+        '
+        'txtAm
+        '
+        Me.txtAm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAm.Location = New System.Drawing.Point(171, 232)
+        Me.txtAm.Name = "txtAm"
+        Me.txtAm.Size = New System.Drawing.Size(145, 22)
+        Me.txtAm.TabIndex = 5
+        '
+        'txtUi
+        '
+        Me.txtUi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUi.Location = New System.Drawing.Point(171, 55)
+        Me.txtUi.Name = "txtUi"
+        Me.txtUi.Size = New System.Drawing.Size(145, 22)
+        Me.txtUi.TabIndex = 1
+        '
+        'cmbUn
+        '
+        Me.cmbUn.FormattingEnabled = True
+        Me.cmbUn.Items.AddRange(New Object() {"KiloGrams", "Liter", "Grams"})
+        Me.cmbUn.Location = New System.Drawing.Point(171, 192)
+        Me.cmbUn.Name = "cmbUn"
+        Me.cmbUn.Size = New System.Drawing.Size(145, 21)
+        Me.cmbUn.TabIndex = 4
         '
         'enterUsage
         '
@@ -206,13 +205,13 @@ Partial Class enterUsage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSeaGreen
         Me.ClientSize = New System.Drawing.Size(349, 450)
-        Me.Controls.Add(Me.dtpTd)
+        Me.Controls.Add(Me.cmbUn)
+        Me.Controls.Add(Me.txtUi)
+        Me.Controls.Add(Me.txtAm)
+        Me.Controls.Add(Me.dtp)
         Me.Controls.Add(Me.txtPc)
-        Me.Controls.Add(Me.txtUn)
         Me.Controls.Add(Me.txtPu)
         Me.Controls.Add(Me.txtMn)
-        Me.Controls.Add(Me.cmbUs)
-        Me.Controls.Add(Me.cmbUi)
         Me.Controls.Add(Me.btnBck)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.lblTd)
@@ -239,11 +238,11 @@ Partial Class enterUsage
     Friend WithEvents lblTd As Label
     Friend WithEvents btnSave As Button
     Friend WithEvents btnBck As Button
-    Friend WithEvents cmbUi As ComboBox
-    Friend WithEvents cmbUs As ComboBox
     Friend WithEvents txtMn As TextBox
     Friend WithEvents txtPu As TextBox
-    Friend WithEvents txtUn As TextBox
     Friend WithEvents txtPc As TextBox
-    Friend WithEvents dtpTd As DateTimePicker
+    Friend WithEvents dtp As DateTimePicker
+    Friend WithEvents txtAm As TextBox
+    Friend WithEvents txtUi As TextBox
+    Friend WithEvents cmbUn As ComboBox
 End Class

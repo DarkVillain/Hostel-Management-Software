@@ -281,9 +281,7 @@ Partial Class dash
         '
         Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders
-        Me.dgv.BackgroundColor = System.Drawing.Color.White
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.GridColor = System.Drawing.Color.Black
         Me.dgv.Location = New System.Drawing.Point(12, 85)
         Me.dgv.Name = "dgv"
         Me.dgv.Size = New System.Drawing.Size(792, 372)
