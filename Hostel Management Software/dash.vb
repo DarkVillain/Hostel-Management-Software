@@ -20,20 +20,21 @@ Public Class dash
         dgv.ForeColor = Color.Black
         dgv.Columns.Clear()
         dgv.Rows.Clear()
-        dgv.Columns.Add("colREG_ID", "Reg id")
-        dgv.Columns.Add("colNAME", "Name")
+        dgv.Columns.Add("colREG_ID", "Registration No")
+        dgv.Columns.Add("colNAME", "Full Name")
         dgv.Columns.Add("colCLASS", "Class")
         dgv.Columns.Add("colDATED", "Date Joined")
-        dgv.Columns.Add("colALLOC_ROOM", "Room")
+        dgv.Columns.Add("colALLOC_ROOM", "Room No.")
         dgv.Columns.Add("colPHONE", "Phone No")
         con.Open()
         Dim command As OracleCommand = con.CreateCommand()
         command.CommandText = "SELECT * FROM STUDENT"
         Dim oraclereader As OracleDataReader = command.ExecuteReader()
         While oraclereader.Read()
-            dgv.Rows.Add({oraclereader.Item("REG_ID"), oraclereader.Item("NAME"), oraclereader.Item("ALLOC_ROOM"), oraclereader.Item("CLASS"), oraclereader.Item("DATED"), oraclereader.Item("PHONE")})
+            dgv.Rows.Add({oraclereader.Item("REG_ID"), oraclereader.Item("NAME"), oraclereader.Item("CLASS"), oraclereader.Item("DATED"), oraclereader.Item("ALLOC_ROOM"), oraclereader.Item("PHONE")})
         End While
         con.Close()
+        dgv.Sort(dgv.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
     End Sub
     Private Sub AddToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddToolStripMenuItem.Click
         addStudent.Show()

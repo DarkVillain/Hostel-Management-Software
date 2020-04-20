@@ -95,7 +95,7 @@ Partial Class Login
         Me.llRn.Location = New System.Drawing.Point(192, 345)
         Me.llRn.Name = "llRn"
         Me.llRn.Size = New System.Drawing.Size(105, 16)
-        Me.llRn.TabIndex = 8
+        Me.llRn.TabIndex = 6
         Me.llRn.TabStop = True
         Me.llRn.Text = "Register Now!"
         '
@@ -107,7 +107,7 @@ Partial Class Login
         Me.llFp.Location = New System.Drawing.Point(47, 345)
         Me.llFp.Name = "llFp"
         Me.llFp.Size = New System.Drawing.Size(117, 16)
-        Me.llFp.TabIndex = 7
+        Me.llFp.TabIndex = 5
         Me.llFp.TabStop = True
         Me.llFp.Text = "Forgot Password?"
         '
@@ -120,7 +120,7 @@ Partial Class Login
         Me.btnClear.Location = New System.Drawing.Point(206, 292)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(78, 32)
-        Me.btnClear.TabIndex = 5
+        Me.btnClear.TabIndex = 4
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
@@ -133,7 +133,7 @@ Partial Class Login
         Me.btnLogin.Location = New System.Drawing.Point(48, 292)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(84, 32)
-        Me.btnLogin.TabIndex = 4
+        Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
@@ -167,7 +167,7 @@ Partial Class Login
         Me.txtPass.Location = New System.Drawing.Point(48, 244)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(236, 22)
-        Me.txtPass.TabIndex = 1
+        Me.txtPass.TabIndex = 2
         Me.txtPass.UseSystemPasswordChar = True
         '
         'txtUm
@@ -178,7 +178,7 @@ Partial Class Login
         Me.txtUm.Location = New System.Drawing.Point(48, 183)
         Me.txtUm.Name = "txtUm"
         Me.txtUm.Size = New System.Drawing.Size(236, 22)
-        Me.txtUm.TabIndex = 0
+        Me.txtUm.TabIndex = 1
         '
         'Login
         '

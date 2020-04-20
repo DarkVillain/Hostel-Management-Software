@@ -72,7 +72,7 @@ Partial Class dash
         Me.mnsDm.Name = "mnsDm"
         Me.mnsDm.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.mnsDm.ShowItemToolTips = True
-        Me.mnsDm.Size = New System.Drawing.Size(1018, 25)
+        Me.mnsDm.Size = New System.Drawing.Size(818, 25)
         Me.mnsDm.TabIndex = 0
         Me.mnsDm.Text = "MenuStrip1"
         '
@@ -235,7 +235,7 @@ Partial Class dash
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsslMsg, Me.tsslNm, Me.tsslBlnk, Me.tsslTd})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 460)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1018, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(818, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -260,7 +260,7 @@ Partial Class dash
         '
         Me.tsslBlnk.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tsslBlnk.Name = "tsslBlnk"
-        Me.tsslBlnk.Size = New System.Drawing.Size(830, 17)
+        Me.tsslBlnk.Size = New System.Drawing.Size(630, 17)
         Me.tsslBlnk.Spring = True
         '
         'tsslTd
@@ -279,12 +279,12 @@ Partial Class dash
         '
         'dgv
         '
-        Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
+        Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv.Location = New System.Drawing.Point(12, 85)
         Me.dgv.Name = "dgv"
-        Me.dgv.Size = New System.Drawing.Size(792, 372)
+        Me.dgv.Size = New System.Drawing.Size(744, 372)
         Me.dgv.TabIndex = 3
         '
         'lblStudent
@@ -317,7 +317,7 @@ Partial Class dash
         Me.BackColor = System.Drawing.Color.DarkMagenta
         Me.BackgroundImage = Global.Hostel_Management_Software.My.Resources.Resources.hostelbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1018, 482)
+        Me.ClientSize = New System.Drawing.Size(818, 482)
         Me.Controls.Add(Me.btnClick)
         Me.Controls.Add(Me.lblStudent)
         Me.Controls.Add(Me.dgv)
