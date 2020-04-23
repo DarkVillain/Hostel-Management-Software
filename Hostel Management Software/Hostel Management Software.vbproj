@@ -185,7 +185,6 @@
     <Compile Include="changePass.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="imgHelper.vb" />
     <Compile Include="dailyUsageRep.Designer.vb">
       <DependentUpon>dailyUsageRep.vb</DependentUpon>
     </Compile>
@@ -292,16 +291,6 @@
     <Compile Include="register.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="roomDetails.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>roomDetails.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="studentDS.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>studentDS.xsd</DependentUpon>
-    </Compile>
     <Compile Include="studentRep.Designer.vb">
       <DependentUpon>studentRep.vb</DependentUpon>
     </Compile>
@@ -394,28 +383,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="roomDetails.xsc">
-      <DependentUpon>roomDetails.xsd</DependentUpon>
-    </None>
-    <None Include="roomDetails.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>roomDetails.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="roomDetails.xss">
-      <DependentUpon>roomDetails.xsd</DependentUpon>
-    </None>
-    <None Include="studentDS.xsc">
-      <DependentUpon>studentDS.xsd</DependentUpon>
-    </None>
-    <None Include="studentDS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>studentDS.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="studentDS.xss">
-      <DependentUpon>studentDS.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
