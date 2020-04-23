@@ -328,6 +328,9 @@
     <EmbeddedResource Include="changePass.resx">
       <DependentUpon>changePass.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dailyUsageRep.resx">
+      <DependentUpon>dailyUsageRep.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dash.resx">
       <DependentUpon>dash.vb</DependentUpon>
     </EmbeddedResource>
