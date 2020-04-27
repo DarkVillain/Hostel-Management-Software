@@ -161,12 +161,6 @@
     <Compile Include="addMaterials.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addRoom.Designer.vb">
-      <DependentUpon>addRoom.vb</DependentUpon>
-    </Compile>
-    <Compile Include="addRoom.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="addStudent.Designer.vb">
       <DependentUpon>addStudent.vb</DependentUpon>
     </Compile>
@@ -213,12 +207,6 @@
       <DependentUpon>editMaterials.vb</DependentUpon>
     </Compile>
     <Compile Include="editMaterials.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="editRoom.Designer.vb">
-      <DependentUpon>editRoom.vb</DependentUpon>
-    </Compile>
-    <Compile Include="editRoom.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="editStudent.Designer.vb">
@@ -305,9 +293,6 @@
     <EmbeddedResource Include="addMaterials.resx">
       <DependentUpon>addMaterials.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addRoom.resx">
-      <DependentUpon>addRoom.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="addStudent.resx">
       <DependentUpon>addStudent.vb</DependentUpon>
     </EmbeddedResource>
@@ -331,9 +316,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editMaterials.resx">
       <DependentUpon>editMaterials.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="editRoom.resx">
-      <DependentUpon>editRoom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editStudent.resx">
       <DependentUpon>editStudent.vb</DependentUpon>
