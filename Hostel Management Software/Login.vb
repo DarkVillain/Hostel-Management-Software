@@ -1,22 +1,31 @@
-﻿Public Class Login
+﻿Imports Oracle.DataAccess.Client
+Public Class Login
     Private Sub btnExit_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Dim username As String
-        Dim password As String
-        username = "dark"
-        password = "villain"
-        If txtUm.Text = username And txtPass.Text = password Then
-            'dash.tsslNm.Text = txtBoxName.Text
-            dash.Show()
-            Me.Hide()
-        ElseIf txtUm.Text <> username Or txtPass.Text <> password Then
-            MsgBox("Username or password is incorrect!")
-        End If
-        If txtUm.Text = username And txtPass.Text = password Then
-            txtUm.Text = " "
-            txtPass.Text = " "
+        Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
+        If txtPass.Text = "" Or txtUm.Text = "" Then
+            MessageBox.Show("Please fill the field(s)!!", "Authentication Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Try
+                Dim sql As String = "SELECT * FROM LOGIN WHERE USERNAME='" & txtUm.Text & "' AND PASSWORD = '" & txtPass.Text & "'"
+                Dim sqlCom As New OracleCommand(sql)
+                sqlCom.Connection = con
+                con.Open()
+                Dim sqlRead As OracleDataReader = sqlCom.ExecuteReader()
+                If sqlRead.Read() Then
+                    dash.Show()
+                    Me.Hide()
+                Else
+                    MessageBox.Show("Username and Password do not match!!", "Authentication Failure!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    txtPass.Text = ""
+                    txtUm.Text = ""
+                    txtUm.Focus()
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Failed to connect to Database!!", "Database Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
         End If
     End Sub
     Private Sub btnClr_Click(sender As Object, e As EventArgs) Handles btnClear.Click
