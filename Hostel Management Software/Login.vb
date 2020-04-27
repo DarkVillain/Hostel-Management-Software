@@ -4,7 +4,7 @@ Public Class Login
         Me.Close()
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Dim con As New Oracle.DataAccess.Client.OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
+        Dim con As New OracleConnection("DATA SOURCE=localhost:1521/orclpdb;PERSIST SECURITY INFO=True;USER ID=HR;PASSWORD=hr")
         If txtPass.Text = "" Or txtUm.Text = "" Then
             MessageBox.Show("Please fill the field(s)!!", "Authentication Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
